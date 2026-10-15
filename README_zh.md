@@ -4,6 +4,8 @@
 
 这是一个关于非单项式整函数的两个最大模点计数问题的 Lean 4 形式化证明。
 
+- **Author:** Yao Xu ([@cadamcat](https://github.com/cadamcat)); see [AUTHORS.md](AUTHORS.md).
+- **Mathematics:** (a) L. Pardo-Simón 与 D. J. Sixsmith，[*A finite-order answer to a problem of Erdős on maximum modulus points*](https://arxiv.org/abs/2607.09462)，定理 1.1；本形式化证明了构造所用 tract（区域）的 Rempe-Gillen 逼近步骤（[arXiv:1106.3439](https://arxiv.org/abs/1106.3439)）。(b) Y. Li，[*A cofinal bound for maximum-modulus points of entire functions*](https://github.com/liyunpeng1991/liyunpeng1991.github.io/blob/c063e5f83dfa71c97871eabc8b70cf8a8c1e0bc9/papers/maximum-modulus-points-v2.pdf)，预印本。
 - 本项目在 AI 协助下开发；所有证明均由 Lean 4 内核验证。
 
 ## 命题

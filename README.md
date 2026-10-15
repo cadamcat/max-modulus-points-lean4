@@ -4,6 +4,8 @@
 
 A Lean 4 formalization of the two maximum-modulus counting questions for non-monomial entire functions.
 
+- **Author:** Yao Xu ([@cadamcat](https://github.com/cadamcat)); see [AUTHORS.md](AUTHORS.md).
+- **Mathematics:** (a) L. Pardo-Simón and D. J. Sixsmith, [*A finite-order answer to a problem of Erdős on maximum modulus points*](https://arxiv.org/abs/2607.09462), Theorem 1.1; this formalization proves Rempe-Gillen's approximation step for the tracts used in the construction ([arXiv:1106.3439](https://arxiv.org/abs/1106.3439)). (b) Y. Li, [*A cofinal bound for maximum-modulus points of entire functions*](https://github.com/liyunpeng1991/liyunpeng1991.github.io/blob/c063e5f83dfa71c97871eabc8b70cf8a8c1e0bc9/papers/maximum-modulus-points-v2.pdf), preprint.
 - Developed with AI assistance; all proofs are verified by the Lean 4 kernel.
 
 ## Statement
