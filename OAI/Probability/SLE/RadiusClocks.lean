@@ -1,3 +1,8 @@
+/-
+Modified from openai/math commit adc7f1241b42e322a6451854ab7e4b4c146bf78a.
+Changes: Lean v4.35.0 module header (`module`, public imports, and `@[expose] public section`);
+`NNReal.coe_min` so a minimum of extended nonnegative reals matches after coercion to `ℝ`.
+-/
 module
 
 public import Mathlib
@@ -148,7 +153,7 @@ theorem continuous_zero_hit_after_stopping
       have hx : X t ω = 0 := abs_eq_zero.mp (by dsimp only [f] at ht; linarith [abs_nonneg (X t ω)])
       have hle : (ρ ω : ℝ) ≤ (t : ℝ≥0) := by
         dsimp only [f] at ht
-        rw [min_eq_left hr] at ht
+        rw [NNReal.coe_min, min_eq_left (NNReal.coe_le_coe.mpr hr)] at ht
         have hh := le_max_left ((ρ ω : ℝ) - (t : ℝ≥0)) 0
         linarith [abs_nonneg (X t ω)]
       exact ⟨t, ⟨hle, t.property.2⟩, hx⟩

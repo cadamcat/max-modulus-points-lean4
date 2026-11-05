@@ -1,6 +1,7 @@
 module
 
 public import Mathlib.Analysis.Calculus.Deriv.Comp
+public import Mathlib.Analysis.Calculus.FDeriv.Comp
 public import Mathlib.Topology.Order.IntermediateValue
 public import MaxModulusPoints.Blueprint.Data
 public import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates

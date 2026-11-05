@@ -1,3 +1,7 @@
+/-
+Modified from openai/math commit adc7f1241b42e322a6451854ab7e4b4c146bf78a.
+Change: Lean v4.35.0 module header (`module`, public imports, and `@[expose] public section`).
+-/
 module
 
 public import OAI.Analysis.IntegralMeans.CriticalCount

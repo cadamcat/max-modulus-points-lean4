@@ -1,5 +1,6 @@
 module
 
+public import TauCeti.Analysis.Complex.Conformal.Inverse.Function
 public import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Normalization
 public import OAI.Analysis.SymmetricDomains.MontelExpandingDomains
 public import Mathlib.Analysis.Complex.Schwarz
@@ -35,7 +36,7 @@ theorem exists_compact_trap_disc_maps {A : Set ℂ} {a : ℂ}
     BijOn.symm hψ.bijOn.invOn_invFunOn.symm hψ.bijOn
   have hjhol : DifferentiableOn ℂ j (ball 0 1) := by
     simpa only [hψ.image_eq] using
-      DifferentiableOn.invFunOn hψ.differentiableOn hA hψ.injOn
+      DifferentiableOn.invFunOn hψ.differentiableOn hA hψ.bijOn.injOn
   have hsub : closedBall (0 : ℂ) r ⊆ ball 0 1 := by
     intro z hz
     exact mem_ball_zero_iff.mpr ((mem_closedBall_zero_iff.mp hz).trans_lt hr)

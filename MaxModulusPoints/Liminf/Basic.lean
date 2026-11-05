@@ -1,6 +1,7 @@
 module
 
 public import Mathlib.Analysis.Complex.AbsMax
+public import Mathlib.LinearAlgebra.Complex.FiniteDimensional
 public import Mathlib.Analysis.Analytic.Order
 public import Mathlib.Analysis.Calculus.Deriv.Star
 public import Mathlib.Analysis.Normed.Module.Connected

@@ -1,5 +1,6 @@
 module
 
+public import TauCeti.Analysis.Complex.Conformal.Inverse.Function
 public import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Normalization
 public import MaxModulusPoints.ConformalKernel.TargetDomain
 

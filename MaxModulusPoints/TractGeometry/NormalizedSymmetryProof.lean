@@ -1,5 +1,6 @@
 module
 
+public import TauCeti.Analysis.Complex.Conformal.Inverse.Function
 public import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Normalization
 public import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Equivalence
 public import Mathlib.Analysis.Calculus.Deriv.Star
@@ -71,9 +72,11 @@ theorem symmetric_riemann_maps : SymmetricRiemannMaps := by
   have hjb : BijOn j (ball (0 : ℂ) 1) W := hg.bijOn.symm hg.bijOn.invOn_invFunOn.symm
   have hib : BijOn i (ball (0 : ℂ) 1) U := hf.bijOn.symm hf.bijOn.invOn_invFunOn.symm
   have hjd : DifferentiableOn ℂ j (ball (0 : ℂ) 1) := by
-    simpa only [hg.image_eq] using hg.differentiableOn.invFunOn hWo hg.injOn
+    simpa only [hg.image_eq] using
+      DifferentiableOn.invFunOn hg.differentiableOn hWo hg.injOn
   have hid : DifferentiableOn ℂ i (ball (0 : ℂ) 1) := by
-    simpa only [hf.image_eq] using hf.differentiableOn.invFunOn hUo hf.injOn
+    simpa only [hf.image_eq] using
+      DifferentiableOn.invFunOn hf.differentiableOn hUo hf.injOn
   have hj0 : j 0 = (b : ℂ) := by
     simpa only [hg.map_base] using hg.injOn.leftInvOn_invFunOn hb
   have hdj : HasDerivAt j (deriv g (b : ℂ))⁻¹ 0 := by

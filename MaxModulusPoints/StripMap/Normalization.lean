@@ -1,6 +1,7 @@
 module
 
 public import Mathlib.Analysis.Calculus.Deriv.Star
+public import TauCeti.Analysis.Complex.Conformal.Inverse.Function
 public import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Normalization
 public import MaxModulusPoints.Blueprint.Data
 public import MaxModulusPoints.StripMap.Geometry
@@ -39,10 +40,10 @@ theorem exists_normalized_equivalence :
   have hGbij : BijOn G (ball 0 1) target :=
     BijOn.symm hg.bijOn.invOn_invFunOn.symm hg.bijOn
   have hFd : DifferentiableOn ℂ F (ball 0 1) := by
-    have h := hf.differentiableOn.invFunOn isOpen_strip hf.injOn
+    have h := DifferentiableOn.invFunOn hf.differentiableOn isOpen_strip hf.injOn
     rwa [hf.image_eq] at h
   have hGd : DifferentiableOn ℂ G (ball 0 1) := by
-    have h := hg.differentiableOn.invFunOn isOpen_target hg.injOn
+    have h := DifferentiableOn.invFunOn hg.differentiableOn isOpen_target hg.injOn
     rwa [hg.image_eq] at h
   let e : ConformalEquivalence strip target := {
     toFun := G ∘ f
