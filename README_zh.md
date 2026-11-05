@@ -15,7 +15,11 @@
 1. 存在一个非单项式整函数 `f`，使得对任意 `N` 和 `R`，都存在 `r > R` 满足 `ν f r ≥ N`。因此，当半径趋于无穷时，最大模点个数无界。
 2. 对每个非单项式整函数 `f`，都存在有限的 `B`，使得对任意 `R`，都存在 `r > R` 满足 `ν f r ≤ B`。因此，最大模点个数不会随半径趋于无穷而趋于无穷。
 
-Lean 中的定义和量词见 [MaxModulusPoints/Challenge.lean](MaxModulusPoints/Challenge.lean)；主定理由 [MaxModulusPoints/Blueprint/Main.lean](MaxModulusPoints/Blueprint/Main.lean) 汇总。
+Lean 中的定义和量词见 [MaxModulusPoints/Challenge.lean](MaxModulusPoints/Challenge.lean)；主定理由 [MaxModulusPoints/Blueprint/Main.lean](MaxModulusPoints/Blueprint/Main.lean) 汇总。同一陈述（证明留空）见 [Challenge.lean](Challenge.lean)。[Solution.lean](Solution.lean) 导入该证明。
+
+## 工具链
+
+本分支使用 Lean `v4.35.0` 与 Mathlib 提交 `56a005855ea17e0b0958f73ec801ae140b0a1679`（`v4.35.0` 标签）。所有 Lean 源文件都使用模块系统。随仓库提供的 OAI、TauCeti 与 FixedPointTheorems 已适配该工具链，改动记在 [THIRD_PARTY.md](THIRD_PARTY.md)。`v1.0.0` 仍是最初发布版，使用 Lean `v4.34.1`。
 
 ## 构建
 

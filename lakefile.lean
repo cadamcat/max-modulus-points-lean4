@@ -19,3 +19,6 @@ lean_lib FixedPointTheorems where
 
 @[default_target]
 lean_lib MaxModulusPoints
+
+lean_lib Challenge
+lean_lib Solution

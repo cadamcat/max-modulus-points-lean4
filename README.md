@@ -15,7 +15,11 @@ For an entire function `f : ℂ → ℂ` and a radius `r`, `ν f r` is the cardi
 1. There is a non-monomial entire function `f` such that for every `N` and `R`, some `r > R` has `ν f r ≥ N`. Thus the maximum-point counts are unbounded along radii tending to infinity.
 2. For every non-monomial entire function `f`, there is a finite `B` such that for every `R`, some `r > R` has `ν f r ≤ B`. Thus the counts do not tend to infinity as the radius tends to infinity.
 
-The Lean definitions and quantifiers are in [MaxModulusPoints/Challenge.lean](MaxModulusPoints/Challenge.lean); the theorem is assembled in [MaxModulusPoints/Blueprint/Main.lean](MaxModulusPoints/Blueprint/Main.lean).
+The Lean definitions and quantifiers are in [MaxModulusPoints/Challenge.lean](MaxModulusPoints/Challenge.lean); the theorem is assembled in [MaxModulusPoints/Blueprint/Main.lean](MaxModulusPoints/Blueprint/Main.lean). The same statement, with the proof left open, is in [Challenge.lean](Challenge.lean). [Solution.lean](Solution.lean) imports the proof.
+
+## Toolchain
+
+This branch uses Lean `v4.35.0` and Mathlib commit `56a005855ea17e0b0958f73ec801ae140b0a1679` (the `v4.35.0` tag). Every Lean source uses the module system. The vendored OAI, TauCeti, and FixedPointTheorems files are adapted to that toolchain; the changes are recorded in [THIRD_PARTY.md](THIRD_PARTY.md). Release `v1.0.0` remains the original release, on Lean `v4.34.1`.
 
 ## Build
 
