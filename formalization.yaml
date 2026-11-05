@@ -1,0 +1,156 @@
+# formalization.yaml (v0.4) for the Palomar Registry submission of this revision.
+version: "v0.4"
+
+project:
+  name: "Maximum-modulus points of entire functions (Erdős Problem 1117), in Lean 4"
+  description: >-
+    A Lean 4 formalization of both maximum-modulus counting questions of
+    Hayman–Lingham Problem 2.16 (Erdős Problem 1117). For an entire function f
+    and a radius r, let ν(f, r) be the number of points on the circle |z| = r
+    where |f| attains its maximum on that circle. The registered theorem proves
+    two things: some non-monomial entire function has ν(f, r) unbounded along
+    radii tending to infinity; and for every non-monomial entire function there
+    is one finite bound B with ν(f, r) ≤ B along a cofinal set of radii, so the
+    counts never tend to infinity. The first part follows Pardo-Simón and
+    Sixsmith's finite-order construction and proves the approximation step of
+    Rempe-Gillen that it uses; the second follows Li's cofinal-bound argument.
+    The theorem depends only on the axioms propext, Classical.choice and
+    Quot.sound.
+  authors:
+    - "Yao Xu"
+  responsible_maintainers:
+    - "Yao Xu"
+  license: "Apache-2.0"
+
+classification:
+  arxiv: ["math.CV", "math.DS"]
+  msc2020: ["30D20", "30D15", "37F10"]
+
+sources:
+  - title: "A finite-order answer to a problem of Erdős on maximum modulus points"
+    authors: ["Leticia Pardo-Simón", "David J. Sixsmith"]
+    id: "arXiv:2607.09462"
+    type: "paper"
+    location: "Theorem 1.1"
+    relationship: "formalizes"
+    note: "The first part of the registered statement (unbounded counts)."
+    author_endorsement: "not-contacted"
+  - title: "Hyperbolic entire functions with full hyperbolic dimension and approximation by Eremenko-Lyubich functions"
+    authors: ["Lasse Rempe-Gillen"]
+    id: "arXiv:1106.3439"
+    type: "paper"
+    relationship: "formalizes"
+    note: "The approximation step for the tracts used in the first part is proved here, not assumed."
+    author_endorsement: "not-contacted"
+  - title: "A cofinal bound for maximum-modulus points of entire functions"
+    authors: ["Yunpeng Li"]
+    id: "https://github.com/liyunpeng1991/liyunpeng1991.github.io/blob/c063e5f83dfa71c97871eabc8b70cf8a8c1e0bc9/papers/maximum-modulus-points-v2.pdf"
+    type: "preprint"
+    location: "version 2, 11 October 2026"
+    relationship: "formalizes"
+    note: "The second part of the registered statement (a cofinal finite bound)."
+    author_endorsement: "not-contacted"
+  - title: "Erdős Problem #1117"
+    contributors:
+      - name: "Paul Erdős"
+        role: "problem-proposer"
+    id: "https://www.erdosproblems.com/1117"
+    type: "web post"
+    relationship: "background"
+    note: "The same questions appear as Problem 2.16 in Hayman and Lingham's collection of research problems in function theory."
+
+related_formalizations:
+  - id: "https://github.com/liyunpeng1991/liyunpeng1991.github.io/tree/632e915136249d6000c28ab600396a16eed576cf/proofs/maximum-modulus/lean"
+    relationship: "independent"
+    note: >-
+      Li's own Lean formalization of the cofinal bound (the second part), on
+      Lean v4.35.0-rc4, final declaration
+      MaximumModulus.bounded_maxPoints_at_arbitrarily_large_radii. It does not
+      cover the first part. No code from it is used here.
+  - id: "https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean"
+    relationship: "builds-on"
+    note: >-
+      Modules of OpenAI's mathematics library (Apache-2.0) in the import
+      closure are vendored under OAI/, with module headers and one coercion
+      fix for Lean v4.35.0; see THIRD_PARTY.md.
+  - id: "https://github.com/TauCetiProject/TauCeti/tree/0535b3bf5a083a09c92f18f3f8aa2017f32a803c"
+    relationship: "builds-on"
+    note: >-
+      Conformal-mapping and contour modules (Apache-2.0) vendored under
+      TauCeti/, originally from 3bed7e37f3c5 and updated from this commit for
+      Lean v4.35.0; see THIRD_PARTY.md.
+  - id: "https://github.com/harfe/fixed-point-theorems-lean4/tree/93a3eed3364281a9dbf9652bb52356a8db65057c"
+    relationship: "builds-on"
+    note: "The Brouwer fixed-point theorem (MIT), vendored under FixedPointTheorems/."
+  - id: "https://github.com/cadamcat/max-modulus-points-lean4/releases/tag/v1.0.0"
+    relationship: "other"
+    note: >-
+      Release v1.0.0 is the original release on Lean v4.34.1. This revision
+      ports it to Lean v4.35.0 and the module system without changing the
+      statement.
+
+status:
+  scope: >-
+    Complete formalization of both questions as stated in
+    MaxModulusPoints.Statement. ν counts exact maximum points as an extended
+    natural number, so an infinite set of maximum points counts as ⊤; monomials
+    include the constants and the zero function.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: ["propext", "Classical.choice", "Quot.sound"]
+
+automation:
+  methods:
+    - method: "agent"
+      models: ["GPT-6.1 Sol", "GPT-6 Luna", "Claude Opus 5.5", "Grok 4.7"]
+      framework: "Codex CLI, Claude Code and Grok CLI"
+      tool_setup: >-
+        The author fixed the target statement and the acceptance criteria in
+        advance: the result depends only on Lean's standard axioms and is
+        accepted by Comparator against the challenge statement. AI coding
+        agents wrote the proof, and later ported it to Lean v4.35.0 and the
+        module system.
+      cost:
+        spend_usd: "subscription-based usage"
+        hardware: "API-only models; local builds on an Apple Silicon Mac"
+  spend_usd: "subscription-based usage"
+  notes: >-
+    The author is responsible for the content. Model agreement was not
+    treated as verification; acceptance rests on the Lean kernel checks
+    described under review.
+
+fidelity:
+  divergences: >-
+    None known. The statement keeps both questions, the exact maximum points
+    (by comparison of function values, not by a supremum), and positive radii
+    larger than every given bound.
+
+review:
+  status: "agent-reviewed"
+  reviewers: []
+  notes: >-
+    This revision passed a full build with scripts/verify.sh (the theorem
+    depends only on propext, Classical.choice and Quot.sound), a kernel replay
+    with leanchecker --fresh, and Comparator with the NanoDa kernel and Lean's
+    default kernel; a disposable challenge with ∀ N changed to ∃ N in
+    UnboundedCounts was rejected. A vendor check reproduces every vendored file
+    from its recorded upstream and patch. No independent human expert has
+    reviewed the formalization. Details are in docs/verification.md.
+
+alignment:
+  namespace: "MaxModulusPoints"
+  statements:
+    - source: "Hayman–Lingham Problem 2.16 / Erdős Problem 1117, both questions"
+      lean: "MaxModulusPoints.Blueprint.main"
+      module: "MaxModulusPoints/Blueprint/Main.lean"
+      status: "proved"
+      note: >-
+        First conjunct: Pardo-Simón–Sixsmith, Theorem 1.1. Second conjunct:
+        Li's cofinal bound. Compared by Comparator with the statement of the
+        same name in Challenge.lean, with every definition compared by body.
+
+acknowledgements: >-
+  Mathlib, OpenAI's mathematics library, TauCeti and FixedPointTheorems supply
+  the underlying theory; their authors and licenses are credited in
+  THIRD_PARTY.md. Comparator, lean4export and NanoDa were used for
+  verification.
