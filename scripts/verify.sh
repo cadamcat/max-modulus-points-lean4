@@ -2,6 +2,7 @@
 # Build the release library and check the axioms of its assembled theorem.
 set -euo pipefail
 cd "$(dirname -- "${BASH_SOURCE[0]}")/.."
+python3 scripts/check_vendor.py
 lake build MaxModulusPoints
 out=$(lake env lean Verification/Axioms.lean 2>&1)
 printf '%s\n' "$out"

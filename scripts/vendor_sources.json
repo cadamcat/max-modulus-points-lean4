@@ -1,0 +1,1071 @@
+{
+  "baselineCommit": "b69b82f04a5c17b46532cfb15e4e48005a28bf11",
+  "patch": "scripts/vendor.patch.gz",
+  "patchSha256": "a3ed7d3dee8aabbae866cebced148aa48f1e12cafffa81160e89ecba1440d81a",
+  "libraries": {
+    "OAI": {
+      "license": "Apache-2.0",
+      "upstreamRepo": "https://github.com/openai/math",
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "upstreamPrefix": "lean"
+    },
+    "TauCeti": {
+      "license": "Apache-2.0",
+      "upstreamRepo": "https://github.com/TauCetiProject/TauCeti",
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90",
+      "upstreamPrefix": ""
+    },
+    "FixedPointTheorems": {
+      "license": "MIT",
+      "upstreamRepo": "https://github.com/harfe/fixed-point-theorems-lean4",
+      "upstreamCommit": "770940ddf9878cf61952ed53d910b92bca841838",
+      "upstreamPrefix": ""
+    }
+  },
+  "files": [
+    {
+      "path": "FixedPointTheorems/LICENSE",
+      "library": "FixedPointTheorems",
+      "inBaseline": true,
+      "upstreamCommit": "770940ddf9878cf61952ed53d910b92bca841838"
+    },
+    {
+      "path": "FixedPointTheorems/apply_cubical_sperner.lean",
+      "library": "FixedPointTheorems",
+      "inBaseline": true,
+      "upstreamCommit": "770940ddf9878cf61952ed53d910b92bca841838"
+    },
+    {
+      "path": "FixedPointTheorems/brouwer.lean",
+      "library": "FixedPointTheorems",
+      "inBaseline": true,
+      "upstreamCommit": "770940ddf9878cf61952ed53d910b92bca841838"
+    },
+    {
+      "path": "FixedPointTheorems/convex_homeos.lean",
+      "library": "FixedPointTheorems",
+      "inBaseline": true,
+      "upstreamCommit": "770940ddf9878cf61952ed53d910b92bca841838"
+    },
+    {
+      "path": "FixedPointTheorems/cubical_sperner.lean",
+      "library": "FixedPointTheorems",
+      "inBaseline": true,
+      "upstreamCommit": "770940ddf9878cf61952ed53d910b92bca841838"
+    },
+    {
+      "path": "FixedPointTheorems/cubical_sperner_prep.lean",
+      "library": "FixedPointTheorems",
+      "inBaseline": true,
+      "upstreamCommit": "770940ddf9878cf61952ed53d910b92bca841838"
+    },
+    {
+      "path": "OAI/Analysis/Crouzeix/Hurwitz.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/Crouzeix/Montel.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/AffineLaw.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/AreaTransport.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/BorelPairing.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/BoundaryEscape.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/BoundaryTail.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/CircleBounds.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/CompactClass.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/CriticalCount.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/CriticalMap.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/CriticalPoint.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/Degree.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/Distortion.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/Eigenmeasure.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/ExpectedDensity.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/ExpectedTransport.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/GoodPairs.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/HalfPlane.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/InverseDensity.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/Koebe.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/LevelCurve.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/LevelIndex.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/LogIncrement.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/Model.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/Moments.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/NegativeArea.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/RankPairing.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/Spectrum.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/TraceBounds.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/TraceIdentity.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/TransferOperator.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/TransportBoxes.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/Turning.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/UnivalentArea.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/IntegralMeans/Winding.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/AmbientInverse.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/AnalyticImplicitScalar.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/Basic.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/CompactPeakRatio.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/ContinuityPrinciple.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/DifferentiableCauchyTransform.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/DiscCompactness.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/DiscRelationCompactLocal.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/FiberCardAmbientSheets.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/FiberPolynomialNatDegree.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/FiniteAlgebraGenericSheets.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/FiniteProperMapOpen.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/IntegralPrimitive.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/MontelExpandingDomains.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/PolynomialIntegralCoordinates.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/PolynomialRemovableLocal.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/PrimeZeroLocusMaximum.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/ProperEventuallyFiberSubset.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/ScalarEquicontinuousHolomorphy.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Analysis/SymmetricDomains/ZeroLocusPolynomialSmooth.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/LICENSE",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Probability/SLE/AngularLaws.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Probability/SLE/BoundaryDensity.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Probability/SLE/BrownianGenerators.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Probability/SLE/BrownianStrongMarkov.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Probability/SLE/ClippedCoordinates.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Probability/SLE/FiniteRadiusStop.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Probability/SLE/LoewnerCharts.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Probability/SLE/LoewnerReflection.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Probability/SLE/NearRealContraction.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Probability/SLE/OptionalStopping.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Probability/SLE/RadiusClocks.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Probability/SLE/StoppedPower.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Probability/SLE/SwallowExit.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "OAI/Probability/SLE/SwallowLyapunov.lean",
+      "library": "OAI",
+      "inBaseline": true,
+      "upstreamCommit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "path": "TauCeti/Analysis/Calculus/DSlope/Basic.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Calculus/DSlope/Integral.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Calculus/OneSidedDerivLimit.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/BranchLogRoot.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/Area.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/Biholomorph.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/DiscInjection.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/ExtremalFamily.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/Hurwitz.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/ImageSimplyConnected.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/Inverse/Function.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/Koebe.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/LengthArea.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/LocalDegree.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/Moebius.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/Montel/Basic.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/Montel/Precompact.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/NormalFamilies.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/PseudoHyperbolic.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/RiemannMapping/Conformal.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/RiemannMapping/Equivalence.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/RiemannMapping/Existence.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/RiemannMapping/Normalization.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/RiemannMapping/Uniqueness.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/Rouche.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/Schwarz.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/SchwarzPick/Basic.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/SchwarzPick/Isometry.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/SimplyConnected.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/SquareRoots.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/UnitDisc/Automorphism/Basic.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/UnitDisc/Automorphism/Classification.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/UnitDisc/Automorphism/Group.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/Conformal/UnitDisc/Automorphism/Rotation.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/IsolatedZero.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/UnitDisc/Basic.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/UpperLogContinuity.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Complex/ZeroCount.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Argument/Cycle.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Argument/Divisor.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Argument/Lift.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Argument/Principle.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Cauchy/Goursat.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Cauchy/IntegralFormula.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Cauchy/PrincipalValue/Basic.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Chord/TangentBound.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Crossing/Monotonicity.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Crossing/Windows.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Curve/Approximation.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Curve/Concat.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Curve/Distance.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Curve/Integrability.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Curve/IntegralBound.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Dixon/Def.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Dixon/FunctionDiff.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Dixon/H1Diff.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Dixon/H2/Bound.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Dixon/H2/Diff.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Dixon/Liouville.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/ExitTime.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/HigherOrder/Asymptotics.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/HomologyCauchy.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/LogDerivFTC.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/MeromorphicLaurent.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/NullHomologous.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/PerWindow/HigherOrder.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/PiecewiseC1On.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/PolarPart/Decomposition.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Primitive.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/RegularityConditions.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Residue/Basic.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Residue/Cycle.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Residue/LogDeriv.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Residue/SimplePole.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/SectorCancellation.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/TangentForcing.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Winding/Continuity.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Winding/EndpointRatio.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Winding/Integer.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Winding/LocallyConstant.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Winding/Number/Basic.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Winding/Number/Reverse.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Winding/SegmentSum.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Winding/UnboundedComponent.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/Winding/Vanishing.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/Contour/WindowSplitting.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Analysis/SpecialFunctions/Trigonometric/Angle.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/LICENSE",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/MeasureTheory/Function/Lp/LIntegralRpow.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/MeasureTheory/Integral/CircleLIntegral.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Topology/ConnectedComponents.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Topology/ContinuousMap/Ascoli.lean",
+      "library": "TauCeti",
+      "inBaseline": false,
+      "upstreamCommit": "0535b3bf5a083a09c92f18f3f8aa2017f32a803c"
+    },
+    {
+      "path": "TauCeti/Topology/FilledHull.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Topology/Frontier.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Topology/Homotopy/Path.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Topology/PathComponent.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    },
+    {
+      "path": "TauCeti/Topology/UnitInterval.lean",
+      "library": "TauCeti",
+      "inBaseline": true,
+      "upstreamCommit": "3bed7e37f3c504a99e8c07e9f309540812a7aa90"
+    }
+  ]
+}
