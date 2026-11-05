@@ -1,0 +1,18 @@
+# Palomar Registry mechanical preflight for v1.1.0 (predictive only; not a registry submission).
+name: Palomar preflight
+on:
+  push:
+    branches: [palomar-preflight]
+permissions:
+  contents: read
+jobs:
+  palomar-preflight:
+    uses: PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml@14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+    with:
+      repository: cadamcat/max-modulus-points-lean4
+      commit: 661c39563de20e92f3edde7fef840518608304dc
+      pipeline_commit: 14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+      request_id: preflight928
+      mode: full
+      execution_profile: palomar-standard-v1
+      options: '{"comparator_config_path":"comparator.json","authorization_relationship":"I am a responsible author or maintainer"}'
