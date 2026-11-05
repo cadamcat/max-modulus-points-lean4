@@ -1,7 +1,10 @@
-import Mathlib.Analysis.Calculus.FDeriv.Measurable
-import MaxModulusPoints.CauchyApproximation.DensityBounds
-import MaxModulusPoints.CauchyApproximation.EntireExtension
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import Mathlib.Analysis.Calculus.FDeriv.Measurable
+public import MaxModulusPoints.CauchyApproximation.DensityBounds
+public import MaxModulusPoints.CauchyApproximation.EntireExtension
+public import MaxModulusPoints.CauchyApproximation.Model
+
 /-!
 # Decay of the canonical contour density
 
@@ -11,6 +14,9 @@ eleven for the contour derivative makes the Cauchy density integrable.
 Rempe-Gillen's Corollary 4.4 supplies a derivative bound of degree four;
 the reduction here isolates the remaining conformal estimate.
 -/
+
+
+@[expose] public section
 
 open Complex MeasureTheory Set
 

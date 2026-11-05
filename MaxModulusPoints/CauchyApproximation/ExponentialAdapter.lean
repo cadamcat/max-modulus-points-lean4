@@ -1,9 +1,18 @@
-import Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv
-import Mathlib.Analysis.Convex.Contractible
-import Mathlib.Analysis.Normed.Group.Bounded
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CauchyApproximation.AdapterContract
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv
+public import Mathlib.Analysis.Convex.Contractible
+public import Mathlib.Analysis.Normed.Group.Bounded
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CauchyApproximation.AdapterContract
+public import MaxModulusPoints.CauchyApproximation.Model
+
+/-!
+# `MaxModulusPoints.CauchyApproximation.ExponentialAdapter`
+-/
+
+@[expose] public section
+
 open Complex ComplexConjugate Filter Set
 open scoped Topology
 

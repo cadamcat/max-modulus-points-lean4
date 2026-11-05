@@ -3,13 +3,20 @@ Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: The Tau Ceti contributors
 -/
+/-
+Modified from TauCetiProject/TauCeti commit 3bed7e37f3c504a99e8c07e9f309540812a7aa90.
+The body below is upstream commit 0535b3bf5a08: Mathlib API adaptation on Lean v4.35.0-rc3.
+-/
 module
 
 public import Mathlib.Topology.Connected.Clopen
 public import Mathlib.Topology.Connected.LocallyConnected
 public import Mathlib.Topology.Irreducible
+public import Mathlib.SetTheory.Cardinal.Finite
 public import TauCeti.Topology.PathComponent
+public import Mathlib.Topology.Order.OrderClosed
 import Mathlib.Topology.Homeomorph.Lemmas
+import Mathlib.Topology.Order.IntermediateValue
 
 /-!
 # Connected components
@@ -23,6 +30,8 @@ space by them.
   the connected component of the image point.
 * `TauCeti.frontier_connectedComponentIn_subset_compl`: in a locally connected space, a connected
   component of an open set has its frontier in the complement of that set.
+* `TauCeti.connectedComponentIn_eq_of_lt`: a preconnected set on which a function stays on one
+  side of a value it never takes is a connected component.
 * `TauCeti.isPreconnected_compl_of_isPreconnected_frontier`: in a preconnected, locally connected
   space, an open set with preconnected frontier has preconnected complement.
 * `TauCeti.instT1SpaceConnectedComponents`: the connected-components quotient of any topological
@@ -31,11 +40,13 @@ space by them.
   to the disjoint union of its connected components.
 * `TauCeti.finite_connectedComponents_of_finite_irreducibleComponents`: finiteness of the
   irreducible components implies finiteness of the connected components.
+* `TauCeti.natCard_connectedComponents_eq_of_iUnion_eq_univ`: a space covered by finitely many
+  pairwise disjoint closed connected sets has exactly as many connected components as sets.
 -/
 
 public section
 
-open Set Topology
+open Function Set Topology
 
 universe u
 
@@ -67,6 +78,27 @@ theorem frontier_connectedComponentIn_subset_compl [LocallyConnectedSpace X] {F 
     rw [connectedComponentIn_eq hzx, ← connectedComponentIn_eq hzy]
     exact mem_connectedComponentIn hyF
   exact hy.2 (by rwa [hC.interior_eq])
+
+/-- **A strict superlevel set cuts out a connected component.** Let `φ` be continuous on `D` and
+never equal to `c` there. A preconnected subset `H ⊆ D` containing every point of `D` where `φ`
+exceeds `c` is the connected component in `D` of any of its points `z` with `c < φ z`: by the
+intermediate value theorem, that component cannot reach a point where `φ` is below `c`. -/
+theorem connectedComponentIn_eq_of_lt {α : Type*} [LinearOrder α] [TopologicalSpace α]
+    [OrderClosedTopology α] {D H : Set X} {z : X} {φ : X → α} {c : α} (hH : IsPreconnected H)
+    (hHD : H ⊆ D) (hz : z ∈ H) (hzc : c < φ z) (hφ : ContinuousOn φ D)
+    (hDne : ∀ q ∈ D, φ q ≠ c) (hmem : ∀ q ∈ D, c < φ q → q ∈ H) :
+    connectedComponentIn D z = H := by
+  apply Subset.antisymm
+  · intro q hq
+    have hqD : q ∈ D := connectedComponentIn_subset D z hq
+    apply hmem q hqD
+    rcases lt_or_gt_of_ne (hDne q hqD) with hqlt | hqgt
+    · have hzC : z ∈ connectedComponentIn D z := mem_connectedComponentIn (hHD hz)
+      obtain ⟨p, hpC, hpc⟩ := isPreconnected_connectedComponentIn.intermediate_value hq hzC
+        (hφ.mono (connectedComponentIn_subset D z)) ⟨hqlt.le, hzc.le⟩
+      exact (hDne p (connectedComponentIn_subset D z hpC) hpc).elim
+    · exact hqgt
+  · exact hH.subset_connectedComponentIn hz hHD
 
 /-- **An open set with preconnected frontier has preconnected complement**, in a preconnected,
 locally connected space.
@@ -181,5 +213,30 @@ theorem finite_connectedComponents_of_finite_irreducibleComponents
     obtain ⟨x, rfl⟩ := ConnectedComponents.surjective_coe c
     exact Set.mem_biUnion (irreducibleComponent_mem_irreducibleComponents x)
       ⟨x, mem_irreducibleComponent, rfl⟩
+
+/-- A space covered by finitely many pairwise disjoint closed connected sets has exactly as many
+connected components as sets: the sets are its connected components. -/
+theorem natCard_connectedComponents_eq_of_iUnion_eq_univ {ι : Type*} [Finite ι] {U : ι → Set X}
+    (hclosed : ∀ i, IsClosed (U i)) (hdisj : Pairwise (Disjoint on U))
+    (hunion : ⋃ i, U i = univ) (hconn : ∀ i, IsConnected (U i)) :
+    Nat.card (ConnectedComponents X) = Nat.card ι := by
+  -- Each set is open, its complement being the finite union of the other sets.
+  have hclopen (i : ι) : IsClopen (U i) := by
+    refine ⟨hclosed i, ?_⟩
+    have : (U i)ᶜ = ⋃ j : {j // j ≠ i}, U j := by
+      ext x
+      obtain ⟨k, hk⟩ := mem_iUnion.1 (hunion ▸ mem_univ x)
+      simp only [mem_compl_iff, mem_iUnion, Subtype.exists, exists_prop]
+      refine ⟨fun hx ↦ ⟨k, fun h ↦ hx (h ▸ hk), hk⟩, ?_⟩
+      rintro ⟨j, hji, hj⟩ hi
+      exact disjoint_left.1 (hdisj hji) hj hi
+    rw [← isClosed_compl_iff, this]
+    exact isClosed_iUnion_of_finite fun j ↦ hclosed j
+  have (i : ι) : Unique (ConnectedComponents (U i)) :=
+    have := isPreconnected_iff_preconnectedSpace.1 (hconn i).isPreconnected
+    have := (hconn i).nonempty.to_subtype
+    uniqueOfSubsingleton (ConnectedComponents.mk (Classical.arbitrary _))
+  exact Nat.card_congr ((ConnectedComponents.equivOfIsClopen hclopen hdisj hunion).trans
+    (Equiv.sigmaUnique ι _))
 
 end TauCeti

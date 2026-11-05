@@ -1,9 +1,12 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.FiberContinuation.BoundedSurvivors
-import MaxModulusPoints.FiberContinuation.ClosedBranches
-import MaxModulusPoints.FiberContinuation.CompactFamilies
-import MaxModulusPoints.FiberContinuation.ValueCoordinates
-import MaxModulusPoints.FiberContinuation.ValueWindows
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.FiberContinuation.BoundedSurvivors
+public import MaxModulusPoints.FiberContinuation.ClosedBranches
+public import MaxModulusPoints.FiberContinuation.CompactFamilies
+public import MaxModulusPoints.FiberContinuation.ValueCoordinates
+public import MaxModulusPoints.FiberContinuation.ValueWindows
+
 /-!
 # Local covers from compact surviving pairs
 
@@ -12,6 +15,9 @@ raw image in the target window. One compact surviving pair covers every nearby
 high-count target. Relative closedness extends that containment to its closure,
 including at the value at the origin.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

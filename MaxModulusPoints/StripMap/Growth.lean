@@ -1,9 +1,12 @@
-import OAI.Probability.SLE.AngularLaws
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.StripEstimates.Growth
-import MaxModulusPoints.StripMap.Geometry
-import MaxModulusPoints.StripMap.RealDerivative
-import MaxModulusPoints.StripMap.Symmetry
+module
+
+public import OAI.Probability.SLE.AngularLaws
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.StripEstimates.Growth
+public import MaxModulusPoints.StripMap.Geometry
+public import MaxModulusPoints.StripMap.RealDerivative
+public import MaxModulusPoints.StripMap.Symmetry
+
 /-!
 # Exponential growth of the strip map
 
@@ -11,6 +14,9 @@ An omitted-value bound on discs, applied to the map and its inverse,
 gives uniform bounds on the logarithmic derivative along the real axis.
 Integrating these bounds gives the two-sided exponential estimate.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

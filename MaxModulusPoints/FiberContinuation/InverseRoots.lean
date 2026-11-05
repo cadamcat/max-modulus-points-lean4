@@ -1,10 +1,16 @@
-import MaxModulusPoints.FiberContinuation.InverseCoordinates
+module
+
+public import MaxModulusPoints.FiberContinuation.InverseCoordinates
+
 /-!
 # Exact finite inverse-root families
 
 Local power coordinates enumerate physical inverse roots by roots of unity.
 The enumeration is exact on a fixed neighborhood of the physical root.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

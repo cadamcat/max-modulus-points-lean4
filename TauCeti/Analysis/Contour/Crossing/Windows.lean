@@ -3,6 +3,10 @@ Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Chris Birkbeck
 -/
+/-
+Modified from TauCetiProject/TauCeti commit 3bed7e37f3c504a99e8c07e9f309540812a7aa90.
+The body below is upstream commit 0535b3bf5a08: Mathlib API adaptation on Lean v4.35.0-rc3.
+-/
 module
 
 public import Mathlib.Analysis.Complex.Basic
@@ -330,7 +334,7 @@ theorem sorted_crossing_gluing_induction {E : Type*} [NormedAddCommGroup E] {γ 
     exact h_piece a b hA hab le_rfl
       fun u hu => h_far u hu fun t ht => absurd ht (List.not_mem_nil)
   | cons t rest IH =>
-    intro h_sorted hr a hA hab h_lo h_hi h_pair h_win h_far
+    intro h_sorted hr a hA _ h_lo h_hi h_pair h_win h_far
     have hr_nonneg : 0 ≤ r := hr (List.cons_ne_nil t rest)
     have h_head_lo : a ≤ t - r := h_lo t List.mem_cons_self
     have h_head_hi : t + r ≤ b := h_hi t List.mem_cons_self

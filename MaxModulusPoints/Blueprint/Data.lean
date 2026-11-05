@@ -1,15 +1,21 @@
-import Mathlib.Analysis.Calculus.Deriv.Basic
-import Mathlib.Analysis.SpecialFunctions.Complex.Log
-import Mathlib.Topology.Compactification.OnePoint.Basic
-import Mathlib.Topology.MetricSpace.UniformConvergence
-import Mathlib.Topology.Order.Compact
-import MaxModulusPoints.Challenge
+module
+
+public import Mathlib.Analysis.Calculus.Deriv.Basic
+public import Mathlib.Analysis.SpecialFunctions.Complex.Log
+public import Mathlib.Topology.Compactification.OnePoint.Basic
+public import Mathlib.Topology.MetricSpace.UniformConvergence
+public import Mathlib.Topology.Order.Compact
+public import MaxModulusPoints.Challenge
+
 /-!
 # Data for the maximum-modulus construction
 
 Block n represents the block numbered n + 1 in Pardo-Simón–Sixsmith, §4.
 Every reciprocal below is real division with a strictly positive denominator.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

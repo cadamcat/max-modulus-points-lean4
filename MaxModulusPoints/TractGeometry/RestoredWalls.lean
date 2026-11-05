@@ -1,6 +1,9 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.BlockPositions
-import MaxModulusPoints.TractGeometry.Walls
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.BlockPositions
+public import MaxModulusPoints.TractGeometry.Walls
+
 /-!
 # Restored points on a block's walls
 
@@ -8,6 +11,9 @@ Separated block intervals prevent an opening or gate in one block from
 restoring a wall point in another. Thus only the openings and gates of the
 same block need to be excluded when constructing paths in the complement.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

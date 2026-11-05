@@ -1,9 +1,12 @@
-import Mathlib.Topology.UniformSpace.LocallyUniformConvergence
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.ParameterApproximation.CleanGapGeometry
-import MaxModulusPoints.ParameterApproximation.SemicircleBounds
-import MaxModulusPoints.ParameterApproximation.TargetMajorant
-import MaxModulusPoints.TractGeometry.StripContainment
+module
+
+public import Mathlib.Topology.UniformSpace.LocallyUniformConvergence
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.ParameterApproximation.CleanGapGeometry
+public import MaxModulusPoints.ParameterApproximation.SemicircleBounds
+public import MaxModulusPoints.ParameterApproximation.TargetMajorant
+public import MaxModulusPoints.TractGeometry.StripContainment
+
 /-!
 # Uniform bounds on clean vertical slices
 
@@ -11,6 +14,9 @@ Three fixed interior values control the two endpieces of a clean slice.
 Locally uniform convergence controls its compact middle segment, giving a
 common real-part bound on the whole slice.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

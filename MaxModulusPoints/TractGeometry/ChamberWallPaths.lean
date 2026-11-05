@@ -1,11 +1,14 @@
-import Mathlib.Algebra.Order.Floor.Semiring
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.ExteriorPaths
-import MaxModulusPoints.TractGeometry.RectangleFrontiers
-import MaxModulusPoints.TractGeometry.RestoredWalls
-import MaxModulusPoints.TractGeometry.StripContainment
-import MaxModulusPoints.TractGeometry.Symmetry
-import MaxModulusPoints.TractGeometry.Walls
+module
+
+public import Mathlib.Algebra.Order.Floor.Semiring
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.ExteriorPaths
+public import MaxModulusPoints.TractGeometry.RectangleFrontiers
+public import MaxModulusPoints.TractGeometry.RestoredWalls
+public import MaxModulusPoints.TractGeometry.StripContainment
+public import MaxModulusPoints.TractGeometry.Symmetry
+public import MaxModulusPoints.TractGeometry.Walls
+
 /-!
 # Paths along the chamber walls
 
@@ -14,6 +17,9 @@ boundary of the ambient strip. They meet no restored openings or gates, so
 their points connect to the exterior within the tract complement. Conjugation
 gives the corresponding paths on the negative chamber edges.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

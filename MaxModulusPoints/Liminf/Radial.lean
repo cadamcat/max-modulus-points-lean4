@@ -1,15 +1,24 @@
-import Mathlib.Analysis.Calculus.MeanValue
-import Mathlib.Analysis.Calculus.LocalExtr.Basic
-import Mathlib.Analysis.Calculus.DiffContOnCl
-import Mathlib.Analysis.Complex.AbsMax
-import Mathlib.Analysis.Complex.CauchyIntegral
-import Mathlib.Analysis.Complex.RealDeriv
-import Mathlib.Analysis.Complex.Trigonometric
-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.AbsolutelyContinuousFun
-import Mathlib.Topology.MetricSpace.Bounded
-import Mathlib.Topology.MetricSpace.Pseudo.Lemmas
-import MaxModulusPoints.Blueprint.Data
+module
+
+public import Mathlib.Analysis.Calculus.MeanValue
+public import Mathlib.Analysis.Calculus.LocalExtr.Basic
+public import Mathlib.Analysis.Calculus.DiffContOnCl
+public import Mathlib.Analysis.Complex.AbsMax
+public import Mathlib.Analysis.Complex.CauchyIntegral
+public import Mathlib.Analysis.Complex.RealDeriv
+public import Mathlib.Analysis.Complex.Trigonometric
+public import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.AbsolutelyContinuousFun
+public import Mathlib.Topology.MetricSpace.Bounded
+public import Mathlib.Topology.MetricSpace.Pseudo.Lemmas
+public import MaxModulusPoints.Blueprint.Data
+
+/-!
+# `MaxModulusPoints.Liminf.Radial`
+-/
+
+@[expose] public section
+
 open MeasureTheory Set
 
 open scoped ComplexConjugate Topology NNReal

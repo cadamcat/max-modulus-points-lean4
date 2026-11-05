@@ -1,11 +1,14 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.BlockPositions
-import MaxModulusPoints.TractGeometry.Connectedness
-import MaxModulusPoints.TractGeometry.GapPaths
-import MaxModulusPoints.TractGeometry.NormalizedSymmetry
-import MaxModulusPoints.TractGeometry.RealAxis
-import MaxModulusPoints.TractGeometry.RealAxisLimits
-import MaxModulusPoints.TractGeometry.StripContainment
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.BlockPositions
+public import MaxModulusPoints.TractGeometry.Connectedness
+public import MaxModulusPoints.TractGeometry.GapPaths
+public import MaxModulusPoints.TractGeometry.NormalizedSymmetry
+public import MaxModulusPoints.TractGeometry.RealAxis
+public import MaxModulusPoints.TractGeometry.RealAxisLimits
+public import MaxModulusPoints.TractGeometry.StripContainment
+
 /-!
 # Connected right-hand portions of a tract
 
@@ -13,6 +16,9 @@ Every point of positive real part lies within two units of a full vertical
 line to its left. Clamping at this line retracts the tract onto a connected
 right-hand portion.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.WallGrowth
 

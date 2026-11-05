@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Analysis.SymmetricDomains.Basic
+module
+
+public import Mathlib
+public import OAI.Analysis.SymmetricDomains.Basic
+
+/-!
+# `OAI.Analysis.SymmetricDomains.PolynomialIntegralCoordinates`
+-/
+
+@[expose] public section
 
 namespace OAI
 

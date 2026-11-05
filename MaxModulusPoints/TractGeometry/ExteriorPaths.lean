@@ -1,6 +1,9 @@
-import Mathlib.Analysis.Convex.PathConnected
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.StripContainment
+module
+
+public import Mathlib.Analysis.Convex.PathConnected
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.StripContainment
+
 /-!
 # Paths outside the ambient strip
 
@@ -8,6 +11,9 @@ The left closed half-plane lies in the tract complement. Above or below the
 strip, horizontal paths enter that half-plane, where every point connects to
 the real point `-3`.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

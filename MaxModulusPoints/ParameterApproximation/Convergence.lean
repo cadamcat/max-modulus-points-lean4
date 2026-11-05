@@ -1,9 +1,12 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Challenge
-import MaxModulusPoints.ParameterApproximation.ExteriorStability
-import MaxModulusPoints.ParameterApproximation.Limits
-import MaxModulusPoints.ParameterApproximation.Normality
-import MaxModulusPoints.ParameterApproximation.Uniqueness
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Challenge
+public import MaxModulusPoints.ParameterApproximation.ExteriorStability
+public import MaxModulusPoints.ParameterApproximation.Limits
+public import MaxModulusPoints.ParameterApproximation.Normality
+public import MaxModulusPoints.ParameterApproximation.Uniqueness
+
 /-!
 # Continuous dependence of the unique entire approximant
 
@@ -11,6 +14,9 @@ Exterior stability identifies every entire locally uniform limit with the
 approximant for the limiting tract. Normality and the further-subsequence
 criterion then give locally uniform convergence of the entire family.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

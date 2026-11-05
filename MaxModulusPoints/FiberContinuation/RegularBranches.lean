@@ -1,11 +1,14 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.FiberContinuation.ExactCovers
-import MaxModulusPoints.FiberContinuation.FiniteGraphs
-import MaxModulusPoints.FiberContinuation.InverseRoots
-import MaxModulusPoints.FiberContinuation.LocalFamilies
-import MaxModulusPoints.FiberContinuation.ParameterInverses
-import MaxModulusPoints.FiberContinuation.RotatedComparisons
-import MaxModulusPoints.FiberContinuation.ValueCoordinates
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.FiberContinuation.ExactCovers
+public import MaxModulusPoints.FiberContinuation.FiniteGraphs
+public import MaxModulusPoints.FiberContinuation.InverseRoots
+public import MaxModulusPoints.FiberContinuation.LocalFamilies
+public import MaxModulusPoints.FiberContinuation.ParameterInverses
+public import MaxModulusPoints.FiberContinuation.RotatedComparisons
+public import MaxModulusPoints.FiberContinuation.ValueCoordinates
+
 /-!
 # Regularity of noncentral raw targets
 
@@ -13,6 +16,9 @@ Invert the common value parameter near a nonzero parameter. Roots of unity
 then give a finite analytic graph description of the whole local image.
 Stabilized product comparisons identify every graph through the chosen target.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

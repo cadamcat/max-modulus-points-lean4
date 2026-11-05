@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.Model
+module
+
+public import OAI.Analysis.IntegralMeans.Model
+
+/-!
+# `OAI.Analysis.IntegralMeans.LogIncrement`
+-/
+
+@[expose] public section
 
 namespace OAI
 

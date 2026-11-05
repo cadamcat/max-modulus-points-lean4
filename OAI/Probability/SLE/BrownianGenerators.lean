@@ -1,4 +1,12 @@
-import Mathlib
+module
+
+public import Mathlib
+
+/-!
+# `OAI.Probability.SLE.BrownianGenerators`
+-/
+
+@[expose] public section
 
 namespace OAI
 

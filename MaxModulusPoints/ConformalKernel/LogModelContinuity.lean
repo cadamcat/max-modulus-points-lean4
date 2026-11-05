@@ -1,8 +1,11 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.ConformalKernel.KernelConvergence
-import MaxModulusPoints.ConformalKernel.NormalizedMaps
-import MaxModulusPoints.ConformalKernel.ParameterKernelTheorem
-import MaxModulusPoints.ConformalKernel.TargetDomain
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.ConformalKernel.KernelConvergence
+public import MaxModulusPoints.ConformalKernel.NormalizedMaps
+public import MaxModulusPoints.ConformalKernel.ParameterKernelTheorem
+public import MaxModulusPoints.ConformalKernel.TargetDomain
+
 /-!
 # Kernel continuity of logarithmic conformal maps
 
@@ -10,6 +13,9 @@ The explicit inverse of a normalized logarithmic conformal map agrees on its
 target with the canonical inverse. The parameter kernel theorem therefore gives
 simultaneous convergence of the specified forward maps, inverses and derivatives.
 -/
+
+
+@[expose] public section
 
 open Set Filter Function
 open scoped Topology ComplexOrder

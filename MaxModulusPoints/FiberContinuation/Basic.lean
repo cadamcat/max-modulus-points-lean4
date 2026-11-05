@@ -1,6 +1,9 @@
-import Mathlib.Topology.Connected.Clopen
-import Mathlib.Topology.Maps.Proper.Basic
-import MaxModulusPoints.Blueprint.Data
+module
+
+public import Mathlib.Topology.Connected.Clopen
+public import Mathlib.Topology.Maps.Proper.Basic
+public import MaxModulusPoints.Blueprint.Data
+
 /-!
 # The excluded small-product cylinder
 
@@ -8,6 +11,9 @@ A uniform small-coordinate bound excludes high-count fibers near product zero.
 The exclusion persists under closure, and compactness of the spherical value
 space makes the product projection closed.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

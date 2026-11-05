@@ -1,5 +1,8 @@
-import MaxModulusPoints.ConformalKernel.KernelConvergence
-import MaxModulusPoints.ConformalKernel.NormalFamilies
+module
+
+public import MaxModulusPoints.ConformalKernel.KernelConvergence
+public import MaxModulusPoints.ConformalKernel.NormalFamilies
+
 /-!
 # Simultaneous normal limits on moving domains
 
@@ -8,6 +11,9 @@ holomorphic limits on the limiting domain. For normalized Riemann maps whose
 source domains lie in a common proper simply connected ambient domain, one can
 extract the maps and their inverses along a single subsequence.
 -/
+
+
+@[expose] public section
 
 open Set Filter Function Metric
 open scoped Topology

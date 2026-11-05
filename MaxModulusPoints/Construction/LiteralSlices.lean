@@ -1,11 +1,14 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Construction.ClosedChamberGeometry
-import MaxModulusPoints.Construction.PassageCut
-import MaxModulusPoints.Construction.SliceWindows
-import MaxModulusPoints.Construction.StarredBounds
-import MaxModulusPoints.Construction.StarredSegments
-import MaxModulusPoints.Construction.Tract
-import MaxModulusPoints.Construction.TractMembership
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Construction.ClosedChamberGeometry
+public import MaxModulusPoints.Construction.PassageCut
+public import MaxModulusPoints.Construction.SliceWindows
+public import MaxModulusPoints.Construction.StarredBounds
+public import MaxModulusPoints.Construction.StarredSegments
+public import MaxModulusPoints.Construction.Tract
+public import MaxModulusPoints.Construction.TractMembership
+
 /-!
 # Sample sections of the chamber tract
 
@@ -14,6 +17,9 @@ sample coordinate. Horizontal walls exclude their endpoints. Together
 with the uniform endpiece estimate, this gives the circle bound outside
 the fixed starred segments in Pardo-Simón–Sixsmith, Corollary 4.6.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

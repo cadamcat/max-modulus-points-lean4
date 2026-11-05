@@ -1,6 +1,9 @@
-import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Normalization
-import OAI.Analysis.SymmetricDomains.MontelExpandingDomains
-import Mathlib.Analysis.Complex.Schwarz
+module
+
+public import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Normalization
+public import OAI.Analysis.SymmetricDomains.MontelExpandingDomains
+public import Mathlib.Analysis.Complex.Schwarz
+
 /-!
 # Normal families in a common ambient domain
 
@@ -9,6 +12,9 @@ domain form a normal family when they take the origin to a common point.
 Schwarz's lemma in an ambient Riemann chart traps their values on each smaller
 disc in a fixed compact subset of the ambient domain.
 -/
+
+
+@[expose] public section
 
 open Set Filter Function Metric
 open scoped Topology

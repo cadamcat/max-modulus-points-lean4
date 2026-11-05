@@ -1,17 +1,23 @@
-import Mathlib.Analysis.Complex.Convex
-import Mathlib.Analysis.InnerProductSpace.Harmonic.Constructions
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BoundaryUpper
-import MaxModulusPoints.Blueprint.Interfaces.ClosedGateInterval
-import MaxModulusPoints.Blueprint.Interfaces.Rectangle
-import MaxModulusPoints.Blueprint.Interfaces.RectangleBarriers
-import MaxModulusPoints.StripEstimates.BoundaryMaximum
+module
+
+public import Mathlib.Analysis.Complex.Convex
+public import Mathlib.Analysis.InnerProductSpace.Harmonic.Constructions
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BoundaryUpper
+public import MaxModulusPoints.Blueprint.Interfaces.ClosedGateInterval
+public import MaxModulusPoints.Blueprint.Interfaces.Rectangle
+public import MaxModulusPoints.Blueprint.Interfaces.RectangleBarriers
+public import MaxModulusPoints.StripEstimates.BoundaryMaximum
+
 /-!
 # Rectangle gate bounds
 
 A rational harmonic barrier bounds the effect of a shrinking boundary gate on
 a separated vertical slice, as in Pardo-Simón–Sixsmith, Proposition 4.3.
 -/
+
+
+@[expose] public section
 
 open Set Filter Metric Topology InnerProductSpace
 open MaxModulusPoints.StripEstimates

@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.Degree
+module
+
+public import OAI.Analysis.IntegralMeans.Degree
+
+/-!
+# `OAI.Analysis.IntegralMeans.UnivalentArea`
+-/
+
+@[expose] public section
 
 namespace OAI
 

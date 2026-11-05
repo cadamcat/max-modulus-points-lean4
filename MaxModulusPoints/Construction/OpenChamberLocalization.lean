@@ -1,12 +1,15 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.StripMapData
-import MaxModulusPoints.Construction.OpenChamberGeometry
-import MaxModulusPoints.Construction.OpenChamberPath
-import MaxModulusPoints.Construction.OpenGate
-import MaxModulusPoints.Construction.StripClearance
-import MaxModulusPoints.Construction.StripCoordinates
-import MaxModulusPoints.Construction.Tract
-import MaxModulusPoints.Construction.TractMembership
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+public import MaxModulusPoints.Construction.OpenChamberGeometry
+public import MaxModulusPoints.Construction.OpenChamberPath
+public import MaxModulusPoints.Construction.OpenGate
+public import MaxModulusPoints.Construction.StripClearance
+public import MaxModulusPoints.Construction.StripCoordinates
+public import MaxModulusPoints.Construction.Tract
+public import MaxModulusPoints.Construction.TractMembership
+
 /-!
 # Uniform localization of open chamber centres
 
@@ -15,6 +18,9 @@ on the block number. Physical clearance gives this compact set directly;
 the rescaled strip limit then gives a uniform positive proportion of
 the value at the clean reference point.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

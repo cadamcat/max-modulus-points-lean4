@@ -1,8 +1,11 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.ParameterApproximation.SemicircleBounds
-import MaxModulusPoints.ParameterApproximation.TargetMajorant
-import MaxModulusPoints.StripEstimates.ExceptionalBoundary
-import MaxModulusPoints.StripEstimates.HalfDisc
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.ParameterApproximation.SemicircleBounds
+public import MaxModulusPoints.ParameterApproximation.TargetMajorant
+public import MaxModulusPoints.StripEstimates.ExceptionalBoundary
+public import MaxModulusPoints.StripEstimates.HalfDisc
+
 /-!
 # Harmonic comparison from a reciprocal-height semicircle bound
 
@@ -10,6 +13,9 @@ A rational barrier transfers a bound on the semicircle to the diameter
 midpoint. Only an individual upper bound is needed in the half-disc;
 the comparison constant is determined by the semicircle values.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

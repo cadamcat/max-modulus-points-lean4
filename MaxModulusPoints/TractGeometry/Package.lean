@@ -1,20 +1,26 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.TractModels
-import MaxModulusPoints.TractGeometry.Basepoint
-import MaxModulusPoints.TractGeometry.ConformalExistence
-import MaxModulusPoints.TractGeometry.EndBounds
-import MaxModulusPoints.TractGeometry.NormalizedSymmetry
-import MaxModulusPoints.TractGeometry.NormalizedSymmetryProof
-import MaxModulusPoints.TractGeometry.Openness
-import MaxModulusPoints.TractGeometry.StripContainment
-import MaxModulusPoints.TractGeometry.Symmetry
-import MaxModulusPoints.TractGeometry.TargetGeometryProof
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.TractModels
+public import MaxModulusPoints.TractGeometry.Basepoint
+public import MaxModulusPoints.TractGeometry.ConformalExistence
+public import MaxModulusPoints.TractGeometry.EndBounds
+public import MaxModulusPoints.TractGeometry.NormalizedSymmetry
+public import MaxModulusPoints.TractGeometry.NormalizedSymmetryProof
+public import MaxModulusPoints.TractGeometry.Openness
+public import MaxModulusPoints.TractGeometry.StripContainment
+public import MaxModulusPoints.TractGeometry.Symmetry
+public import MaxModulusPoints.TractGeometry.TargetGeometryProof
+
 /-!
 # Normalized conformal tracts from finite-end bounds
 
 The geometric and conformal properties combine with the finite-end bounds
 to give the normalized logarithmic conformal equivalence and its escape property.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

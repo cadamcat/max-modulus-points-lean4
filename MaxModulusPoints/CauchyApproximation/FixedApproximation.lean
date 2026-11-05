@@ -1,13 +1,16 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.FixedRempeApproximation
-import MaxModulusPoints.CauchyApproximation.CanonicalApproximation
-import MaxModulusPoints.CauchyApproximation.ExponentialAdapter
-import MaxModulusPoints.CauchyApproximation.GlobalCoreBounds
-import MaxModulusPoints.CauchyApproximation.Model
-import MaxModulusPoints.CauchyApproximation.NonMonomial
-import MaxModulusPoints.CauchyApproximation.RealSymmetry
-import MaxModulusPoints.CauchyApproximation.TractWallContract
-import MaxModulusPoints.Challenge
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.FixedRempeApproximation
+public import MaxModulusPoints.CauchyApproximation.CanonicalApproximation
+public import MaxModulusPoints.CauchyApproximation.ExponentialAdapter
+public import MaxModulusPoints.CauchyApproximation.GlobalCoreBounds
+public import MaxModulusPoints.CauchyApproximation.Model
+public import MaxModulusPoints.CauchyApproximation.NonMonomial
+public import MaxModulusPoints.CauchyApproximation.RealSymmetry
+public import MaxModulusPoints.CauchyApproximation.TractWallContract
+public import MaxModulusPoints.Challenge
+
 /-!
 # Controlled approximation on the chamber and gate tracts
 
@@ -16,6 +19,9 @@ core and uniform decay outside it. Decay of the exponential conformal
 function between the core and the tract walls extends the approximation
 to the whole original tract.
 -/
+
+
+@[expose] public section
 
 open Complex Set
 

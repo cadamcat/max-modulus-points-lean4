@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.TraceIdentity
+module
+
+public import OAI.Analysis.IntegralMeans.TraceIdentity
+
+/-!
+# `OAI.Analysis.IntegralMeans.BoundaryEscape`
+-/
+
+@[expose] public section
 
 namespace OAI
 

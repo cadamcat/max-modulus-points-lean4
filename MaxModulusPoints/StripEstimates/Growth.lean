@@ -1,5 +1,8 @@
-import Mathlib.Analysis.Calculus.Deriv.MeanValue
-import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+module
+
+public import Mathlib.Analysis.Calculus.Deriv.MeanValue
+public import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+
 /-!
 # Exponential growth from logarithmic derivative bounds
 
@@ -7,6 +10,9 @@ The real-variable implication used in Pardo-Simón–Sixsmith, Lemma 2.6,
 equation (2.9). Its geometric input is a positive real restriction of a
 normalized conformal map, together with bounds on its logarithmic derivative.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.StripEstimates
 

@@ -1,12 +1,15 @@
-import MaxModulusPoints.CauchyApproximation.CanonicalApproximation
-import MaxModulusPoints.CauchyApproximation.ContourGrowth
-import MaxModulusPoints.CauchyApproximation.ContourTube
-import MaxModulusPoints.CauchyApproximation.DetourHolomorphy
-import MaxModulusPoints.CauchyApproximation.ImproperIntegral
-import MaxModulusPoints.CauchyApproximation.InverseDistortion
-import MaxModulusPoints.CauchyApproximation.LocalDetour
-import MaxModulusPoints.CauchyApproximation.Model
-import MaxModulusPoints.CauchyApproximation.SeparatedDecay
+module
+
+public import MaxModulusPoints.CauchyApproximation.CanonicalApproximation
+public import MaxModulusPoints.CauchyApproximation.ContourGrowth
+public import MaxModulusPoints.CauchyApproximation.ContourTube
+public import MaxModulusPoints.CauchyApproximation.DetourHolomorphy
+public import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+public import MaxModulusPoints.CauchyApproximation.InverseDistortion
+public import MaxModulusPoints.CauchyApproximation.LocalDetour
+public import MaxModulusPoints.CauchyApproximation.Model
+public import MaxModulusPoints.CauchyApproximation.SeparatedDecay
+
 /-!
 # Uniform decay of the canonical integral away from its contour tube
 
@@ -16,6 +19,9 @@ so the separated-kernel estimate gives one inverse-norm constant for all
 normalized conformal maps. The canonical entire extension inherits this
 bound on the two branches of its gluing wherever the separation holds.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open scoped Topology

@@ -1,14 +1,20 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.BlockPositions
-import MaxModulusPoints.TractGeometry.GapPaths
-import MaxModulusPoints.TractGeometry.RectangleFrontiers
-import MaxModulusPoints.TractGeometry.Walls
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.BlockPositions
+public import MaxModulusPoints.TractGeometry.GapPaths
+public import MaxModulusPoints.TractGeometry.RectangleFrontiers
+public import MaxModulusPoints.TractGeometry.Walls
+
 /-!
 # Vertical paths inside the passages
 
 The interior of each passage avoids all walls. Moving its imaginary coordinate
 toward zero gives a path inside the tract to the real axis.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

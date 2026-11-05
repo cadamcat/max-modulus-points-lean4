@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Analysis.SymmetricDomains.DifferentiableCauchyTransform
+module
+
+public import Mathlib
+public import OAI.Analysis.SymmetricDomains.DifferentiableCauchyTransform
+
+/-!
+# `OAI.Analysis.SymmetricDomains.PolynomialRemovableLocal`
+-/
+
+@[expose] public section
 
 namespace OAI
 

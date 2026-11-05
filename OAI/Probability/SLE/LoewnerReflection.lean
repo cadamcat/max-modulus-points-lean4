@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Probability.SLE.LoewnerCharts
+module
+
+public import Mathlib
+public import OAI.Probability.SLE.LoewnerCharts
+
+/-!
+# `OAI.Probability.SLE.LoewnerReflection`
+-/
+
+@[expose] public section
 
 namespace OAI
 

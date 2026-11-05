@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Analysis.SymmetricDomains.IntegralPrimitive
+module
+
+public import Mathlib
+public import OAI.Analysis.SymmetricDomains.IntegralPrimitive
+
+/-!
+# `OAI.Analysis.SymmetricDomains.FiniteAlgebraGenericSheets`
+-/
+
+@[expose] public section
 
 namespace OAI
 

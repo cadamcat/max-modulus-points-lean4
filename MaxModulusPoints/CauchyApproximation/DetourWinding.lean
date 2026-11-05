@@ -1,9 +1,12 @@
-import MaxModulusPoints.CauchyApproximation.ConformalWinding
-import MaxModulusPoints.CauchyApproximation.ContourRegularity
-import MaxModulusPoints.CauchyApproximation.GraphWinding
-import MaxModulusPoints.CauchyApproximation.LocalDetour
-import MaxModulusPoints.CauchyApproximation.Model
-import MaxModulusPoints.CauchyApproximation.ResidueJump
+module
+
+public import MaxModulusPoints.CauchyApproximation.ConformalWinding
+public import MaxModulusPoints.CauchyApproximation.ContourRegularity
+public import MaxModulusPoints.CauchyApproximation.GraphWinding
+public import MaxModulusPoints.CauchyApproximation.LocalDetour
+public import MaxModulusPoints.CauchyApproximation.Model
+public import MaxModulusPoints.CauchyApproximation.ResidueJump
+
 /-!
 # Local winding values of the canonical detour
 
@@ -13,6 +16,9 @@ graph winding computation and conformal transfer therefore give winding
 number −1 on the core side and zero on the other side. The same neighborhood
 avoids the entire detour and lies inside the tract.
 -/
+
+
+@[expose] public section
 
 open Complex Filter Set
 open TauCeti.Contour

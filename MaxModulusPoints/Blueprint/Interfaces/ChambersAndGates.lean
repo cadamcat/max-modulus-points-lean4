@@ -1,18 +1,23 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
-import MaxModulusPoints.Blueprint.Interfaces.HalfDiscBarriers
-import MaxModulusPoints.Blueprint.Interfaces.KernelContinuity
-import MaxModulusPoints.Blueprint.Interfaces.RectangleBarriers
-import MaxModulusPoints.Blueprint.Interfaces.RempeApproximation
-import MaxModulusPoints.Blueprint.Interfaces.StripMapData
-import MaxModulusPoints.Blueprint.Interfaces.TractModels
-import MaxModulusPoints.Construction.ChambersAndGates
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
+public import MaxModulusPoints.Blueprint.Interfaces.HalfDiscBarriers
+public import MaxModulusPoints.Blueprint.Interfaces.KernelContinuity
+public import MaxModulusPoints.Blueprint.Interfaces.RectangleBarriers
+public import MaxModulusPoints.Blueprint.Interfaces.RempeApproximation
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+public import MaxModulusPoints.Blueprint.Interfaces.TractModels
+public import MaxModulusPoints.Construction.ChambersAndGates
 
 /-!
 # `chambers_and_gates`
 
 One declaration of `MaxModulusPoints.Blueprint.Interfaces`, in its own module so that it can import the module that proves it.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

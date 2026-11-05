@@ -1,9 +1,12 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.StripMapData
-import MaxModulusPoints.Construction.StripClearance
-import MaxModulusPoints.Construction.StripCoordinates
-import MaxModulusPoints.Construction.Tract
-import MaxModulusPoints.Construction.TractMembership
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+public import MaxModulusPoints.Construction.StripClearance
+public import MaxModulusPoints.Construction.StripCoordinates
+public import MaxModulusPoints.Construction.Tract
+public import MaxModulusPoints.Construction.TractMembership
+
 /-!
 # Uniform bounds along finite real paths
 
@@ -12,6 +15,9 @@ uses the passage and tunnel openings. On each fixed finite interval,
 only finitely many positive tunnel heights determine a clearance radius.
 This gives bounds independent of every gate parameter.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

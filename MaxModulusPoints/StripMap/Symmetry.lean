@@ -1,6 +1,9 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.StripMap.Geometry
-import MaxModulusPoints.StripMap.Normalization
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.StripMap.Geometry
+public import MaxModulusPoints.StripMap.Normalization
+
 /-!
 # Real symmetry of the normalized strip map
 
@@ -8,6 +11,9 @@ Conjugating a normalized Riemann map on a symmetric domain preserves its
 normalization. Uniqueness then makes the strip map real and positive on the
 real axis.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

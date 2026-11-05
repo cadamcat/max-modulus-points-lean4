@@ -1,8 +1,11 @@
-import Mathlib.MeasureTheory.Measure.Lebesgue.Complex
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CrosscutDistortion.ConformalDensity
-import MaxModulusPoints.CrosscutDistortion.ProductEnergy
-import MaxModulusPoints.CrosscutDistortion.TunnelSlice
+module
+
+public import Mathlib.MeasureTheory.Measure.Lebesgue.Complex
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CrosscutDistortion.ConformalDensity
+public import MaxModulusPoints.CrosscutDistortion.ProductEnergy
+public import MaxModulusPoints.CrosscutDistortion.TunnelSlice
+
 /-!
 # Complex-plane energy in an open tunnel
 
@@ -10,6 +13,9 @@ Real and imaginary coordinates identify complex Lebesgue measure on a
 rectangle with the product of the restricted real Lebesgue measures.
 This transfers the tunnel energy lower bound to the complex plane.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

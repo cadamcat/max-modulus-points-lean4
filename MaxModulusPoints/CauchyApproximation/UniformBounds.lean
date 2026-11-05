@@ -1,10 +1,13 @@
-import Mathlib.Topology.Connected.Clopen
-import MaxModulusPoints.CauchyApproximation.CanonicalDensity
-import MaxModulusPoints.CauchyApproximation.ContourDerivative
-import MaxModulusPoints.CauchyApproximation.ContourDistortion
-import MaxModulusPoints.CauchyApproximation.InverseDistortion
-import MaxModulusPoints.CauchyApproximation.Model
-import MaxModulusPoints.CauchyApproximation.RealSymmetry
+module
+
+public import Mathlib.Topology.Connected.Clopen
+public import MaxModulusPoints.CauchyApproximation.CanonicalDensity
+public import MaxModulusPoints.CauchyApproximation.ContourDerivative
+public import MaxModulusPoints.CauchyApproximation.ContourDistortion
+public import MaxModulusPoints.CauchyApproximation.InverseDistortion
+public import MaxModulusPoints.CauchyApproximation.Model
+public import MaxModulusPoints.CauchyApproximation.RealSymmetry
+
 /-!
 # Uniform bounds for normalized inverse conformal maps
 
@@ -14,6 +17,9 @@ values by a fixed factor. Connectedness propagates this comparison from the
 normalization point, and a finite covering gives uniform value and derivative
 bounds on compact subsets of the fixed image domain.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open OAI.Brennan

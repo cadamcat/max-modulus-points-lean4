@@ -1,32 +1,38 @@
-import Mathlib.Analysis.SpecialFunctions.Exp
-import Mathlib.Tactic.Linarith
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates2
-import MaxModulusPoints.Blueprint.Interfaces.ChambersAndGates
-import MaxModulusPoints.Blueprint.Interfaces.CompactMaximumContinuity
-import MaxModulusPoints.Blueprint.Interfaces.ExceptionalRadii
-import MaxModulusPoints.Blueprint.Interfaces.GlobalMaxima
-import MaxModulusPoints.Blueprint.Interfaces.HalfDiscBarriers2
-import MaxModulusPoints.Blueprint.Interfaces.HighCountContinuation
-import MaxModulusPoints.Blueprint.Interfaces.KernelContinuity2
-import MaxModulusPoints.Blueprint.Interfaces.NonconstantProducts
-import MaxModulusPoints.Blueprint.Interfaces.Normalize
-import MaxModulusPoints.Blueprint.Interfaces.ParameterApproximation
-import MaxModulusPoints.Blueprint.Interfaces.RadialEnvelope
-import MaxModulusPoints.Blueprint.Interfaces.RectangleBarriers2
-import MaxModulusPoints.Blueprint.Interfaces.RegularFiberBound
-import MaxModulusPoints.Blueprint.Interfaces.RempeApproximation2
-import MaxModulusPoints.Blueprint.Interfaces.Shooting
-import MaxModulusPoints.Blueprint.Interfaces.SmallCoordinateBound
-import MaxModulusPoints.Blueprint.Interfaces.StripMapEstimates
-import MaxModulusPoints.Blueprint.Interfaces.TractModels2
-import MaxModulusPoints.Challenge
+module
+
+public import Mathlib.Analysis.SpecialFunctions.Exp
+public import Mathlib.Tactic.Linarith
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates2
+public import MaxModulusPoints.Blueprint.Interfaces.ChambersAndGates
+public import MaxModulusPoints.Blueprint.Interfaces.CompactMaximumContinuity
+public import MaxModulusPoints.Blueprint.Interfaces.ExceptionalRadii
+public import MaxModulusPoints.Blueprint.Interfaces.GlobalMaxima
+public import MaxModulusPoints.Blueprint.Interfaces.HalfDiscBarriers2
+public import MaxModulusPoints.Blueprint.Interfaces.HighCountContinuation
+public import MaxModulusPoints.Blueprint.Interfaces.KernelContinuity2
+public import MaxModulusPoints.Blueprint.Interfaces.NonconstantProducts
+public import MaxModulusPoints.Blueprint.Interfaces.Normalize
+public import MaxModulusPoints.Blueprint.Interfaces.ParameterApproximation
+public import MaxModulusPoints.Blueprint.Interfaces.RadialEnvelope
+public import MaxModulusPoints.Blueprint.Interfaces.RectangleBarriers2
+public import MaxModulusPoints.Blueprint.Interfaces.RegularFiberBound
+public import MaxModulusPoints.Blueprint.Interfaces.RempeApproximation2
+public import MaxModulusPoints.Blueprint.Interfaces.Shooting
+public import MaxModulusPoints.Blueprint.Interfaces.SmallCoordinateBound
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapEstimates
+public import MaxModulusPoints.Blueprint.Interfaces.TractModels2
+public import MaxModulusPoints.Challenge
+
 /-!
 # Assembly of the two maximum-modulus counting answers
 
 The analytic construction and the logarithmic-derivative continuation are
 the explicit theorem packages in Interfaces.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Blueprint
 

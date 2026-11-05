@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Probability.SLE.BrownianGenerators
+module
+
+public import Mathlib
+public import OAI.Probability.SLE.BrownianGenerators
+
+/-!
+# `OAI.Probability.SLE.OptionalStopping`
+-/
+
+@[expose] public section
 
 namespace OAI
 

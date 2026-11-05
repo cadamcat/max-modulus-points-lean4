@@ -1,13 +1,16 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
-import MaxModulusPoints.Blueprint.Interfaces.HalfDiscBarriers
-import MaxModulusPoints.Blueprint.Interfaces.StripMapData
-import MaxModulusPoints.Construction.EndpointBounds
-import MaxModulusPoints.Construction.OpenGateComparison
-import MaxModulusPoints.Construction.SliceWindows
-import MaxModulusPoints.Construction.StarredSegments
-import MaxModulusPoints.Construction.Tract
-import MaxModulusPoints.Construction.TractMembership
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
+public import MaxModulusPoints.Blueprint.Interfaces.HalfDiscBarriers
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+public import MaxModulusPoints.Construction.EndpointBounds
+public import MaxModulusPoints.Construction.OpenGateComparison
+public import MaxModulusPoints.Construction.SliceWindows
+public import MaxModulusPoints.Construction.StarredSegments
+public import MaxModulusPoints.Construction.Tract
+public import MaxModulusPoints.Construction.TractMembership
+
 /-!
 # Fixed starred segments and a uniform endpiece ceiling
 
@@ -15,6 +18,9 @@ The endpoint radii in Pardo-Simón–Sixsmith, Proposition 4.4, allow a
 single choice of compact segments before the gates are chosen. Each
 open-chamber witness and each real passage witness can be retained.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

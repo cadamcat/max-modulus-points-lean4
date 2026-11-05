@@ -1,17 +1,23 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.FiberContinuation.CompactCapture
-import MaxModulusPoints.FiberContinuation.FiniteFibers
-import MaxModulusPoints.FiberContinuation.InverseCoordinates
-import MaxModulusPoints.FiberContinuation.InverseRoots
-import MaxModulusPoints.FiberContinuation.LogarithmicValues
-import MaxModulusPoints.FiberContinuation.SphericalInverseRoots
-import MaxModulusPoints.FiberContinuation.ValueCoordinates
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.FiberContinuation.CompactCapture
+public import MaxModulusPoints.FiberContinuation.FiniteFibers
+public import MaxModulusPoints.FiberContinuation.InverseCoordinates
+public import MaxModulusPoints.FiberContinuation.InverseRoots
+public import MaxModulusPoints.FiberContinuation.LogarithmicValues
+public import MaxModulusPoints.FiberContinuation.SphericalInverseRoots
+public import MaxModulusPoints.FiberContinuation.ValueCoordinates
+
 /-!
 # Exact finite common-power families
 
 Compact capture and local power coordinates enumerate every nearby physical
 pair at the same common-power parameter. Indices may repeat physical pairs.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

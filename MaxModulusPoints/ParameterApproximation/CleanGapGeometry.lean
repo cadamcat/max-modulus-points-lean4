@@ -1,11 +1,14 @@
-import Mathlib.Analysis.Real.Pi.Bounds
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.ParameterApproximation.AffineBoundary
-import MaxModulusPoints.ParameterApproximation.TargetMajorant
-import MaxModulusPoints.StripEstimates.HalfDisc
-import MaxModulusPoints.TractGeometry.BlockPositions
-import MaxModulusPoints.TractGeometry.StripContainment
-import MaxModulusPoints.TractGeometry.Walls
+module
+
+public import Mathlib.Analysis.Real.Pi.Bounds
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.ParameterApproximation.AffineBoundary
+public import MaxModulusPoints.ParameterApproximation.TargetMajorant
+public import MaxModulusPoints.StripEstimates.HalfDisc
+public import MaxModulusPoints.TractGeometry.BlockPositions
+public import MaxModulusPoints.TractGeometry.StripContainment
+public import MaxModulusPoints.TractGeometry.Walls
+
 /-!
 # Fixed half-discs at the ends of clean slices
 
@@ -13,6 +16,9 @@ The gap after each block contains a fixed vertical strip free of walls.
 A half-disc at the upper strip boundary is therefore common to all gate
 parameters, and its diameter lies outside every admissible tract.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

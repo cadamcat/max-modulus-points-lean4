@@ -1,8 +1,11 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.GateHeights
-import MaxModulusPoints.TractGeometry.RectangleFrontiers
-import MaxModulusPoints.TractGeometry.RestoredWalls
-import MaxModulusPoints.TractGeometry.Walls
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.GateHeights
+public import MaxModulusPoints.TractGeometry.RectangleFrontiers
+public import MaxModulusPoints.TractGeometry.RestoredWalls
+public import MaxModulusPoints.TractGeometry.Walls
+
 /-!
 # The restored part of a chamber's right edge
 
@@ -10,6 +13,9 @@ On each positive chamber's closed right edge, the only tract points are
 those in that chamber's own gate. Gates in other layers lie strictly
 outside the chamber's height interval.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

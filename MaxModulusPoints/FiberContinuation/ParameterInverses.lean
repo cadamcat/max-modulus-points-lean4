@@ -1,11 +1,17 @@
-import MaxModulusPoints.FiberContinuation.SphericalCharts
-import MaxModulusPoints.FiberContinuation.ValueCoordinates
+module
+
+public import MaxModulusPoints.FiberContinuation.SphericalCharts
+public import MaxModulusPoints.FiberContinuation.ValueCoordinates
+
 /-!
 # Inverse value parameters away from the center
 
 At a nonzero parameter, a positive power has nonzero derivative. The finite
 common value, also in a pole chart, therefore has an analytic local inverse.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

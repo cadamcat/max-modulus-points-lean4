@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.GoodPairs
+module
+
+public import OAI.Analysis.IntegralMeans.GoodPairs
+
+/-!
+# `OAI.Analysis.IntegralMeans.TransportBoxes`
+-/
+
+@[expose] public section
 
 namespace OAI
 

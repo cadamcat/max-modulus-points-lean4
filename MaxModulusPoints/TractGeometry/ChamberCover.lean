@@ -1,7 +1,10 @@
-import Mathlib.Algebra.Order.Floor.Semiring
-import Mathlib.Tactic.Linarith
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.RegularCoordinates
+module
+
+public import Mathlib.Algebra.Order.Floor.Semiring
+public import Mathlib.Tactic.Linarith
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.RegularCoordinates
+
 /-!
 # Covering the chamber heights
 
@@ -9,6 +12,9 @@ Above the passage height, each point with regular coordinates lies strictly
 between two consecutive chamber grid heights. The natural floor selects the
 layer, and the sign of the imaginary coordinate selects its reflection.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

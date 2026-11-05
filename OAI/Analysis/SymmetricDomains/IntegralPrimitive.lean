@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Analysis.SymmetricDomains.PolynomialRemovableLocal
+module
+
+public import Mathlib
+public import OAI.Analysis.SymmetricDomains.PolynomialRemovableLocal
+
+/-!
+# `OAI.Analysis.SymmetricDomains.IntegralPrimitive`
+-/
+
+@[expose] public section
 
 namespace OAI
 

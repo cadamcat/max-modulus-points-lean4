@@ -1,11 +1,14 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Construction.LiteralSlices
-import MaxModulusPoints.Construction.Maxima
-import MaxModulusPoints.Construction.OpenChamberGeometry
-import MaxModulusPoints.Construction.OpenChamberLocalization
-import MaxModulusPoints.Construction.StarredSegments
-import MaxModulusPoints.Construction.Tract
-import MaxModulusPoints.Construction.TractMembership
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Construction.LiteralSlices
+public import MaxModulusPoints.Construction.Maxima
+public import MaxModulusPoints.Construction.OpenChamberGeometry
+public import MaxModulusPoints.Construction.OpenChamberLocalization
+public import MaxModulusPoints.Construction.StarredSegments
+public import MaxModulusPoints.Construction.Tract
+public import MaxModulusPoints.Construction.TractMembership
+
 /-!
 # Compact segments indexed by passage and chamber labels
 
@@ -13,6 +16,9 @@ The fixed starred segments satisfy the geometric fields of the shooting
 family. The label convention here agrees with the paired-gate indices:
 `true` selects an upper chamber and `false` its reflection.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

@@ -1,9 +1,12 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.FixedRempeApproximation
-import MaxModulusPoints.Blueprint.Interfaces.RempeApproximation
-import MaxModulusPoints.Challenge
-import MaxModulusPoints.ParameterApproximation.Convergence
-import MaxModulusPoints.ParameterApproximation.Uniqueness
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.FixedRempeApproximation
+public import MaxModulusPoints.Blueprint.Interfaces.RempeApproximation
+public import MaxModulusPoints.Challenge
+public import MaxModulusPoints.ParameterApproximation.Convergence
+public import MaxModulusPoints.ParameterApproximation.Uniqueness
+
 /-!
 # A continuous family of entire approximants
 
@@ -11,6 +14,9 @@ Uniqueness, normality and stability of the approximation bounds give the
 parameter dependence asserted by Pardo-Simón–Sixsmith, Observation 2.3.
 The same universal error constant is retained throughout the family.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

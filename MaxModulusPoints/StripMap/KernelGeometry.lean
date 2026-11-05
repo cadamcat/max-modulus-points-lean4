@@ -1,5 +1,8 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.StripMap.Growth
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.StripMap.Growth
+
 /-!
 # Geometry of the rescaled logarithmic targets
 
@@ -7,6 +10,9 @@ Positive dilations of the logarithmic target contain the right half-plane.
 On every bounded set their leftward overhang tends uniformly to zero as
 the dilation scale tends to infinity.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

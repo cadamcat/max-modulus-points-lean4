@@ -1,14 +1,20 @@
-import Mathlib.Analysis.Complex.SqrtDeriv
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.StripMap.KernelGeometry
-import MaxModulusPoints.StripMap.Rescaling
-import MaxModulusPoints.StripMap.Symmetry
+module
+
+public import Mathlib.Analysis.Complex.SqrtDeriv
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.StripMap.KernelGeometry
+public import MaxModulusPoints.StripMap.Rescaling
+public import MaxModulusPoints.StripMap.Symmetry
+
 /-!
 # A bounded transform of the rescaled strip maps
 
 The principal square root sends the slit plane into the right half-plane.
 The Cayley transform then gives bounded holomorphic maps on the fixed strip.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

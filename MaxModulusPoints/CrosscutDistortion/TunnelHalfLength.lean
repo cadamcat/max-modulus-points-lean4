@@ -1,12 +1,15 @@
-import Mathlib.Analysis.Calculus.ContDiff.Operations
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CrosscutDistortion.CoreIntersection
-import MaxModulusPoints.CrosscutDistortion.HalfCurveLength
-import MaxModulusPoints.CrosscutDistortion.PotentialSpeed
-import MaxModulusPoints.CrosscutDistortion.SlabPotentials
-import MaxModulusPoints.CrosscutDistortion.TractSymmetry
-import MaxModulusPoints.CrosscutDistortion.TunnelBoundary
-import MaxModulusPoints.CrosscutDistortion.TunnelSlice
+module
+
+public import Mathlib.Analysis.Calculus.ContDiff.Operations
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CrosscutDistortion.CoreIntersection
+public import MaxModulusPoints.CrosscutDistortion.HalfCurveLength
+public import MaxModulusPoints.CrosscutDistortion.PotentialSpeed
+public import MaxModulusPoints.CrosscutDistortion.SlabPotentials
+public import MaxModulusPoints.CrosscutDistortion.TractSymmetry
+public import MaxModulusPoints.CrosscutDistortion.TunnelBoundary
+public import MaxModulusPoints.CrosscutDistortion.TunnelSlice
+
 /-!
 # Weighted lengths of tunnel half-crosscuts
 
@@ -14,6 +17,9 @@ Both halves of an interior tunnel crosscut meet the target slab core by
 reflection symmetry. Holomorphy and escape at the excluded endpoints give
 the hypotheses of the half-curve length estimate.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

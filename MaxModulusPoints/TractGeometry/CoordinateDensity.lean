@@ -1,11 +1,17 @@
-import Mathlib.Analysis.Complex.Basic
-import Mathlib.Topology.Algebra.Module.Cardinality
+module
+
+public import Mathlib.Analysis.Complex.Basic
+public import Mathlib.Topology.Algebra.Module.Cardinality
+
 /-!
 # Density away from countably many coordinate lines
 
 Countable subsets of the real line have dense complements. Taking their
 product gives dense complex points avoiding both prescribed coordinate sets.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

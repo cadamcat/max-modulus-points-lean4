@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.Spectrum
+module
+
+public import OAI.Analysis.IntegralMeans.Spectrum
+
+/-!
+# `OAI.Analysis.IntegralMeans.NegativeArea`
+-/
+
+@[expose] public section
 
 namespace OAI
 

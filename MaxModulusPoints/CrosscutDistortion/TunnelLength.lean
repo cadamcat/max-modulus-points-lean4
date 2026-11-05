@@ -1,7 +1,10 @@
-import Mathlib.Analysis.Calculus.Deriv.Shift
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CrosscutDistortion.PotentialSpeed
-import MaxModulusPoints.CrosscutDistortion.TunnelHalfLength
+module
+
+public import Mathlib.Analysis.Calculus.Deriv.Shift
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CrosscutDistortion.PotentialSpeed
+public import MaxModulusPoints.CrosscutDistortion.TunnelHalfLength
+
 /-!
 # Weighted length of a tunnel crosscut
 
@@ -9,6 +12,9 @@ The positive and negative halves of an interior tunnel crosscut each
 contribute at least one half to its slab-weighted length. Negating the
 real parameter identifies the negative-half speed with the full speed.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

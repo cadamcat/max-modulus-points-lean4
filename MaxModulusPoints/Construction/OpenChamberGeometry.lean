@@ -1,8 +1,11 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Construction.StarredSegments
-import MaxModulusPoints.Construction.StripClearance
-import MaxModulusPoints.Construction.Tract
-import MaxModulusPoints.Construction.TractMembership
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Construction.StarredSegments
+public import MaxModulusPoints.Construction.StripClearance
+public import MaxModulusPoints.Construction.Tract
+public import MaxModulusPoints.Construction.TractMembership
+
 /-!
 # Clearance around fully open chambers
 
@@ -10,6 +13,9 @@ The path in Pardo-Simón–Sixsmith, Proposition 4.1, runs vertically along
 the clean slice and then horizontally through the centre of a fully open
 gate. Its clearance depends only on the chamber height.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

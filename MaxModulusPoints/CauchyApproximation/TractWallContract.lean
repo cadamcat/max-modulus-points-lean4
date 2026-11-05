@@ -1,4 +1,7 @@
-import MaxModulusPoints.Blueprint.Data
+module
+
+public import MaxModulusPoints.Blueprint.Data
+
 /-!
 # Decay between the interior contour and the tract walls
 
@@ -7,6 +10,9 @@ function on the core. Extending the approximation to the original tract
 requires decay of that function on the portion to the left of the interior
 contour.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.CauchyApproximation
 

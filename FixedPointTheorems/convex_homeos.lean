@@ -1,12 +1,16 @@
-import Mathlib
+module
+
+public import Mathlib.Analysis.Convex.Intrinsic
+public import Mathlib.Analysis.Convex.GaugeRescale
 
 /-!
 # Homeomorphisms of compact convex sets
 
-Compact convex sets are reduced to unit balls in their affine spans and then to
-finite-dimensional cubes. These homeomorphisms transfer the cubical fixed-point
-theorem to arbitrary nonempty compact convex domains.
+Compact convex sets with nonempty interior are homeomorphic to closed balls, and nonempty
+compact convex sets are homeomorphic to cubes.
 -/
+
+@[expose] public section
 
 
 lemma homeo_unit_ball {V : Type*}
@@ -24,6 +28,7 @@ lemma homeo_unit_ball {V : Type*}
   rw [he.2.1] at e2
   exact Nonempty.intro e2
 }
+
 
 theorem homeo_of_finrank_eq {V W : Type*}
     [NormedAddCommGroup V] [NormedSpace ℝ V] [FiniteDimensional ℝ V]
@@ -57,6 +62,7 @@ theorem homeo_of_finrank_eq {V W : Type*}
   apply Nonempty.intro
   exact e2.symm.trans e1
 }
+
 
 lemma unit_cube_homeo_unit_ball {n}
     : Nonempty (Set.Icc (0 : Fin n → ℝ) 1 ≃ₜ Metric.closedBall (0 : Fin n → ℝ) 1 ) := by

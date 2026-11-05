@@ -1,6 +1,9 @@
-import Mathlib.Analysis.Complex.AbsMax
-import MaxModulusPoints.Challenge
-import MaxModulusPoints.ParameterApproximation.Uniqueness
+module
+
+public import Mathlib.Analysis.Complex.AbsMax
+public import MaxModulusPoints.Challenge
+public import MaxModulusPoints.ParameterApproximation.Uniqueness
+
 /-!
 # Disk bounds from a logarithmic slice
 
@@ -8,6 +11,9 @@ A bound for the real part of the conformal map on one vertical slice bounds
 the entire approximant on the corresponding circle. The maximum modulus
 principle transfers this bound to its enclosed disk, including the origin.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

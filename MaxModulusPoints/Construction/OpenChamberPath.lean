@@ -1,6 +1,9 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Construction.OpenChamberGeometry
-import MaxModulusPoints.Construction.Tract
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Construction.OpenChamberGeometry
+public import MaxModulusPoints.Construction.Tract
+
 /-!
 # A smooth path through an open gate
 
@@ -8,6 +11,9 @@ A quadratic reparameterization makes the vertical and horizontal legs
 meet with zero velocity. Clearance and speed bounds therefore apply
 directly to the compact strip-containment estimate.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

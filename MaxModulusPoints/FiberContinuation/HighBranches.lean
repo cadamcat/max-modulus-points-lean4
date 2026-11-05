@@ -1,11 +1,14 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.FiberContinuation.ClosedBranches
-import MaxModulusPoints.FiberContinuation.ExactCovers
-import MaxModulusPoints.FiberContinuation.LocalCounts
-import MaxModulusPoints.FiberContinuation.LocalFamilies
-import MaxModulusPoints.FiberContinuation.ParameterInverses
-import MaxModulusPoints.FiberContinuation.StabilizedCovers
-import MaxModulusPoints.FiberContinuation.ValueCoordinates
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.FiberContinuation.ClosedBranches
+public import MaxModulusPoints.FiberContinuation.ExactCovers
+public import MaxModulusPoints.FiberContinuation.LocalCounts
+public import MaxModulusPoints.FiberContinuation.LocalFamilies
+public import MaxModulusPoints.FiberContinuation.ParameterInverses
+public import MaxModulusPoints.FiberContinuation.StabilizedCovers
+public import MaxModulusPoints.FiberContinuation.ValueCoordinates
+
 /-!
 # Local selection of high-count branches
 
@@ -14,6 +17,9 @@ central-cardinality comparison prevents an isolated regular high target.
 Relative closedness then identifies the local high-count closure exactly with
 the selected full raw image union, including at an infinite center.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

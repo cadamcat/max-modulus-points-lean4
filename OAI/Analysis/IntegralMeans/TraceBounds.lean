@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.NegativeArea
+module
+
+public import OAI.Analysis.IntegralMeans.NegativeArea
+
+/-!
+# `OAI.Analysis.IntegralMeans.TraceBounds`
+-/
+
+@[expose] public section
 
 namespace OAI
 

@@ -1,15 +1,21 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.GateHeights
-import MaxModulusPoints.TractGeometry.PassageWallPaths
-import MaxModulusPoints.TractGeometry.RectangleFrontiers
-import MaxModulusPoints.TractGeometry.RestoredWalls
-import MaxModulusPoints.TractGeometry.Walls
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.GateHeights
+public import MaxModulusPoints.TractGeometry.PassageWallPaths
+public import MaxModulusPoints.TractGeometry.RectangleFrontiers
+public import MaxModulusPoints.TractGeometry.RestoredWalls
+public import MaxModulusPoints.TractGeometry.Walls
+
 /-!
 # Complement paths from tunnel frontiers
 
 The portions of a tunnel frontier outside the tract lie on its horizontal
 walls. Those walls join the passage's right wall at their left endpoints.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

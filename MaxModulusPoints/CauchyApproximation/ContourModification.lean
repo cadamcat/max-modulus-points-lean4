@@ -1,5 +1,8 @@
-import Mathlib.Analysis.Calculus.Deriv.Basic
-import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+module
+
+public import Mathlib.Analysis.Calculus.Deriv.Basic
+public import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+
 /-!
 # Compact modifications of improper Cauchy integrals
 
@@ -8,6 +11,9 @@ Cauchy integral by exactly the corresponding finite integral. The common
 infinite tails cancel. Agreement on the open tails also implies agreement
 of their derivatives, without any assumption at the endpoints.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open scoped Topology

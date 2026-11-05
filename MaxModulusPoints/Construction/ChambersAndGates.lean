@@ -1,22 +1,25 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
-import MaxModulusPoints.Blueprint.Interfaces.HalfDiscBarriers
-import MaxModulusPoints.Blueprint.Interfaces.KernelContinuity
-import MaxModulusPoints.Blueprint.Interfaces.RectangleBarriers
-import MaxModulusPoints.Blueprint.Interfaces.RempeApproximation
-import MaxModulusPoints.Blueprint.Interfaces.StripMapData
-import MaxModulusPoints.Blueprint.Interfaces.TractModels
-import MaxModulusPoints.Challenge
-import MaxModulusPoints.Construction.ClosedGateComparison
-import MaxModulusPoints.Construction.FamilySegments
-import MaxModulusPoints.Construction.LiteralSlices
-import MaxModulusPoints.Construction.Maxima
-import MaxModulusPoints.Construction.OpenChamberLocalization
-import MaxModulusPoints.Construction.OpenGateComparison
-import MaxModulusPoints.Construction.StarredBounds
-import MaxModulusPoints.Construction.StarredSegments
-import MaxModulusPoints.Construction.Tract
-import MaxModulusPoints.Construction.TractMembership
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
+public import MaxModulusPoints.Blueprint.Interfaces.HalfDiscBarriers
+public import MaxModulusPoints.Blueprint.Interfaces.KernelContinuity
+public import MaxModulusPoints.Blueprint.Interfaces.RectangleBarriers
+public import MaxModulusPoints.Blueprint.Interfaces.RempeApproximation
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+public import MaxModulusPoints.Blueprint.Interfaces.TractModels
+public import MaxModulusPoints.Challenge
+public import MaxModulusPoints.Construction.ClosedGateComparison
+public import MaxModulusPoints.Construction.FamilySegments
+public import MaxModulusPoints.Construction.LiteralSlices
+public import MaxModulusPoints.Construction.Maxima
+public import MaxModulusPoints.Construction.OpenChamberLocalization
+public import MaxModulusPoints.Construction.OpenGateComparison
+public import MaxModulusPoints.Construction.StarredBounds
+public import MaxModulusPoints.Construction.StarredSegments
+public import MaxModulusPoints.Construction.Tract
+public import MaxModulusPoints.Construction.TractMembership
+
 /-!
 # The chamber-and-gate shooting family
 
@@ -26,6 +29,9 @@ bottleneck, barrier, conformal-model and approximation inputs are explicit.
 All choices of tunnels, spacing, thresholds and starred segments precede
 the choice of a gate parameter.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Blueprint.Packages
 

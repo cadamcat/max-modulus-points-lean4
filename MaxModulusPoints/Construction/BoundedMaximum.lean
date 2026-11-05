@@ -1,8 +1,11 @@
-import Mathlib.Topology.Order.LocalExtr
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BoundaryUpper
-import MaxModulusPoints.Construction.BoundaryLimits
-import MaxModulusPoints.Construction.StripCoordinates
+module
+
+public import Mathlib.Topology.Order.LocalExtr
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BoundaryUpper
+public import MaxModulusPoints.Construction.BoundaryLimits
+public import MaxModulusPoints.Construction.StripCoordinates
+
 /-!
 # A bounded-domain maximum principle with upper boundary limits
 
@@ -11,6 +14,9 @@ upper limits. Compactness then produces an interior maximum, which a
 continuous conformal inverse excludes. This is the comparison needed
 for the left-portion bound in Pardo-Simón–Sixsmith, Proposition 4.2.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

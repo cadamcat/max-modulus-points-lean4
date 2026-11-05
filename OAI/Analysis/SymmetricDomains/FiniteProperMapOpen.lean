@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Analysis.SymmetricDomains.FiniteAlgebraGenericSheets
+module
+
+public import Mathlib
+public import OAI.Analysis.SymmetricDomains.FiniteAlgebraGenericSheets
+
+/-!
+# `OAI.Analysis.SymmetricDomains.FiniteProperMapOpen`
+-/
+
+@[expose] public section
 
 namespace OAI
 

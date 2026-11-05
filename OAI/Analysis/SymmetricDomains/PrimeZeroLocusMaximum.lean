@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Analysis.SymmetricDomains.FiberCardAmbientSheets
+module
+
+public import Mathlib
+public import OAI.Analysis.SymmetricDomains.FiberCardAmbientSheets
+
+/-!
+# `OAI.Analysis.SymmetricDomains.PrimeZeroLocusMaximum`
+-/
+
+@[expose] public section
 
 namespace OAI
 

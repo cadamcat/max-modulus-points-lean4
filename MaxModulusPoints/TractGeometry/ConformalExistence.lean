@@ -1,18 +1,24 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.Basepoint
-import MaxModulusPoints.TractGeometry.Connectedness
-import MaxModulusPoints.TractGeometry.NormalizedSymmetry
-import MaxModulusPoints.TractGeometry.Openness
-import MaxModulusPoints.TractGeometry.SimplyConnected
-import MaxModulusPoints.TractGeometry.StripContainment
-import MaxModulusPoints.TractGeometry.Symmetry
-import MaxModulusPoints.TractGeometry.TargetGeometry
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.Basepoint
+public import MaxModulusPoints.TractGeometry.Connectedness
+public import MaxModulusPoints.TractGeometry.NormalizedSymmetry
+public import MaxModulusPoints.TractGeometry.Openness
+public import MaxModulusPoints.TractGeometry.SimplyConnected
+public import MaxModulusPoints.TractGeometry.StripContainment
+public import MaxModulusPoints.TractGeometry.Symmetry
+public import MaxModulusPoints.TractGeometry.TargetGeometry
+
 /-!
 # Normalized conformal equivalences for the chamber and gate tract
 
 The source geometry supplies the hypotheses for a normalized symmetric
 conformal equivalence with the fixed target.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

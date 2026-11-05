@@ -1,12 +1,17 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Challenge
-import MaxModulusPoints.Liminf.Packages
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Challenge
+public import MaxModulusPoints.Liminf.Packages
 
 /-!
 # `normalize`
 
 One declaration of `MaxModulusPoints.Blueprint.Interfaces`, in its own module so that it can import the module that proves it.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

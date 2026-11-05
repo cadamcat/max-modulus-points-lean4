@@ -1,10 +1,13 @@
-import OAI.Analysis.SymmetricDomains.MontelExpandingDomains
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Challenge
-import MaxModulusPoints.ParameterApproximation.DiskBounds
-import MaxModulusPoints.ParameterApproximation.SliceBounds
-import MaxModulusPoints.ParameterApproximation.Uniqueness
-import MaxModulusPoints.TractGeometry.BlockPositions
+module
+
+public import OAI.Analysis.SymmetricDomains.MontelExpandingDomains
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Challenge
+public import MaxModulusPoints.ParameterApproximation.DiskBounds
+public import MaxModulusPoints.ParameterApproximation.SliceBounds
+public import MaxModulusPoints.ParameterApproximation.Uniqueness
+public import MaxModulusPoints.TractGeometry.BlockPositions
+
 /-!
 # Normality of entire approximants
 
@@ -12,6 +15,9 @@ Real-part bounds on clean logarithmic slices give common bounds on every
 fixed planar disk. Montel's theorem for eventual local bounds then produces
 an entire locally uniform subsequential limit.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

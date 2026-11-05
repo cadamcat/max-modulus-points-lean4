@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Analysis.SymmetricDomains.AmbientInverse
+module
+
+public import Mathlib
+public import OAI.Analysis.SymmetricDomains.AmbientInverse
+
+/-!
+# `OAI.Analysis.SymmetricDomains.ZeroLocusPolynomialSmooth`
+-/
+
+@[expose] public section
 
 namespace OAI
 

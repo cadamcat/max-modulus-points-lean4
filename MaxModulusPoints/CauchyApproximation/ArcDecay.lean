@@ -1,8 +1,11 @@
-import MaxModulusPoints.CauchyApproximation.ArcCorrection
-import MaxModulusPoints.CauchyApproximation.ContourGrowth
-import MaxModulusPoints.CauchyApproximation.ContourTube
-import MaxModulusPoints.CauchyApproximation.InverseDistortion
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import MaxModulusPoints.CauchyApproximation.ArcCorrection
+public import MaxModulusPoints.CauchyApproximation.ContourGrowth
+public import MaxModulusPoints.CauchyApproximation.ContourTube
+public import MaxModulusPoints.CauchyApproximation.InverseDistortion
+public import MaxModulusPoints.CauchyApproximation.Model
+
 /-!
 # Uniform inverse-norm decay of the finite arc correction
 
@@ -12,6 +15,9 @@ quartic position growth then convert the order-thirteen arc estimate into
 inverse evaluation-norm decay. The same tube coefficient is retained in
 the geometric inclusion and integral bound.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open scoped Topology

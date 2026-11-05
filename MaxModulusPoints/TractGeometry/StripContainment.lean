@@ -1,7 +1,10 @@
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.Positivity
-import MaxModulusPoints.Blueprint.Data
+module
+
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Positivity
+public import MaxModulusPoints.Blueprint.Data
+
 /-!
 # Strip containment of the chamber and gate tracts
 
@@ -9,6 +12,9 @@ The tract of Pardo-Simón–Sixsmith, §4, lies to the right of the line with
 real coordinate `-2`, in the horizontal strip with imaginary part between
 `-π / 2` and `π / 2`.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

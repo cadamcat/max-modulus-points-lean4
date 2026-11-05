@@ -1,12 +1,18 @@
-import Mathlib.Order.Monotone.Basic
-import Mathlib.Tactic.Linarith
-import MaxModulusPoints.Blueprint.Data
+module
+
+public import Mathlib.Order.Monotone.Basic
+public import Mathlib.Tactic.Linarith
+public import MaxModulusPoints.Blueprint.Data
+
 /-!
 # Separation of the block positions
 
 Each successive block starts at least two units to the right of the previous
 one, since each block has width one and the intervening gap is at least one.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

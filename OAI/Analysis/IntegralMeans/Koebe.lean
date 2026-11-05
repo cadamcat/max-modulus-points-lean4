@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.CircleBounds
+module
+
+public import OAI.Analysis.IntegralMeans.CircleBounds
+
+/-!
+# `OAI.Analysis.IntegralMeans.Koebe`
+-/
+
+@[expose] public section
 
 namespace OAI
 

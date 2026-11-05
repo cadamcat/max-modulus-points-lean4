@@ -1,10 +1,13 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.StripMapData
-import MaxModulusPoints.StripMap.Growth
-import MaxModulusPoints.StripMap.Normalization
-import MaxModulusPoints.StripMap.RescaledLimit
-import MaxModulusPoints.StripMap.Symmetry
-import MaxModulusPoints.StripMap.VerticalMaximum
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+public import MaxModulusPoints.StripMap.Growth
+public import MaxModulusPoints.StripMap.Normalization
+public import MaxModulusPoints.StripMap.RescaledLimit
+public import MaxModulusPoints.StripMap.Symmetry
+public import MaxModulusPoints.StripMap.VerticalMaximum
+
 /-!
 # The normalized strip map estimates
 
@@ -12,6 +15,9 @@ The normalized strip-to-target equivalence has positive real values, uniform
 exponential growth on the real axis, a vertical real-part maximum, and the
 rescaled exponential limit with convergence of derivatives.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

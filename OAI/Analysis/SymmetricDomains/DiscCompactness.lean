@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Analysis.SymmetricDomains.DiscRelationCompactLocal
+module
+
+public import Mathlib
+public import OAI.Analysis.SymmetricDomains.DiscRelationCompactLocal
+
+/-!
+# `OAI.Analysis.SymmetricDomains.DiscCompactness`
+-/
+
+@[expose] public section
 
 namespace OAI
 

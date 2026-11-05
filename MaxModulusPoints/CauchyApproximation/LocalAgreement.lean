@@ -1,12 +1,15 @@
-import MaxModulusPoints.CauchyApproximation.ContourRegularity
-import MaxModulusPoints.CauchyApproximation.DetourHolomorphy
-import MaxModulusPoints.CauchyApproximation.DetourHomology
-import MaxModulusPoints.CauchyApproximation.DetourWinding
-import MaxModulusPoints.CauchyApproximation.Holomorphy
-import MaxModulusPoints.CauchyApproximation.ImproperIntegral
-import MaxModulusPoints.CauchyApproximation.LocalDetour
-import MaxModulusPoints.CauchyApproximation.Model
-import MaxModulusPoints.CauchyApproximation.ResidueJump
+module
+
+public import MaxModulusPoints.CauchyApproximation.ContourRegularity
+public import MaxModulusPoints.CauchyApproximation.DetourHolomorphy
+public import MaxModulusPoints.CauchyApproximation.DetourHomology
+public import MaxModulusPoints.CauchyApproximation.DetourWinding
+public import MaxModulusPoints.CauchyApproximation.Holomorphy
+public import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+public import MaxModulusPoints.CauchyApproximation.LocalDetour
+public import MaxModulusPoints.CauchyApproximation.Model
+public import MaxModulusPoints.CauchyApproximation.ResidueJump
+
 /-!
 # Analytic agreement across the interior contour
 
@@ -16,6 +19,9 @@ and the computed clockwise winding values show that it agrees there with
 the original integral plus the prescribed holomorphic function on the core
 side, and with the original integral on the other side.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open TauCeti.Contour

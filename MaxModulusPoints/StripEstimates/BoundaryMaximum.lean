@@ -1,13 +1,19 @@
-import Mathlib.Analysis.Analytic.Uniqueness
-import Mathlib.Analysis.Complex.AbsMax
-import Mathlib.Analysis.Complex.Harmonic.Analytic
-import Mathlib.Topology.Order.Compact
+module
+
+public import Mathlib.Analysis.Analytic.Uniqueness
+public import Mathlib.Analysis.Complex.AbsMax
+public import Mathlib.Analysis.Complex.Harmonic.Analytic
+public import Mathlib.Topology.Order.Compact
+
 /-!
 # Harmonic comparison from boundary upper limits
 
 A maximum principle with boundary upper-limit hypotheses, as used in the
 rectangle and half-disc comparisons of Pardo-Simón–Sixsmith, Section 4.
 -/
+
+
+@[expose] public section
 
 open Set Filter Metric Topology InnerProductSpace
 

@@ -1,12 +1,18 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CrosscutDistortion.RealAxis
-import MaxModulusPoints.CrosscutDistortion.TractSymmetry
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CrosscutDistortion.RealAxis
+public import MaxModulusPoints.CrosscutDistortion.TractSymmetry
+
 /-!
 # Real-axis orientation of inverse tract maps
 
 The inverse of a normalized strip equivalence takes the whole real axis
 into the real interval to the right of `-2`, in increasing order.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.CrosscutDistortion
 

@@ -1,8 +1,11 @@
-import Mathlib.Analysis.Complex.BorelCaratheodory
-import Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Ring
-import MaxModulusPoints.Blueprint.Data
+module
+
+public import Mathlib.Analysis.Complex.BorelCaratheodory
+public import Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Ring
+public import MaxModulusPoints.Blueprint.Data
+
 /-!
 # A positive real majorant on the logarithmic target
 
@@ -11,6 +14,9 @@ logarithmically enlarged half-plane, and its real part majorizes Re w.
 Borel–Carathéodory therefore bounds conformal maps into that target from
 their value at the center of any source disk.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

@@ -1,8 +1,11 @@
-import TauCeti.Analysis.Contour.Curve.Concat
-import Mathlib.Analysis.Complex.CauchyIntegral
-import Mathlib.Analysis.SpecialFunctions.Log.Deriv
-import MaxModulusPoints.CauchyApproximation.LocalDetour
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import TauCeti.Analysis.Contour.Curve.Concat
+public import Mathlib.Analysis.Complex.CauchyIntegral
+public import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+public import MaxModulusPoints.CauchyApproximation.LocalDetour
+public import MaxModulusPoints.CauchyApproximation.Model
+
 /-!
 # Piecewise smoothness of the interior contour and its detour
 
@@ -11,6 +14,9 @@ and 1. The tent perturbation is affine on four pieces. Gluing these pieces
 gives piecewise C¹ regularity on every bounded interval. Holomorphy of the
 conformal inverse then transfers this regularity to the tract.
 -/
+
+
+@[expose] public section
 
 open Complex Set
 open TauCeti.Contour

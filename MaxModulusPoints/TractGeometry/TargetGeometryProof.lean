@@ -1,6 +1,15 @@
-import Mathlib.Analysis.Convex.Contractible
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.TargetGeometry
+module
+
+public import Mathlib.Analysis.Convex.Contractible
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.TargetGeometry
+
+/-!
+# `MaxModulusPoints.TractGeometry.TargetGeometryProof`
+-/
+
+@[expose] public section
+
 noncomputable section
 
 namespace MaxModulusPoints.TractGeometry

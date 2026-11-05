@@ -1,6 +1,9 @@
-import Mathlib.Analysis.Calculus.ParametricIntegral
-import Mathlib.Analysis.Calculus.Deriv.Inv
-import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+module
+
+public import Mathlib.Analysis.Calculus.ParametricIntegral
+public import Mathlib.Analysis.Calculus.Deriv.Inv
+public import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+
 /-!
 # Holomorphy of improper Cauchy integrals off the contour
 
@@ -8,6 +11,9 @@ A proper curve has closed image. A small ball about an off-contour point is
 therefore uniformly separated from the whole curve, including its infinite
 tails. This separation supplies an integrable bound for the derivative kernel.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open scoped Topology

@@ -1,9 +1,12 @@
-import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Normalization
-import Mathlib.Analysis.Calculus.Deriv.Star
-import Mathlib.Analysis.Complex.Convex
-import Mathlib.Analysis.Convex.Contractible
-import Mathlib.Tactic.NormNum
-import MaxModulusPoints.Blueprint.Data
+module
+
+public import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Normalization
+public import Mathlib.Analysis.Calculus.Deriv.Star
+public import Mathlib.Analysis.Complex.Convex
+public import Mathlib.Analysis.Convex.Contractible
+public import Mathlib.Tactic.NormNum
+public import MaxModulusPoints.Blueprint.Data
+
 /-!
 # Reflection symmetry of normalized strip equivalences
 
@@ -11,6 +14,9 @@ A conformal equivalence from a symmetric domain to the horizontal strip
 commutes with conjugation when its base point and derivative are real.
 The derivative normalization is positive, fixing the orientation.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.CrosscutDistortion
 

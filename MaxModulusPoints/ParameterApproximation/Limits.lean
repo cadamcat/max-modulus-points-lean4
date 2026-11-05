@@ -1,5 +1,8 @@
-import MaxModulusPoints.Challenge
-import MaxModulusPoints.ParameterApproximation.Uniqueness
+module
+
+public import MaxModulusPoints.Challenge
+public import MaxModulusPoints.ParameterApproximation.Uniqueness
+
 /-!
 # Limits of entire approximants on varying tracts
 
@@ -8,6 +11,9 @@ The exterior estimate passes first at points which remain outside the varying
 tracts, then to their closure by continuity. This includes boundary points
 which can enter a varying tract while nearby exterior points persist.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

@@ -1,10 +1,13 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.ChamberFrontierPaths
-import MaxModulusPoints.TractGeometry.ChamberGridPaths
-import MaxModulusPoints.TractGeometry.RectangleFrontiers
-import MaxModulusPoints.TractGeometry.RestoredWalls
-import MaxModulusPoints.TractGeometry.Symmetry
-import MaxModulusPoints.TractGeometry.Walls
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.ChamberFrontierPaths
+public import MaxModulusPoints.TractGeometry.ChamberGridPaths
+public import MaxModulusPoints.TractGeometry.RectangleFrontiers
+public import MaxModulusPoints.TractGeometry.RestoredWalls
+public import MaxModulusPoints.TractGeometry.Symmetry
+public import MaxModulusPoints.TractGeometry.Walls
+
 /-!
 # Complement paths along passage walls
 
@@ -12,6 +15,9 @@ Above and below the central opening, the right wall of a passage joins
 vertically to the chamber grid and hence to the exterior of the tract.
 Every other frontier point outside the tract lies on the base grid.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

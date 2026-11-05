@@ -1,11 +1,14 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.StripMap.ExponentialChart
-import MaxModulusPoints.StripMap.Geometry
-import MaxModulusPoints.StripMap.Growth
-import MaxModulusPoints.StripMap.KernelGeometry
-import MaxModulusPoints.StripMap.RealDerivative
-import MaxModulusPoints.StripMap.Rescaling
-import MaxModulusPoints.StripMap.Symmetry
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.StripMap.ExponentialChart
+public import MaxModulusPoints.StripMap.Geometry
+public import MaxModulusPoints.StripMap.Growth
+public import MaxModulusPoints.StripMap.KernelGeometry
+public import MaxModulusPoints.StripMap.RealDerivative
+public import MaxModulusPoints.StripMap.Rescaling
+public import MaxModulusPoints.StripMap.Symmetry
+
 /-!
 # A sharp lower bound for the logarithmic derivative
 
@@ -13,6 +16,9 @@ Every rescaled target contains the right half-plane. Its inverse conformal
 map therefore gives a disc self-map fixing the origin. Schwarz's lemma
 provides the sharp lower bound π for the real logarithmic derivative.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

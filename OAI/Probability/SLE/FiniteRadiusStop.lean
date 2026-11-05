@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Probability.SLE.BoundaryDensity
+module
+
+public import Mathlib
+public import OAI.Probability.SLE.BoundaryDensity
+
+/-!
+# `OAI.Probability.SLE.FiniteRadiusStop`
+-/
+
+@[expose] public section
 
 namespace OAI
 

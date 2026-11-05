@@ -1,14 +1,17 @@
-import Mathlib.Analysis.Complex.Convex
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.FiberContinuation.Basic
-import MaxModulusPoints.FiberContinuation.BoundedSurvivors
-import MaxModulusPoints.FiberContinuation.CompactCovers
-import MaxModulusPoints.FiberContinuation.CompactFamilies
-import MaxModulusPoints.FiberContinuation.CompactGraphs
-import MaxModulusPoints.FiberContinuation.CompleteBranches
-import MaxModulusPoints.FiberContinuation.ParameterInverses
-import MaxModulusPoints.FiberContinuation.ValueCoordinates
-import MaxModulusPoints.FiberContinuation.ValueWindows
+module
+
+public import Mathlib.Analysis.Complex.Convex
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.FiberContinuation.Basic
+public import MaxModulusPoints.FiberContinuation.BoundedSurvivors
+public import MaxModulusPoints.FiberContinuation.CompactCovers
+public import MaxModulusPoints.FiberContinuation.CompactFamilies
+public import MaxModulusPoints.FiberContinuation.CompactGraphs
+public import MaxModulusPoints.FiberContinuation.CompleteBranches
+public import MaxModulusPoints.FiberContinuation.ParameterInverses
+public import MaxModulusPoints.FiberContinuation.ValueCoordinates
+public import MaxModulusPoints.FiberContinuation.ValueWindows
+
 /-!
 # Continuation through the value at the origin
 
@@ -18,6 +21,9 @@ compact-survivor branch. It is also closed, so connectedness propagates one
 noncentral member throughout the punctured disk and closedness includes its
 center.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

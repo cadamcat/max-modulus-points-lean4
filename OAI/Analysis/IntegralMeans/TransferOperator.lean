@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.TransportBoxes
+module
+
+public import OAI.Analysis.IntegralMeans.TransportBoxes
+
+/-!
+# `OAI.Analysis.IntegralMeans.TransferOperator`
+-/
+
+@[expose] public section
 
 namespace OAI
 

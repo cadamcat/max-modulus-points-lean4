@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.ExpectedTransport
+module
+
+public import OAI.Analysis.IntegralMeans.ExpectedTransport
+
+/-!
+# `OAI.Analysis.IntegralMeans.Moments`
+-/
+
+@[expose] public section
 
 namespace OAI
 

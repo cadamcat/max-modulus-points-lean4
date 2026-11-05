@@ -1,5 +1,8 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.FiberContinuation.LogarithmicValues
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.FiberContinuation.LogarithmicValues
+
 /-!
 # Compact capture of physical fibers
 
@@ -7,6 +10,9 @@ Away from the value at the origin, both physical coordinates are uniformly
 bounded below. A bounded product then bounds them above. Spherical continuity
 turns these bounds into compact fibers and exact capture near each target.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

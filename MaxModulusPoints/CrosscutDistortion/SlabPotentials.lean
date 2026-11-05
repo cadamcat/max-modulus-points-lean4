@@ -1,6 +1,9 @@
-import Mathlib.Topology.MetricSpace.Lipschitz
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CrosscutDistortion.CompactEscape
+module
+
+public import Mathlib.Topology.MetricSpace.Lipschitz
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CrosscutDistortion.CompactEscape
+
 /-!
 # Lipschitz potentials in a strip slab
 
@@ -8,6 +11,9 @@ Two nonnegative potentials measure distance from the real axis and from
 the strip boundary, truncated by the vertical sides of a slab.
 Their values sum to one half on the central real-coordinate interval.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

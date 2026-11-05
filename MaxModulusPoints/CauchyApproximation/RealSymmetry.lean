@@ -1,11 +1,14 @@
-import Mathlib.Analysis.Analytic.IsolatedZeros
-import Mathlib.Analysis.Calculus.Deriv.Shift
-import Mathlib.Analysis.Calculus.Deriv.Star
-import Mathlib.MeasureTheory.Group.Integral
-import MaxModulusPoints.CauchyApproximation.CanonicalApproximation
-import MaxModulusPoints.CauchyApproximation.CanonicalDensity
-import MaxModulusPoints.CauchyApproximation.ImproperIntegral
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import Mathlib.Analysis.Analytic.IsolatedZeros
+public import Mathlib.Analysis.Calculus.Deriv.Shift
+public import Mathlib.Analysis.Calculus.Deriv.Star
+public import Mathlib.MeasureTheory.Group.Integral
+public import MaxModulusPoints.CauchyApproximation.CanonicalApproximation
+public import MaxModulusPoints.CauchyApproximation.CanonicalDensity
+public import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+public import MaxModulusPoints.CauchyApproximation.Model
+
 /-!
 # Real symmetry of the canonical approximation
 
@@ -14,6 +17,9 @@ symmetry by the identity principle. The canonical contour reverses under
 conjugation, so its Cauchy transform is real symmetric. Uniqueness of the
 entire extension gives the same symmetry everywhere.
 -/
+
+
+@[expose] public section
 
 open Complex ComplexConjugate Filter MeasureTheory Set
 open scoped Topology

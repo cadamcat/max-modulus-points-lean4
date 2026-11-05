@@ -1,8 +1,11 @@
-import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Normalization
-import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Equivalence
-import Mathlib.Analysis.Calculus.Deriv.Star
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.NormalizedSymmetry
+module
+
+public import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Normalization
+public import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Equivalence
+public import Mathlib.Analysis.Calculus.Deriv.Star
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.NormalizedSymmetry
+
 /-!
 # Symmetry of normalized conformal equivalences
 
@@ -10,6 +13,9 @@ Reflection preserves the normalized Riemann map of a conjugation invariant
 plane domain at a real base point. Uniqueness then gives conjugation symmetry,
 and composing two normalized disc charts gives the normalized equivalence.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

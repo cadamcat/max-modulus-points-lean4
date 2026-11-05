@@ -1,9 +1,12 @@
-import Mathlib.Analysis.Real.Pi.Bounds
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.Ring
-import MaxModulusPoints.Blueprint.Data
+module
+
+public import Mathlib.Analysis.Real.Pi.Bounds
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Ring
+public import MaxModulusPoints.Blueprint.Data
+
 /-!
 # Heights of the chamber gates
 
@@ -12,6 +15,9 @@ width bound places every gate point strictly between those heights, after
 reflecting negative gates into the positive half-plane. Consequently no gate
 meets a chamber grid line of either sign.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

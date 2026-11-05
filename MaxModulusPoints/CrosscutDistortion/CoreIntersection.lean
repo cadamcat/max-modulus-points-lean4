@@ -1,8 +1,11 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CrosscutDistortion.InverseRealAxis
-import MaxModulusPoints.CrosscutDistortion.RealAxis
-import MaxModulusPoints.CrosscutDistortion.Separation
-import MaxModulusPoints.CrosscutDistortion.TunnelSlice
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CrosscutDistortion.InverseRealAxis
+public import MaxModulusPoints.CrosscutDistortion.RealAxis
+public import MaxModulusPoints.CrosscutDistortion.Separation
+public import MaxModulusPoints.CrosscutDistortion.TunnelSlice
+
 /-!
 # Intersection of tunnel images with a real-coordinate interval
 
@@ -10,6 +13,9 @@ Each tunnel crosscut meets the vertical slab determined by a passage point
 and a clean-slice point. When their image real parts occur in reversed
 order, the slab reduces to the real coordinate of the passage image.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.CrosscutDistortion
 

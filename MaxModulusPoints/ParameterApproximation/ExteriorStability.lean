@@ -1,8 +1,11 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.ConformalKernel.TractGateKernel
-import MaxModulusPoints.ConformalKernel.TractGateWalls
-import MaxModulusPoints.ParameterApproximation.Limits
-import MaxModulusPoints.TractGeometry.StripContainment
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.ConformalKernel.TractGateKernel
+public import MaxModulusPoints.ConformalKernel.TractGateWalls
+public import MaxModulusPoints.ParameterApproximation.Limits
+public import MaxModulusPoints.TractGeometry.StripContainment
+
 /-!
 # Persistent exterior points of the chamber tracts
 
@@ -11,6 +14,9 @@ strictly beyond the limiting opening. Points outside the fully open tract
 remain outside every admissible tract. Exponential injectivity on that tract
 transfers the resulting exterior approximation to the plane.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

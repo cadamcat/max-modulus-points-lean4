@@ -1,13 +1,16 @@
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.Ring
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.BlockPositions
-import MaxModulusPoints.TractGeometry.GapPaths
-import MaxModulusPoints.TractGeometry.RectangleFrontiers
-import MaxModulusPoints.TractGeometry.ShoulderPaths
-import MaxModulusPoints.TractGeometry.StripContainment
-import MaxModulusPoints.TractGeometry.Symmetry
-import MaxModulusPoints.TractGeometry.Walls
+module
+
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Ring
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.BlockPositions
+public import MaxModulusPoints.TractGeometry.GapPaths
+public import MaxModulusPoints.TractGeometry.RectangleFrontiers
+public import MaxModulusPoints.TractGeometry.ShoulderPaths
+public import MaxModulusPoints.TractGeometry.StripContainment
+public import MaxModulusPoints.TractGeometry.Symmetry
+public import MaxModulusPoints.TractGeometry.Walls
+
 /-!
 # Paths inside the chamber layers
 
@@ -17,6 +20,9 @@ At the center height, paths continue through positive gates and descend through
 the next gap to the real axis.
 Complex conjugation supplies the corresponding paths in negative chambers.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

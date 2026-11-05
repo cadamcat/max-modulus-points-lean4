@@ -1,8 +1,11 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.Basepoint
-import MaxModulusPoints.TractGeometry.Openness
-import MaxModulusPoints.TractGeometry.RegularCoordinates
-import MaxModulusPoints.TractGeometry.RegularPaths
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.Basepoint
+public import MaxModulusPoints.TractGeometry.Openness
+public import MaxModulusPoints.TractGeometry.RegularCoordinates
+public import MaxModulusPoints.TractGeometry.RegularPaths
+
 /-!
 # Connectedness of the chamber and gate tracts
 
@@ -10,6 +13,9 @@ The path component of the normalization point contains every tract point with
 regular coordinates. Openness and coordinate density place the whole tract
 in the closure of that connected component.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

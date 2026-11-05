@@ -1,6 +1,14 @@
-import Mathlib
-import OAI.Analysis.SymmetricDomains.ScalarEquicontinuousHolomorphy
-import OAI.Analysis.SymmetricDomains.PrimeZeroLocusMaximum
+module
+
+public import Mathlib
+public import OAI.Analysis.SymmetricDomains.ScalarEquicontinuousHolomorphy
+public import OAI.Analysis.SymmetricDomains.PrimeZeroLocusMaximum
+
+/-!
+# `OAI.Analysis.SymmetricDomains.AmbientInverse`
+-/
+
+@[expose] public section
 
 namespace OAI
 

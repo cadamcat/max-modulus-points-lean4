@@ -3,6 +3,10 @@ Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: The Tau Ceti contributors
 -/
+/-
+Modified from TauCetiProject/TauCeti commit 3bed7e37f3c504a99e8c07e9f309540812a7aa90.
+The body below is upstream commit 0535b3bf5a08: Mathlib API adaptation on Lean v4.35.0-rc3.
+-/
 module
 
 public import TauCeti.Analysis.Contour.PiecewiseC1On
@@ -32,8 +36,6 @@ path-independence argument needs: running a curve backwards, and following one c
 * `TauCeti.Contour.intervalIntegral_deriv_smul_comp_const_sub` — the contour integral of the
   reversed curve.
 * `TauCeti.Contour.IsPiecewiseC1On.if_le` — concatenation preserves piecewise `C¹` regularity.
-* `TauCeti.Contour.eqOn_deriv_smul_comp_of_eqOn` — the contour integrand depends on the curve on
-  an open parameter interval only through its values there.
 * `TauCeti.Contour.intervalIntegral_deriv_smul_congr` — the contour integral depends on the curve
   only through its values on the open parameter interval.
 * `TauCeti.Contour.intervalIntegral_deriv_smul_eq_add_of_eqOn` — the contour integral along a
@@ -131,21 +133,13 @@ theorem IsPiecewiseC1On.if_le (h₁ : IsPiecewiseC1On γ a b) (h₂ : IsPiecewis
       refine (hC₂ d e (uIcc_of_le hbc ▸ hsub) (Set.disjoint_left.2 fun x hx hxde =>
         hnot x (by simp [Finset.mem_coe.1 hx]) hxde)).congr fun t ht => hη₂ (hsub ht)
 
-/-- **The contour integrand sees only the open parameter interval.** Two curves that agree on the
-open interval between `a` and `b` have contour integrands that agree there too, an open set being a
-neighbourhood of each of its points. -/
-theorem eqOn_deriv_smul_comp_of_eqOn {E : Type*} [NormedAddCommGroup E] [NormedSpace ℂ E]
-    {f : ℂ → E} (h : EqOn γ δ (uIoo a b)) :
-    EqOn (fun t => deriv γ t • f (γ t)) (fun t => deriv δ t • f (δ t)) (uIoo a b) := fun t ht => by
-  simp only [h ht, h.deriv isOpen_Ioo ht]
-
 /-- **The contour integral sees only the open parameter interval.** If two curves agree on the
 open interval between `a` and `b`, their contour integrals over `a..b` agree, even though the
 integrand involves the derivative of the curve. -/
 theorem intervalIntegral_deriv_smul_congr {E : Type*} [NormedAddCommGroup E] [NormedSpace ℂ E]
     {f : ℂ → E} (h : EqOn γ δ (uIoo a b)) :
     ∫ t in a..b, deriv γ t • f (γ t) = ∫ t in a..b, deriv δ t • f (δ t) :=
-  intervalIntegral.integral_congr_uIoo (eqOn_deriv_smul_comp_of_eqOn h)
+  intervalIntegral.integral_congr_uIoo ((h.deriv isOpen_Ioo).comp_left₂ h.comp_left)
 
 /-- **The contour integral along a concatenation.** If `η` agrees with `γ` on the open interval
 between `a` and `b` and with `δ` on the open interval between `b` and `c`, and the contour
@@ -160,8 +154,9 @@ theorem intervalIntegral_deriv_smul_eq_add_of_eqOn {E : Type*} [NormedAddCommGro
     ∫ t in a..c, deriv η t • f (η t) =
       (∫ t in a..b, deriv γ t • f (γ t)) + ∫ t in b..c, deriv δ t • f (δ t) := by
   rw [← intervalIntegral.integral_add_adjacent_intervals
-      (hγi.congr_uIoo (eqOn_deriv_smul_comp_of_eqOn hγ).symm)
-      (hδi.congr_uIoo (eqOn_deriv_smul_comp_of_eqOn hδ).symm),
+      (f := fun t => deriv η t • f (η t))
+      (hγi.congr_uIoo ((hγ.deriv isOpen_Ioo).comp_left₂ hγ.comp_left).symm)
+      (hδi.congr_uIoo ((hδ.deriv isOpen_Ioo).comp_left₂ hδ.comp_left).symm),
     intervalIntegral_deriv_smul_congr hγ, intervalIntegral_deriv_smul_congr hδ]
 
 end TauCeti.Contour

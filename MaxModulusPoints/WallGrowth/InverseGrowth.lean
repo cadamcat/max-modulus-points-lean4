@@ -1,7 +1,10 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CauchyApproximation.RealInverseGrowth
-import MaxModulusPoints.WallGrowth.CircleControl
-import MaxModulusPoints.WallGrowth.RightCuts
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CauchyApproximation.RealInverseGrowth
+public import MaxModulusPoints.WallGrowth.CircleControl
+public import MaxModulusPoints.WallGrowth.RightCuts
+
 /-!
 # Quadratic inverse growth throughout a chamber and gate tract
 
@@ -9,6 +12,9 @@ Connected right-hand portions and short restricted circular images compare
 an arbitrary point with the positive real axis. The real-axis quadratic
 bound consequently controls the whole tract.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.WallGrowth
 

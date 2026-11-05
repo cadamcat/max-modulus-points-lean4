@@ -1,7 +1,10 @@
-import Mathlib.Analysis.Complex.Basic
-import Mathlib.Topology.Order.DenselyOrdered
-import Mathlib.Tactic.Linarith
-import MaxModulusPoints.ConformalKernel.KernelConvergence
+module
+
+public import Mathlib.Analysis.Complex.Basic
+public import Mathlib.Topology.Order.DenselyOrdered
+public import Mathlib.Tactic.Linarith
+public import MaxModulusPoints.ConformalKernel.KernelConvergence
+
 /-!
 # Kernel convergence for vertical chamber gates
 
@@ -10,6 +13,9 @@ The remaining variable walls are locally finite vertical segments. A gate of
 half-height `δ i` consists of the points on wall `i` with imaginary displacement
 strictly less than `δ i`. Wall endpoints belong to the fixed boundary.
 -/
+
+
+@[expose] public section
 
 open Set Filter
 open scoped Topology

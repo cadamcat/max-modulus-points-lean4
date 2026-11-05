@@ -1,13 +1,19 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.Gates
-import MaxModulusPoints.TractGeometry.Openings
-import MaxModulusPoints.TractGeometry.Walls
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.Gates
+public import MaxModulusPoints.TractGeometry.Openings
+public import MaxModulusPoints.TractGeometry.Walls
+
 /-!
 # Openness of the chamber and gate tracts
 
 The complement of the closed walls is open within the ambient strip. Each
 restored opening and gate also has a neighborhood contained in the tract.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

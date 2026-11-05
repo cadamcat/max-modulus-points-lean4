@@ -1,9 +1,12 @@
-import MaxModulusPoints.CauchyApproximation.CanonicalDensity
-import MaxModulusPoints.CauchyApproximation.ContourDerivative
-import MaxModulusPoints.CauchyApproximation.ContourDistortion
-import MaxModulusPoints.CauchyApproximation.InverseDistortion
-import MaxModulusPoints.CauchyApproximation.Model
-import MaxModulusPoints.CauchyApproximation.UniformBounds
+module
+
+public import MaxModulusPoints.CauchyApproximation.CanonicalDensity
+public import MaxModulusPoints.CauchyApproximation.ContourDerivative
+public import MaxModulusPoints.CauchyApproximation.ContourDistortion
+public import MaxModulusPoints.CauchyApproximation.InverseDistortion
+public import MaxModulusPoints.CauchyApproximation.Model
+public import MaxModulusPoints.CauchyApproximation.UniformBounds
+
 /-!
 # Distortion relative to the normalization derivative
 
@@ -12,6 +15,9 @@ directions. Comparisons on the right-hand line transfer to the contour
 tails by disk distortion. Compact derivative comparisons cover the middle
 interval without imposing a positive absolute lower bound on the scale.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open OAI.Brennan

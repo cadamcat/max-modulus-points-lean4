@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.TransferOperator
+module
+
+public import OAI.Analysis.IntegralMeans.TransferOperator
+
+/-!
+# `OAI.Analysis.IntegralMeans.Eigenmeasure`
+-/
+
+@[expose] public section
 
 namespace OAI
 

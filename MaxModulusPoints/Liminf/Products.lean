@@ -1,5 +1,14 @@
-import Mathlib.Analysis.Complex.Liouville
-import MaxModulusPoints.Liminf.Basic
+module
+
+public import Mathlib.Analysis.Complex.Liouville
+public import MaxModulusPoints.Liminf.Basic
+
+/-!
+# `MaxModulusPoints.Liminf.Products`
+-/
+
+@[expose] public section
+
 open Filter Topology
 open scoped ComplexConjugate
 

@@ -1,5 +1,8 @@
-import MaxModulusPoints.ConformalKernel.KernelConvergence
-import MaxModulusPoints.ConformalKernel.KernelDerivatives
+module
+
+public import MaxModulusPoints.ConformalKernel.KernelConvergence
+public import MaxModulusPoints.ConformalKernel.KernelDerivatives
+
 /-!
 # The normalized disc-map kernel theorem
 
@@ -8,6 +11,9 @@ to a nondegenerate pointed kernel, their positively normalized Riemann maps
 converge locally uniformly to the normalized map of the kernel. Their inverses
 and forward derivatives converge locally uniformly as well.
 -/
+
+
+@[expose] public section
 
 open Set Filter Function Metric
 open scoped Topology

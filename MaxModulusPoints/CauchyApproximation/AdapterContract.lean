@@ -1,5 +1,8 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CauchyApproximation.Model
+
 /-!
 # Exponential correspondence for normalized conformal data
 
@@ -8,6 +11,9 @@ exponential image. The correspondence below records the domain, forward
 and inverse identities, and real symmetry needed to transport entire
 approximations between the two descriptions.
 -/
+
+
+@[expose] public section
 
 open Complex Set
 

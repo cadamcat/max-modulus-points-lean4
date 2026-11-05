@@ -1,11 +1,17 @@
-import Mathlib.Tactic.NormNum
-import MaxModulusPoints.Blueprint.Data
+module
+
+public import Mathlib.Tactic.NormNum
+public import MaxModulusPoints.Blueprint.Data
+
 /-!
 # Reflection symmetry of the chamber and gate tracts
 
 Complex conjugation preserves the passage and tunnel and exchanges the two
 chambers and gates at each height.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

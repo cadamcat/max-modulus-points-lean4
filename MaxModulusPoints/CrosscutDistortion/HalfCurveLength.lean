@@ -1,5 +1,8 @@
-import MaxModulusPoints.CrosscutDistortion.PotentialSpeed
-import MaxModulusPoints.CrosscutDistortion.SlabPotentials
+module
+
+public import MaxModulusPoints.CrosscutDistortion.PotentialSpeed
+public import MaxModulusPoints.CrosscutDistortion.SlabPotentials
+
 /-!
 # Weighted length of a half-crosscut
 
@@ -7,6 +10,9 @@ A curve starting on the real axis and meeting the core of a vertical slab
 has weighted length at least one half if its roof potential tends to zero
 at the other endpoint. No endpoint limit of the curve itself is required.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

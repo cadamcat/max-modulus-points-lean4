@@ -1,11 +1,14 @@
-import Mathlib.Analysis.Complex.ReImTopology
-import Mathlib.Analysis.Real.Pi.Bounds
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.Positivity
-import Mathlib.Tactic.Ring
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.ConformalKernel.VerticalGates
-import MaxModulusPoints.TractGeometry.BlockPositions
+module
+
+public import Mathlib.Analysis.Complex.ReImTopology
+public import Mathlib.Analysis.Real.Pi.Bounds
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Positivity
+public import Mathlib.Tactic.Ring
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.ConformalKernel.VerticalGates
+public import MaxModulusPoints.TractGeometry.BlockPositions
+
 /-!
 # The variable vertical walls of the chamber tracts
 
@@ -13,6 +16,9 @@ The right sides of the chambers are the locally finite walls on which the
 gate parameters act. A gate meets only its own wall, and none of these walls
 meets a restored passage or tunnel opening.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

@@ -3,6 +3,10 @@ Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Chris Birkbeck
 -/
+/-
+Modified from TauCetiProject/TauCeti commit 3bed7e37f3c504a99e8c07e9f309540812a7aa90.
+The body below is upstream commit 0535b3bf5a08: Mathlib API adaptation on Lean v4.35.0-rc3.
+-/
 module
 
 public import TauCeti.Analysis.Contour.Dixon.Def
@@ -155,7 +159,7 @@ private theorem differentiableAt_dixonH1_integral (hU : IsOpen U) (hf : Differen
     DifferentiableAt ℂ (fun w ↦ ∫ t in a..b, dslope f w (γ t) * deriv γ t) w₀ := by
   have hK_compact : IsCompact (γ '' uIcc a b) := isCompact_uIcc.image_of_continuousOn hγ_cont
   have hK_sub : γ '' uIcc a b ⊆ U := fun _ ⟨t, ht, hz⟩ ↦ hz ▸ hγU t ht
-  obtain ⟨C, hC_pos, δ, hδ_pos, h_dslope_bd⟩ :=
+  obtain ⟨C, _, δ, hδ_pos, h_dslope_bd⟩ :=
     deriv_dslope_bounded_on_compact hU hf hK_compact hK_sub hw₀
   obtain ⟨εU, hεU_pos, hεU_sub⟩ := Metric.isOpen_iff.mp hU w₀ hw₀
   have hε_pos : 0 < min δ εU := lt_min hδ_pos hεU_pos

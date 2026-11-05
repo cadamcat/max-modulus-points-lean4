@@ -1,13 +1,16 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
-import MaxModulusPoints.Blueprint.Interfaces.StripMapData
-import MaxModulusPoints.Construction.Maxima
-import MaxModulusPoints.Construction.OpenChamberLocalization
-import MaxModulusPoints.Construction.OpenGate
-import MaxModulusPoints.Construction.RealOrientation
-import MaxModulusPoints.Construction.StripCoordinates
-import MaxModulusPoints.Construction.Tract
-import MaxModulusPoints.Construction.TractMembership
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+public import MaxModulusPoints.Construction.Maxima
+public import MaxModulusPoints.Construction.OpenChamberLocalization
+public import MaxModulusPoints.Construction.OpenGate
+public import MaxModulusPoints.Construction.RealOrientation
+public import MaxModulusPoints.Construction.StripCoordinates
+public import MaxModulusPoints.Construction.Tract
+public import MaxModulusPoints.Construction.TractMembership
+
 /-!
 # Uniform strict comparison at open gates
 
@@ -16,6 +19,9 @@ simultaneously suppresses the passage and raises the clean reference
 value. The resulting chamber excess survives the approximation error,
 uniformly over all the other gates and all later geometric choices.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

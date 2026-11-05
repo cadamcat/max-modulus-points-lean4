@@ -1,9 +1,12 @@
-import Mathlib.Analysis.Complex.CauchyIntegral
-import Mathlib.Analysis.Calculus.Deriv.Star
-import Mathlib.Analysis.Meromorphic.Order
-import Mathlib.Topology.MetricSpace.Bounded
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Challenge
+module
+
+public import Mathlib.Analysis.Complex.CauchyIntegral
+public import Mathlib.Analysis.Calculus.Deriv.Star
+public import Mathlib.Analysis.Meromorphic.Order
+public import Mathlib.Topology.MetricSpace.Bounded
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Challenge
+
 /-!
 # Spherical logarithmic-derivative values
 
@@ -11,6 +14,9 @@ The logarithmic derivative of a nonzero entire function has a simple genuine
 pole at each of its zeros away from the origin. Assigning infinity there gives
 a continuous spherical-valued function.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

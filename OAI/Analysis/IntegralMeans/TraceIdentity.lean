@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.BoundaryTail
+module
+
+public import OAI.Analysis.IntegralMeans.BoundaryTail
+
+/-!
+# `OAI.Analysis.IntegralMeans.TraceIdentity`
+-/
+
+@[expose] public section
 
 namespace OAI
 

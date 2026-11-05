@@ -3,6 +3,10 @@ Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: The Tau Ceti contributors
 -/
+/-
+Modified from TauCetiProject/TauCeti commit 3bed7e37f3c504a99e8c07e9f309540812a7aa90.
+The body below is upstream commit 0535b3bf5a08: Mathlib API adaptation on Lean v4.35.0-rc3.
+-/
 module
 
 public import Mathlib.Analysis.Complex.UnitDisc.Basic
@@ -84,7 +88,7 @@ lemma isCompact_setOf_norm_le {ρ : ℝ} (hρ : ρ < 1) :
       {z : _root_.Complex.UnitDisc | ‖(z : ℂ)‖ ≤ ρ} = Metric.closedBall (0 : ℂ) ρ := by
     ext w
     simp only [Set.mem_image, Set.mem_ofPred_eq, Metric.mem_closedBall, dist_zero_right]
-    exact ⟨fun ⟨z, hz, hzw⟩ => hzw ▸ hz, fun hw =>
+    exact ⟨fun ⟨_, hz, hzw⟩ => hzw ▸ hz, fun hw =>
       ⟨_root_.Complex.UnitDisc.mk w (lt_of_le_of_lt hw hρ), by simpa using hw, by simp⟩⟩
   rw [himg]
   exact isCompact_closedBall _ _

@@ -1,15 +1,18 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
-import MaxModulusPoints.Blueprint.Interfaces.BoundaryUpper
-import MaxModulusPoints.Blueprint.Interfaces.HalfDisc
-import MaxModulusPoints.Blueprint.Interfaces.HalfDiscBarriers
-import MaxModulusPoints.Blueprint.Interfaces.StripMapData
-import MaxModulusPoints.Construction.BoundaryLimits
-import MaxModulusPoints.Construction.ClosedGate
-import MaxModulusPoints.Construction.SliceWindows
-import MaxModulusPoints.Construction.Tract
-import MaxModulusPoints.Construction.TractMembership
-import MaxModulusPoints.Construction.UniformLeftBound
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
+public import MaxModulusPoints.Blueprint.Interfaces.BoundaryUpper
+public import MaxModulusPoints.Blueprint.Interfaces.HalfDisc
+public import MaxModulusPoints.Blueprint.Interfaces.HalfDiscBarriers
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+public import MaxModulusPoints.Construction.BoundaryLimits
+public import MaxModulusPoints.Construction.ClosedGate
+public import MaxModulusPoints.Construction.SliceWindows
+public import MaxModulusPoints.Construction.Tract
+public import MaxModulusPoints.Construction.TractMembership
+public import MaxModulusPoints.Construction.UniformLeftBound
+
 /-!
 # Uniform bounds on deleted slice endpieces
 
@@ -18,6 +21,9 @@ endpoints. The uniform left-region bound controls their interiors and
 the removed horizontal walls have nonpositive boundary upper limits.
 The resulting endpoint radii are independent of every gate parameter.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

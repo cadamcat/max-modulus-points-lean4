@@ -1,8 +1,11 @@
-import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected
-import Mathlib.Analysis.SpecialFunctions.Complex.Analytic
-import Mathlib.Analysis.SpecialFunctions.Log.PosLog
-import Mathlib.Topology.UniformSpace.LocallyUniformConvergence
-import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+module
+
+public import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected
+public import Mathlib.Analysis.SpecialFunctions.Complex.Analytic
+public import Mathlib.Analysis.SpecialFunctions.Log.PosLog
+public import Mathlib.Topology.UniformSpace.LocallyUniformConvergence
+public import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+
 /-!
 # Conformal models and controlled approximation
 
@@ -13,6 +16,9 @@ modulus points*. The approximation assertions below are propositions; in the
 family assertion the same selection must depend locally uniformly continuously
 on the parameter, as required by Observation 2.3 of that paper.
 -/
+
+
+@[expose] public section
 
 open Complex ComplexConjugate Filter MeasureTheory Set
 open scoped Topology

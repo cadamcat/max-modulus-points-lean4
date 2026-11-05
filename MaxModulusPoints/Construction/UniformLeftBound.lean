@@ -1,11 +1,14 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
-import MaxModulusPoints.Blueprint.Interfaces.StripMapData
-import MaxModulusPoints.Construction.BoundedMaximum
-import MaxModulusPoints.Construction.PassageCut
-import MaxModulusPoints.Construction.RealPathBounds
-import MaxModulusPoints.Construction.Tract
-import MaxModulusPoints.Construction.TractMembership
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+public import MaxModulusPoints.Construction.BoundedMaximum
+public import MaxModulusPoints.Construction.PassageCut
+public import MaxModulusPoints.Construction.RealPathBounds
+public import MaxModulusPoints.Construction.Tract
+public import MaxModulusPoints.Construction.TractMembership
+
 /-!
 # A uniform bound to the left of each vertical line
 
@@ -14,6 +17,9 @@ follows by cutting at a future passage. The real reference is uniformly
 bounded by finite-path clearance, the bottleneck controls the passage,
 and the bounded-domain maximum principle propagates this control leftward.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

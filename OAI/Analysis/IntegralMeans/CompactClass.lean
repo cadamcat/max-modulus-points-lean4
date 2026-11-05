@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.Distortion
+module
+
+public import OAI.Analysis.IntegralMeans.Distortion
+
+/-!
+# `OAI.Analysis.IntegralMeans.CompactClass`
+-/
+
+@[expose] public section
 
 namespace OAI
 

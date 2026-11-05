@@ -1,8 +1,17 @@
-import Mathlib.Analysis.Complex.AbsMax
-import Mathlib.Analysis.Analytic.Order
-import Mathlib.Analysis.Calculus.Deriv.Star
-import Mathlib.Analysis.Normed.Module.Connected
-import Mathlib.Topology.Separation.Connected
+module
+
+public import Mathlib.Analysis.Complex.AbsMax
+public import Mathlib.Analysis.Analytic.Order
+public import Mathlib.Analysis.Calculus.Deriv.Star
+public import Mathlib.Analysis.Normed.Module.Connected
+public import Mathlib.Topology.Separation.Connected
+
+/-!
+# `MaxModulusPoints.Liminf.Basic`
+-/
+
+@[expose] public section
+
 open scoped Filter Topology
 open scoped ComplexConjugate
 

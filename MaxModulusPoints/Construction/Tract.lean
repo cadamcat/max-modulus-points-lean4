@@ -1,6 +1,9 @@
-import Mathlib.Analysis.Real.Pi.Bounds
-import Mathlib.Data.Fintype.Option
-import MaxModulusPoints.Construction.CirclePoints
+module
+
+public import Mathlib.Analysis.Real.Pi.Bounds
+public import Mathlib.Data.Fintype.Option
+public import MaxModulusPoints.Construction.CirclePoints
+
 /-!
 
 # A tract with passages, tunnels, and paired chambers
@@ -10,6 +13,9 @@ Block `n` has `n+1` pairs of chambers. Horizontal walls are described as the
 complement of the open height intervals, and vertical walls retain only the
 specified passage openings, tunnel openings, and paired gates.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

@@ -1,5 +1,8 @@
-import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Normalization
-import MaxModulusPoints.ConformalKernel.TargetDomain
+module
+
+public import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Normalization
+public import MaxModulusPoints.ConformalKernel.TargetDomain
+
 /-!
 # Normalized conformal maps to the logarithmic target
 
@@ -7,6 +10,9 @@ Normalized disc maps give the unique conformal equivalence carrying a specified
 source point to a specified target point with positive real derivative.
 For the logarithmic tract maps the two points are `-1` and `1`.
 -/
+
+
+@[expose] public section
 
 open Set Function
 open scoped ComplexOrder

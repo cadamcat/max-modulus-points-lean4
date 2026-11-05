@@ -1,5 +1,8 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.CoordinateDensity
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.CoordinateDensity
+
 /-!
 # Points away from the boundary coordinates
 
@@ -7,6 +10,9 @@ The block edges, tunnel heights, and chamber grid heights form countably many
 coordinate lines. Their complement is dense and avoids all equality cases in
 the decomposition into passage, tunnel, shoulder, chamber, and gap regions.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

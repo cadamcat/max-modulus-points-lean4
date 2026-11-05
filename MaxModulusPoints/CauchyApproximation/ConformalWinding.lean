@@ -1,11 +1,14 @@
-import TauCeti.Analysis.Contour.Argument.Cycle
-import MaxModulusPoints.CauchyApproximation.ContourRegularity
-import MaxModulusPoints.CauchyApproximation.DetourHolomorphy
-import MaxModulusPoints.CauchyApproximation.DetourHomology
-import MaxModulusPoints.CauchyApproximation.ImproperIntegral
-import MaxModulusPoints.CauchyApproximation.LocalDetour
-import MaxModulusPoints.CauchyApproximation.Model
-import MaxModulusPoints.CauchyApproximation.ResidueJump
+module
+
+public import TauCeti.Analysis.Contour.Argument.Cycle
+public import MaxModulusPoints.CauchyApproximation.ContourRegularity
+public import MaxModulusPoints.CauchyApproximation.DetourHolomorphy
+public import MaxModulusPoints.CauchyApproximation.DetourHomology
+public import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+public import MaxModulusPoints.CauchyApproximation.LocalDetour
+public import MaxModulusPoints.CauchyApproximation.Model
+public import MaxModulusPoints.CauchyApproximation.ResidueJump
+
 /-!
 # Conformal transfer of the detour winding number
 
@@ -15,6 +18,9 @@ has exactly one zero in the tract, and its holomorphic inverse makes that
 zero simple. Thus the graph geometry in the image domain determines the
 winding number needed for the local Cauchy jump.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open TauCeti.Contour

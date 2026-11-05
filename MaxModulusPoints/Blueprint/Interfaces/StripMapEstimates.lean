@@ -1,12 +1,17 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.StripMapData
-import MaxModulusPoints.StripMap.Package
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+public import MaxModulusPoints.StripMap.Package
 
 /-!
 # `strip_map_estimates`
 
 One declaration of `MaxModulusPoints.Blueprint.Interfaces`, in its own module so that it can import the module that proves it.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

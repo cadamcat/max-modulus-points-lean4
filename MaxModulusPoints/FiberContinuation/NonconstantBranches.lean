@@ -1,10 +1,13 @@
-import Mathlib.Analysis.Complex.OpenMapping
-import Mathlib.Analysis.Calculus.MeanValue
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.FiberContinuation.CompleteBranches
-import MaxModulusPoints.FiberContinuation.LogarithmicValues
-import MaxModulusPoints.FiberContinuation.OmittedContinuation
-import MaxModulusPoints.FiberContinuation.ValueCoordinates
+module
+
+public import Mathlib.Analysis.Complex.OpenMapping
+public import Mathlib.Analysis.Calculus.MeanValue
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.FiberContinuation.CompleteBranches
+public import MaxModulusPoints.FiberContinuation.LogarithmicValues
+public import MaxModulusPoints.FiberContinuation.OmittedContinuation
+public import MaxModulusPoints.FiberContinuation.ValueCoordinates
+
 /-!
 # Nonconstant product coordinates of physical branches
 
@@ -14,6 +17,9 @@ for its first coordinate would make the cleared product equation vanish on
 an open set. Analytic continuation and derivative constancy would then make
 the reflected product constant on the punctured plane.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

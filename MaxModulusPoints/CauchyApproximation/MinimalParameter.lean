@@ -1,9 +1,12 @@
-import MaxModulusPoints.CauchyApproximation.ArcDecay
-import MaxModulusPoints.CauchyApproximation.ContourTube
-import MaxModulusPoints.CauchyApproximation.DetourHolomorphy
-import MaxModulusPoints.CauchyApproximation.ImproperIntegral
-import MaxModulusPoints.CauchyApproximation.LocalDetour
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import MaxModulusPoints.CauchyApproximation.ArcDecay
+public import MaxModulusPoints.CauchyApproximation.ContourTube
+public import MaxModulusPoints.CauchyApproximation.DetourHolomorphy
+public import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+public import MaxModulusPoints.CauchyApproximation.LocalDetour
+public import MaxModulusPoints.CauchyApproximation.Model
+
 /-!
 # Minimal near parameters and separation outside the selected disk
 
@@ -13,6 +16,9 @@ points of the contour outside the selected disk remain at least half
 their own tube radius from the evaluation point. This provides the
 separation estimate for the surviving part of a contour replacement.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open scoped Topology

@@ -1,10 +1,13 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.KernelContinuity
-import MaxModulusPoints.ConformalKernel.KernelConvergence
-import MaxModulusPoints.ConformalKernel.LogModelContinuity
-import MaxModulusPoints.ConformalKernel.TargetDomain
-import MaxModulusPoints.ConformalKernel.TractGateKernel
-import MaxModulusPoints.TractGeometry.StripContainment
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.KernelContinuity
+public import MaxModulusPoints.ConformalKernel.KernelConvergence
+public import MaxModulusPoints.ConformalKernel.LogModelContinuity
+public import MaxModulusPoints.ConformalKernel.TargetDomain
+public import MaxModulusPoints.ConformalKernel.TractGateKernel
+public import MaxModulusPoints.TractGeometry.StripContainment
+
 /-!
 # Continuity of the normalized chamber-tract maps
 
@@ -13,6 +16,9 @@ kernel sense as their gate parameters converge. Their positive normalization
 therefore gives locally uniform dependence of the forward maps, specified
 inverses and derivatives, as used in Pardo-Simón–Sixsmith, Observation 2.3.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

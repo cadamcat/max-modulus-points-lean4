@@ -1,8 +1,11 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.ParameterApproximation.BoundaryControl
-import MaxModulusPoints.ParameterApproximation.HalfDiscComparison
-import MaxModulusPoints.ParameterApproximation.TargetMajorant
-import MaxModulusPoints.StripEstimates.HalfDisc
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.ParameterApproximation.BoundaryControl
+public import MaxModulusPoints.ParameterApproximation.HalfDiscComparison
+public import MaxModulusPoints.ParameterApproximation.TargetMajorant
+public import MaxModulusPoints.StripEstimates.HalfDisc
+
 /-!
 # Bounds near an affine straight boundary segment
 
@@ -10,6 +13,9 @@ Inverse escape supplies the individual boundedness needed for harmonic
 comparison. The resulting bound near a straight boundary segment depends
 only on three fixed interior values of the conformal map.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

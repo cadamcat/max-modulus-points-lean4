@@ -1,6 +1,9 @@
-import Mathlib.Analysis.Complex.Basic
-import Mathlib.Topology.Order.DenselyOrdered
-import Mathlib.Topology.Order.OrderClosed
+module
+
+public import Mathlib.Analysis.Complex.Basic
+public import Mathlib.Topology.Order.DenselyOrdered
+public import Mathlib.Topology.Order.OrderClosed
+
 /-!
 # Frontiers of coordinate rectangles
 
@@ -8,6 +11,9 @@ A point lies in the frontier of a closed coordinate rectangle exactly when
 it satisfies the coordinate bounds and lies on one of the four sides. The
 criterion also holds for empty or degenerate rectangles.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

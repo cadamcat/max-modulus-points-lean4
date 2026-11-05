@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Probability.SLE.OptionalStopping
+module
+
+public import Mathlib
+public import OAI.Probability.SLE.OptionalStopping
+
+/-!
+# `OAI.Probability.SLE.ClippedCoordinates`
+-/
+
+@[expose] public section
 
 namespace OAI
 

@@ -1,13 +1,19 @@
-import Mathlib.Topology.LocallyFinite
-import Mathlib.Tactic.NormNum
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.BlockPositions
+module
+
+public import Mathlib.Topology.LocallyFinite
+public import Mathlib.Tactic.NormNum
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.BlockPositions
+
 /-!
 # Closedness of the chamber and tunnel walls
 
 The walls within each block form a finite union of closed sets. The block
 positions tend to the right, so this family is locally finite.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

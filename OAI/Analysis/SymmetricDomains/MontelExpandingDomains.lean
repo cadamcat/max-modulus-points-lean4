@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Analysis.SymmetricDomains.CompactPeakRatio
+module
+
+public import Mathlib
+public import OAI.Analysis.SymmetricDomains.CompactPeakRatio
+
+/-!
+# `OAI.Analysis.SymmetricDomains.MontelExpandingDomains`
+-/
+
+@[expose] public section
 
 namespace OAI
 

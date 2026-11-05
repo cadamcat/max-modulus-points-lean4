@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.CriticalCount
+module
+
+public import OAI.Analysis.IntegralMeans.CriticalCount
+
+/-!
+# `OAI.Analysis.IntegralMeans.RankPairing`
+-/
+
+@[expose] public section
 
 namespace OAI
 

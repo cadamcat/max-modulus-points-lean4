@@ -1,9 +1,12 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Construction.ClosedChamberGeometry
-import MaxModulusPoints.Construction.OpenChamberGeometry
-import MaxModulusPoints.Construction.PassageCut
-import MaxModulusPoints.Construction.Tract
-import MaxModulusPoints.Construction.TractMembership
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Construction.ClosedChamberGeometry
+public import MaxModulusPoints.Construction.OpenChamberGeometry
+public import MaxModulusPoints.Construction.PassageCut
+public import MaxModulusPoints.Construction.Tract
+public import MaxModulusPoints.Construction.TractMembership
+
 /-!
 # Fixed rectangular windows around slice endpoints
 
@@ -11,6 +14,9 @@ The endpoint half-discs in Pardo-Simón–Sixsmith, Proposition 4.4, fit
 inside passage or chamber rectangles. Their diameters lie on horizontal
 walls which no admissible gate restores.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

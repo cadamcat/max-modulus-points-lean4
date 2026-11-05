@@ -1,13 +1,18 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.FixedRempeApproximation
-import MaxModulusPoints.Blueprint.Interfaces.RempeApproximation
-import MaxModulusPoints.ParameterApproximation.Package
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.FixedRempeApproximation
+public import MaxModulusPoints.Blueprint.Interfaces.RempeApproximation
+public import MaxModulusPoints.ParameterApproximation.Package
 
 /-!
 # `parameter_approximation`
 
 One declaration of `MaxModulusPoints.Blueprint.Interfaces`, in its own module so that it can import the module that proves it.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

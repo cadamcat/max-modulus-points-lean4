@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Analysis.SymmetricDomains.DiscCompactness
+module
+
+public import Mathlib
+public import OAI.Analysis.SymmetricDomains.DiscCompactness
+
+/-!
+# `OAI.Analysis.SymmetricDomains.ContinuityPrinciple`
+-/
+
+@[expose] public section
 
 namespace OAI
 

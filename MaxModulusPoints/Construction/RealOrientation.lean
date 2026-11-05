@@ -1,11 +1,14 @@
-import Mathlib.Analysis.Complex.RealDeriv
-import Mathlib.Analysis.Calculus.Deriv.Slope
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
-import MaxModulusPoints.Blueprint.Interfaces.StripMapData
-import MaxModulusPoints.Construction.StripCoordinates
-import MaxModulusPoints.Construction.Tract
-import MaxModulusPoints.Construction.TractMembership
+module
+
+public import Mathlib.Analysis.Complex.RealDeriv
+public import Mathlib.Analysis.Calculus.Deriv.Slope
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+public import MaxModulusPoints.Construction.StripCoordinates
+public import MaxModulusPoints.Construction.Tract
+public import MaxModulusPoints.Construction.TractMembership
+
 /-!
 # Orientation and growth of real strip coordinates
 
@@ -14,6 +17,9 @@ Together with the tunnel crosscut estimate, this makes the clean reference
 coordinate and its logarithmic conformal value uniformly large as the tunnel
 height decreases; Pardo-Simón–Sixsmith, Proposition 4.1.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

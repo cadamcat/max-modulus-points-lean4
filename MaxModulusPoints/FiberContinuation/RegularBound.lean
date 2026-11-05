@@ -1,11 +1,17 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.FiberContinuation.Basic
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.FiberContinuation.Basic
+
 /-!
 # Bounding regular physical fibers
 
 The open product projection, compactness of the spherical value space and
 the excluded small-product cylinder give the regular-fiber bound.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

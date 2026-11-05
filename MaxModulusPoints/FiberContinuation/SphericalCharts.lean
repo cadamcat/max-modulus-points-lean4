@@ -1,8 +1,11 @@
-import Mathlib.Analysis.Normed.Field.Lemmas
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Challenge
-import MaxModulusPoints.FiberContinuation.LogarithmicValues
-import MaxModulusPoints.FiberContinuation.PoleCoordinates
+module
+
+public import Mathlib.Analysis.Normed.Field.Lemmas
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Challenge
+public import MaxModulusPoints.FiberContinuation.LogarithmicValues
+public import MaxModulusPoints.FiberContinuation.PoleCoordinates
+
 /-!
 # A spherical chart at infinity
 
@@ -10,6 +13,9 @@ The map sending zero to infinity and a nonzero parameter to its reciprocal
 is a continuous injective value chart. Near a pole it represents the actual
 spherical logarithmic derivative through the analytic reciprocal coordinate.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

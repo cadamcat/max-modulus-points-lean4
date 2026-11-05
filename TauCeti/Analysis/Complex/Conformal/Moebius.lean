@@ -3,10 +3,15 @@ Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: The Tau Ceti contributors
 -/
+/-
+Modified from TauCetiProject/TauCeti commit 3bed7e37f3c504a99e8c07e9f309540812a7aa90.
+The body below is upstream commit 0535b3bf5a08: Mathlib API adaptation on Lean v4.35.0-rc3.
+-/
 module
 
 public import Mathlib.Analysis.Calculus.Deriv.Inv
 import Mathlib.Analysis.Calculus.Deriv.Add
+import Mathlib.Analysis.Calculus.Deriv.Mul
 public import TauCeti.Analysis.Complex.Conformal.PseudoHyperbolic
 
 /-!
@@ -169,10 +174,6 @@ private lemma unitDiscMoebius_neg_apply_unitDiscMoebius_apply_scalar {a z : ℂ}
         (1 - (starRingEnd ℂ) a * a) / (1 - (starRingEnd ℂ) a * z) := by
     field_simp [hden]
     ring
-  have hden₂ :
-      1 + (starRingEnd ℂ) a * ((z - a) / (1 - (starRingEnd ℂ) a * z)) ≠ 0 := by
-    rw [hden₂_eq]
-    exact div_ne_zero hnorm hden
   have hden_comm : 1 - z * (starRingEnd ℂ) a ≠ 0 := by
     simpa [mul_comm] using hden
   have hnorm_comm : 1 - a * (starRingEnd ℂ) a ≠ 0 := by

@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.CompactClass
+module
+
+public import OAI.Analysis.IntegralMeans.CompactClass
+
+/-!
+# `OAI.Analysis.IntegralMeans.HalfPlane`
+-/
+
+@[expose] public section
 
 namespace OAI
 

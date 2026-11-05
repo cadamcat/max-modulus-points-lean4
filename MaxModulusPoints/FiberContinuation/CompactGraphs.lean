@@ -1,11 +1,14 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.FiberContinuation.CompactCovers
-import MaxModulusPoints.FiberContinuation.CompactFamilies
-import MaxModulusPoints.FiberContinuation.InverseRoots
-import MaxModulusPoints.FiberContinuation.ParameterInverses
-import MaxModulusPoints.FiberContinuation.RotatedComparisons
-import MaxModulusPoints.FiberContinuation.Stabilization
-import MaxModulusPoints.FiberContinuation.ValueCoordinates
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.FiberContinuation.CompactCovers
+public import MaxModulusPoints.FiberContinuation.CompactFamilies
+public import MaxModulusPoints.FiberContinuation.InverseRoots
+public import MaxModulusPoints.FiberContinuation.ParameterInverses
+public import MaxModulusPoints.FiberContinuation.RotatedComparisons
+public import MaxModulusPoints.FiberContinuation.Stabilization
+public import MaxModulusPoints.FiberContinuation.ValueCoordinates
+
 /-!
 # Local graphs of compact-survivor images
 
@@ -14,6 +17,9 @@ parameter, invert the common value and identify the germs of all graphs through
 the target. Continuity removes the other graphs, so the finite raw union is
 locally contained in one analytic graph, without any full-fiber capture claim.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

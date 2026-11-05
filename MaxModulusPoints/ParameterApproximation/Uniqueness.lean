@@ -1,13 +1,19 @@
-import Mathlib.Analysis.Complex.Liouville
-import Mathlib.Tactic.Linarith
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Challenge
+module
+
+public import Mathlib.Analysis.Complex.Liouville
+public import Mathlib.Tactic.Linarith
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Challenge
+
 /-!
 # Uniqueness of entire approximants with decaying error
 
 The interior and exterior bounds of the conformal approximation determine the
 entire function uniquely, even when the two error constants differ.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

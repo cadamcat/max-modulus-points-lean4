@@ -1,13 +1,19 @@
-import TauCeti.Analysis.Complex.Conformal.SchwarzPick.Basic
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.StripMap.ExponentialChart
-import MaxModulusPoints.StripMap.Symmetry
+module
+
+public import TauCeti.Analysis.Complex.Conformal.SchwarzPick.Basic
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.StripMap.ExponentialChart
+public import MaxModulusPoints.StripMap.Symmetry
+
 /-!
 # Imaginary contraction for symmetric strip maps
 
 Schwarz--Pick applied to conjugate points shows that a symmetric holomorphic
 self-map of the strip contracts the absolute imaginary coordinate.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

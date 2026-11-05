@@ -1,9 +1,12 @@
-import Mathlib.Analysis.Calculus.MeanValue
-import Mathlib.Analysis.SpecialFunctions.Log.Deriv
-import Mathlib.Topology.MetricSpace.Lipschitz
-import MaxModulusPoints.CauchyApproximation.CanonicalDensity
-import MaxModulusPoints.CauchyApproximation.EntireExtension
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import Mathlib.Analysis.Calculus.MeanValue
+public import Mathlib.Analysis.SpecialFunctions.Log.Deriv
+public import Mathlib.Topology.MetricSpace.Lipschitz
+public import MaxModulusPoints.CauchyApproximation.CanonicalDensity
+public import MaxModulusPoints.CauchyApproximation.EntireExtension
+public import MaxModulusPoints.CauchyApproximation.Model
+
 /-!
 # The derivative of the canonical interior contour
 
@@ -13,6 +16,9 @@ is not differentiable, since both derivatives then vanish by definition.
 Thus a bound for the inverse derivative along the fixed curve gives a bound
 for the actual contour derivative, as in Rempe-Gillen's Corollary 4.4.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open scoped Topology

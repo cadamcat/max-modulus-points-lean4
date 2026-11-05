@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.HalfPlane
+module
+
+public import OAI.Analysis.IntegralMeans.HalfPlane
+
+/-!
+# `OAI.Analysis.IntegralMeans.CriticalMap`
+-/
+
+@[expose] public section
 
 namespace OAI
 

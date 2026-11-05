@@ -1,8 +1,11 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.FiberContinuation.ExactCovers
-import MaxModulusPoints.FiberContinuation.InverseRoots
-import MaxModulusPoints.FiberContinuation.LocalFamilies
-import MaxModulusPoints.FiberContinuation.Stabilization
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.FiberContinuation.ExactCovers
+public import MaxModulusPoints.FiberContinuation.InverseRoots
+public import MaxModulusPoints.FiberContinuation.LocalFamilies
+public import MaxModulusPoints.FiberContinuation.Stabilization
+
 /-!
 # Stabilized rotated product comparisons
 
@@ -10,6 +13,9 @@ Two representatives of one common value differ by a root-of-unity rotation
 of their parameters. Stabilizing these finitely many rotated comparisons
 separates punctured raw image branches.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

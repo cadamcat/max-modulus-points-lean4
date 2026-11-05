@@ -1,15 +1,24 @@
-import Mathlib.Analysis.Analytic.IsolatedZeros
-import Mathlib.Analysis.Calculus.InverseFunctionTheorem.Analytic
-import Mathlib.Analysis.Meromorphic.Order
-import Mathlib.Analysis.SpecialFunctions.Complex.Analytic
-import Mathlib.Algebra.Polynomial.Roots
-import Mathlib.Topology.Compactness.Lindelof
-import Mathlib.Topology.DiscreteSubset
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Challenge
-import MaxModulusPoints.Liminf.Basic
-import MaxModulusPoints.Liminf.Products
-import MaxModulusPoints.Liminf.Radial
+module
+
+public import Mathlib.Analysis.Analytic.IsolatedZeros
+public import Mathlib.Analysis.Calculus.InverseFunctionTheorem.Analytic
+public import Mathlib.Analysis.Meromorphic.Order
+public import Mathlib.Analysis.SpecialFunctions.Complex.Analytic
+public import Mathlib.Algebra.Polynomial.Roots
+public import Mathlib.Topology.Compactness.Lindelof
+public import Mathlib.Topology.DiscreteSubset
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Challenge
+public import MaxModulusPoints.Liminf.Basic
+public import MaxModulusPoints.Liminf.Products
+public import MaxModulusPoints.Liminf.Radial
+
+/-!
+# `MaxModulusPoints.Liminf.Packages`
+-/
+
+@[expose] public section
+
 open Filter
 open Set
 open scoped ComplexConjugate Topology

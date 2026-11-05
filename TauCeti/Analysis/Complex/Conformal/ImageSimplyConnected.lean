@@ -3,6 +3,10 @@ Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: The Tau Ceti contributors
 -/
+/-
+Modified from TauCetiProject/TauCeti commit 3bed7e37f3c504a99e8c07e9f309540812a7aa90.
+The body below is upstream commit 0535b3bf5a08: Mathlib API adaptation on Lean v4.35.0-rc3.
+-/
 module
 
 public import Mathlib.Analysis.Complex.OpenMapping
@@ -114,13 +118,5 @@ theorem isSimplyConnected_image_of_differentiableOn_of_injOn (hΩo : IsOpen Ω)
   -- `IsSimplyConnected (univ : Set ↥Ω)` is simple connectivity of `↥Ω` itself.
   have : SimplyConnectedSpace ↥Ω := hΩc
   exact (Homeomorph.Set.univ ↥Ω).toHomotopyEquiv.simplyConnectedSpace
-
-/-- Deprecated compatibility alias for the old name, which named only the injectivity hypothesis. -/
-@[deprecated isOpen_image_of_differentiableOn_of_injOn (since := "2026-07-29")]
-alias isOpen_image_of_injOn := isOpen_image_of_differentiableOn_of_injOn
-
-/-- Deprecated compatibility alias for the old name, which named only the injectivity hypothesis. -/
-@[deprecated isSimplyConnected_image_of_differentiableOn_of_injOn (since := "2026-07-29")]
-alias isSimplyConnected_image_of_injOn := isSimplyConnected_image_of_differentiableOn_of_injOn
 
 end TauCeti

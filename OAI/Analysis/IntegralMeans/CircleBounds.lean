@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.Moments
+module
+
+public import OAI.Analysis.IntegralMeans.Moments
+
+/-!
+# `OAI.Analysis.IntegralMeans.CircleBounds`
+-/
+
+@[expose] public section
 
 namespace OAI
 

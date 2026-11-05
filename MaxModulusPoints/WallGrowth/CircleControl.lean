@@ -1,9 +1,12 @@
-import TauCeti.Analysis.Complex.Conformal.LengthArea
-import Mathlib.MeasureTheory.Measure.Lebesgue.Complex
-import Mathlib.Topology.Order.IntermediateValue
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.TargetGeometry
-import MaxModulusPoints.TractGeometry.TargetGeometryProof
+module
+
+public import TauCeti.Analysis.Complex.Conformal.LengthArea
+public import Mathlib.MeasureTheory.Measure.Lebesgue.Complex
+public import Mathlib.Topology.Order.IntermediateValue
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.TargetGeometry
+public import MaxModulusPoints.TractGeometry.TargetGeometryProof
+
 /-!
 # Restricted circular lengths in the logarithmic target
 
@@ -12,6 +15,9 @@ disk gives an area bound proportional to the squared radius. A fixed-ratio
 annulus therefore contains a short restricted circular image. Such a circle
 cannot carry an arc whose image norm decreases from the radius to half of it.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.WallGrowth
 

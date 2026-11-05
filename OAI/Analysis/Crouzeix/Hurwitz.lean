@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Analysis.Crouzeix.Montel
+module
+
+public import Mathlib
+public import OAI.Analysis.Crouzeix.Montel
+
+/-!
+# `OAI.Analysis.Crouzeix.Hurwitz`
+-/
+
+@[expose] public section
 
 namespace OAI
 

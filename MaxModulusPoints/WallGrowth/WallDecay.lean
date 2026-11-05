@@ -1,6 +1,9 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CauchyApproximation.TractWallContract
-import MaxModulusPoints.WallGrowth.InverseGrowth
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CauchyApproximation.TractWallContract
+public import MaxModulusPoints.WallGrowth.InverseGrowth
+
 /-!
 # Uniform decay at the tract walls
 
@@ -8,6 +11,9 @@ Quadratic inverse growth and the logarithmic target boundary give a uniform
 bound for the product of the physical modulus and the exponential conformal
 function outside the interior contour.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.WallGrowth
 

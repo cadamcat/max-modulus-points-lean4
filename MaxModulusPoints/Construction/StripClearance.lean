@@ -1,6 +1,9 @@
-import OAI.Probability.SLE.AngularLaws
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Construction.RealOrientation
+module
+
+public import OAI.Probability.SLE.AngularLaws
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Construction.RealOrientation
+
 /-!
 # Compact strip containment from physical clearance
 
@@ -10,6 +13,9 @@ clearance radius and a uniform speed bound give compact containment:
 the omitted strip walls control the derivative, and their positive
 distances have logarithms with uniformly bounded derivatives.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

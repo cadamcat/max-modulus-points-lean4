@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.LevelCurve
+module
+
+public import OAI.Analysis.IntegralMeans.LevelCurve
+
+/-!
+# `OAI.Analysis.IntegralMeans.Turning`
+-/
+
+@[expose] public section
 
 namespace OAI
 

@@ -1,6 +1,9 @@
-import Mathlib.Analysis.Complex.OpenMapping
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CrosscutDistortion.Symmetry
+module
+
+public import Mathlib.Analysis.Complex.OpenMapping
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CrosscutDistortion.Symmetry
+
 /-!
 # Reflection symmetry of normalized chamber-tract maps
 
@@ -8,6 +11,9 @@ The inverse holomorphic map makes the tract open. Reflection invariance of
 the concrete walls and openings then allows normalized-map uniqueness to
 identify the map with its conjugate reflection.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.CrosscutDistortion
 

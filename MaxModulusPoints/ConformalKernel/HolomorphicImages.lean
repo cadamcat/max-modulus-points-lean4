@@ -1,6 +1,9 @@
-import OAI.Analysis.Crouzeix.Hurwitz
-import Mathlib.Analysis.Complex.OpenMapping
-import MaxModulusPoints.ConformalKernel.KernelConvergence
+module
+
+public import OAI.Analysis.Crouzeix.Hurwitz
+public import Mathlib.Analysis.Complex.OpenMapping
+public import MaxModulusPoints.ConformalKernel.KernelConvergence
+
 /-!
 # Compact images under holomorphic limits
 
@@ -9,6 +12,9 @@ compact subset of its image lies in the images of all sufficiently late maps.
 Applied to converging inverse conformal maps, this gives the image-to-kernel
 inclusion in the Carathéodory kernel argument.
 -/
+
+
+@[expose] public section
 
 open Set Filter Function
 open scoped Topology

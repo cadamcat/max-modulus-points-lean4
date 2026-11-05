@@ -1,9 +1,12 @@
-import Mathlib.Analysis.Normed.Group.Bounded
-import Mathlib.Analysis.Normed.Module.FiniteDimension
-import Mathlib.Tactic.Choose
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Push
-import MaxModulusPoints.Blueprint.Data
+module
+
+public import Mathlib.Analysis.Normed.Group.Bounded
+public import Mathlib.Analysis.Normed.Module.FiniteDimension
+public import Mathlib.Tactic.Choose
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Push
+public import MaxModulusPoints.Blueprint.Data
+
 /-!
 # Boundary control from the inverse escape condition
 
@@ -13,6 +16,9 @@ half-plane therefore have inverse images separated from each finite boundary
 point. It follows that the conformal map has nonpositive real upper limit
 at such a boundary point.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

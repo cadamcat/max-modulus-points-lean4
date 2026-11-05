@@ -1,9 +1,12 @@
-import Mathlib.Analysis.Calculus.Deriv.Comp
-import Mathlib.Topology.Order.IntermediateValue
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
-import MaxModulusPoints.Blueprint.Interfaces.StripMapData
-import MaxModulusPoints.Construction.OpenGate
+module
+
+public import Mathlib.Analysis.Calculus.Deriv.Comp
+public import Mathlib.Topology.Order.IntermediateValue
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+public import MaxModulusPoints.Construction.OpenGate
+
 /-!
 # Normalized strip coordinates
 
@@ -12,6 +15,9 @@ compose the logarithmic conformal map with the inverse strip map.
 The normalization and real-axis properties follow from the displayed
 conformal and strip-growth data.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

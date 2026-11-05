@@ -1,7 +1,10 @@
-import Mathlib.Topology.MetricSpace.ProperSpace
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BoundaryUpper
-import MaxModulusPoints.Construction.StripCoordinates
+module
+
+public import Mathlib.Topology.MetricSpace.ProperSpace
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BoundaryUpper
+public import MaxModulusPoints.Construction.StripCoordinates
+
 /-!
 # Boundary upper limits of logarithmic conformal maps
 
@@ -11,6 +14,9 @@ positive half-plane have compact inverse images inside the tract. These
 two facts give the nonpositive boundary upper limits used in
 Pardo-Simón–Sixsmith, Propositions 4.3 and 4.4.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

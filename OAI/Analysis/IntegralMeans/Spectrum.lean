@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.Koebe
+module
+
+public import OAI.Analysis.IntegralMeans.Koebe
+
+/-!
+# `OAI.Analysis.IntegralMeans.Spectrum`
+-/
+
+@[expose] public section
 
 namespace OAI
 

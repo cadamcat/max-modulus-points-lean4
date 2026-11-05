@@ -1,5 +1,8 @@
-import Mathlib.Topology.Maps.Proper.CompactlyGenerated
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import Mathlib.Topology.Maps.Proper.CompactlyGenerated
+public import MaxModulusPoints.CauchyApproximation.Model
+
 /-!
 # Separation by the interior contour
 
@@ -8,6 +11,9 @@ whole plane. The latter assertion includes possible approaches to the tract
 boundary: the inverse map is proper on the closed region to the right of the
 image graph. Its image is exactly the core together with the contour.
 -/
+
+
+@[expose] public section
 
 open Complex Filter Set
 open scoped Topology

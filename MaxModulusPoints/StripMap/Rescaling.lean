@@ -1,8 +1,11 @@
-import Mathlib.Analysis.Complex.LocallyUniformLimit
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.StripMap.Geometry
-import MaxModulusPoints.StripMap.Growth
-import MaxModulusPoints.StripMap.Symmetry
+module
+
+public import Mathlib.Analysis.Complex.LocallyUniformLimit
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.StripMap.Geometry
+public import MaxModulusPoints.StripMap.Growth
+public import MaxModulusPoints.StripMap.Symmetry
+
 /-!
 # Rescaling the strip map
 
@@ -11,6 +14,9 @@ at the translation point normalizes the translated map at the origin.
 Locally uniform convergence of these holomorphic maps implies convergence
 of their derivatives.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

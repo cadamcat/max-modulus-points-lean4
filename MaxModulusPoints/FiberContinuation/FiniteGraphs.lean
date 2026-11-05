@@ -1,5 +1,8 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.FiberContinuation.LogarithmicValues
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.FiberContinuation.LogarithmicValues
+
 /-!
 # Whole-image regularity of finite graph families
 
@@ -7,6 +10,9 @@ If every graph through the chosen target has the same germ, continuity removes
 the other finitely many graphs from a smaller product neighborhood. The whole
 actual image there is then exactly one holomorphic graph.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

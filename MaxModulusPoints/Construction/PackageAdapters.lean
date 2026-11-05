@@ -1,10 +1,13 @@
-import Mathlib.Data.Fintype.Option
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Challenge
-import MaxModulusPoints.Construction.Brouwer
-import MaxModulusPoints.Construction.CirclePoints
-import MaxModulusPoints.Construction.Maxima
-import MaxModulusPoints.Construction.Shooting
+module
+
+public import Mathlib.Data.Fintype.Option
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Challenge
+public import MaxModulusPoints.Construction.Brouwer
+public import MaxModulusPoints.Construction.CirclePoints
+public import MaxModulusPoints.Construction.Maxima
+public import MaxModulusPoints.Construction.Shooting
+
 /-!
 
 # Simultaneous shooting and global maximum counts
@@ -13,6 +16,9 @@ The simultaneous-zero theorem supplies Lemma 2.4 of Pardo-Simón–Sixsmith.
 For Corollary 4.6, disjoint exponential images of compact segments directly
 give distinct global maximum-modulus points once all segment maxima agree.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

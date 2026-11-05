@@ -1,5 +1,8 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.FiberContinuation.Stabilization
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.FiberContinuation.Stabilization
+
 /-!
 # Counts in finite analytic physical families
 
@@ -7,6 +10,9 @@ Stabilized analytic comparisons give constant physical counts on a punctured
 parameter disk. Whole-image regularity prevents the central physical fiber
 from being larger than the nearby one.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

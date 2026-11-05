@@ -1,10 +1,13 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CauchyApproximation.CanonicalApproximation
-import MaxModulusPoints.CauchyApproximation.GlobalCoreBounds
-import MaxModulusPoints.CauchyApproximation.Model
-import MaxModulusPoints.CauchyApproximation.RealSymmetry
-import MaxModulusPoints.Challenge
-import MaxModulusPoints.TractGeometry.StripContainment
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CauchyApproximation.CanonicalApproximation
+public import MaxModulusPoints.CauchyApproximation.GlobalCoreBounds
+public import MaxModulusPoints.CauchyApproximation.Model
+public import MaxModulusPoints.CauchyApproximation.RealSymmetry
+public import MaxModulusPoints.Challenge
+public import MaxModulusPoints.TractGeometry.StripContainment
+
 /-!
 # Non-monomiality of the canonical entire approximation
 
@@ -13,6 +16,9 @@ axis, so its canonical approximation is nonzero. If the tract lies in the
 right half-plane, decay on the negative real axis excludes every nonzero
 monomial.
 -/
+
+
+@[expose] public section
 
 open Complex Filter Set
 open scoped Topology

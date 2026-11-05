@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.BorelPairing
+module
+
+public import OAI.Analysis.IntegralMeans.BorelPairing
+
+/-!
+# `OAI.Analysis.IntegralMeans.AreaTransport`
+-/
+
+@[expose] public section
 
 namespace OAI
 

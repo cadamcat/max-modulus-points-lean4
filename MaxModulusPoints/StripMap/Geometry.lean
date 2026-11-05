@@ -1,7 +1,10 @@
-import Mathlib.Analysis.Convex.Contractible
-import Mathlib.Analysis.SpecialFunctions.Log.PosLog
-import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Equivalence
-import MaxModulusPoints.Blueprint.Data
+module
+
+public import Mathlib.Analysis.Convex.Contractible
+public import Mathlib.Analysis.SpecialFunctions.Log.PosLog
+public import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Equivalence
+public import MaxModulusPoints.Blueprint.Data
+
 /-!
 # The strip and the logarithmic target
 
@@ -9,6 +12,9 @@ The target in Pardo-Simón–Sixsmith, equation (2.1), is the region to the
 right of a continuous graph. A horizontal shear straightens this graph,
 which supplies the simple connectivity needed for the Riemann mapping theorem.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Analysis.SymmetricDomains.AnalyticImplicitScalar
+module
+
+public import Mathlib
+public import OAI.Analysis.SymmetricDomains.AnalyticImplicitScalar
+
+/-!
+# `OAI.Analysis.SymmetricDomains.DifferentiableCauchyTransform`
+-/
+
+@[expose] public section
 
 namespace OAI
 

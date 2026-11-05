@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Probability.SLE.SwallowExit
+module
+
+public import Mathlib
+public import OAI.Probability.SLE.SwallowExit
+
+/-!
+# `OAI.Probability.SLE.NearRealContraction`
+-/
+
+@[expose] public section
 
 namespace OAI
 

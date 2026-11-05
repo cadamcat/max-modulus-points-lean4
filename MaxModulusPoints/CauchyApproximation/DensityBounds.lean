@@ -1,11 +1,17 @@
-import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
-import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+module
+
+public import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
+public import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+
 /-!
 # Integrability from polynomial bounds on a contour density
 
 The cancellation of the derivative-growth exponent against the decay exponent
 is the estimate preceding equation (2.2) in Rempe-Gillen's Theorem 2.1.
 -/
+
+
+@[expose] public section
 
 open MeasureTheory Real
 

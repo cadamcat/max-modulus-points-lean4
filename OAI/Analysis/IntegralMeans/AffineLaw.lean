@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.Eigenmeasure
+module
+
+public import OAI.Analysis.IntegralMeans.Eigenmeasure
+
+/-!
+# `OAI.Analysis.IntegralMeans.AffineLaw`
+-/
+
+@[expose] public section
 
 namespace OAI
 

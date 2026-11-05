@@ -1,6 +1,8 @@
-import Mathlib.Analysis.Calculus.FDeriv.Defs
-import Mathlib.Analysis.Complex.Basic
-import Mathlib.Data.Set.Card
+module
+
+public import Mathlib.Analysis.Calculus.FDeriv.Defs
+public import Mathlib.Analysis.Complex.Basic
+public import Mathlib.Data.Set.Card
 
 /-!
 # Maximum-modulus points of entire functions
@@ -8,6 +10,9 @@ import Mathlib.Data.Set.Card
 The two questions of Erdős concern the count of exact maximum-modulus points
 of one fixed non-monomial entire function as the circle radius tends to infinity.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints
 

@@ -3,6 +3,10 @@ Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: The Tau Ceti contributors
 -/
+/-
+Modified from TauCetiProject/TauCeti commit 3bed7e37f3c504a99e8c07e9f309540812a7aa90.
+The body below is upstream commit 0535b3bf5a08: Mathlib API adaptation on Lean v4.35.0-rc3.
+-/
 module
 
 public import TauCeti.Analysis.Complex.Conformal.UnitDisc.Automorphism.Classification
@@ -109,8 +113,6 @@ lemma unitDiscStandardAutomorphismEquiv_symm_eq (u : Circle) (a : Complex.UnitDi
   have hu : (u : ℂ) ≠ 0 := u.coe_ne_zero
   have hconj : (starRingEnd ℂ) (u : ℂ) = (u : ℂ)⁻¹ := by
     rw [← Circle.coe_inv_eq_conj, Circle.coe_inv]
-  have hd₁ : 1 - (starRingEnd ℂ) (a : ℂ) * ((u : ℂ)⁻¹ * (z : ℂ)) ≠ 0 := by
-    simpa using one_sub_conj_mul_ne_zero_unitDisc (u⁻¹ • z) a
   have hd₂ : 1 - (starRingEnd ℂ) ((u : ℂ) * -(a : ℂ)) * (z : ℂ) ≠ 0 := by
     simpa using one_sub_conj_mul_ne_zero_unitDisc z (u • (-a))
   rw [map_mul, map_neg, hconj] at hd₂

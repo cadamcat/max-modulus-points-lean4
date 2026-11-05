@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Probability.SLE.ClippedCoordinates
+module
+
+public import Mathlib
+public import OAI.Probability.SLE.ClippedCoordinates
+
+/-!
+# `OAI.Probability.SLE.LoewnerCharts`
+-/
+
+@[expose] public section
 
 namespace OAI
 

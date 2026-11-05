@@ -1,13 +1,19 @@
-import Mathlib.Analysis.Convex.PathConnected
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.Openings
-import MaxModulusPoints.TractGeometry.RectangleFrontiers
+module
+
+public import Mathlib.Analysis.Convex.PathConnected
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.Openings
+public import MaxModulusPoints.TractGeometry.RectangleFrontiers
+
 /-!
 # The real axis in the chamber and gate tracts
 
 The real interval to the right of the left boundary lies in every tract.
 Any wall that meets this interval does so at a restored passage opening.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

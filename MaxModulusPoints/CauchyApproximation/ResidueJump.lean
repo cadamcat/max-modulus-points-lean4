@@ -1,8 +1,11 @@
-import TauCeti.Analysis.Contour.Curve.Concat
-import TauCeti.Analysis.Contour.HomologyCauchy
-import TauCeti.Analysis.Contour.Dixon.FunctionDiff
-import MaxModulusPoints.CauchyApproximation.ContourModification
-import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+module
+
+public import TauCeti.Analysis.Contour.Curve.Concat
+public import TauCeti.Analysis.Contour.HomologyCauchy
+public import TauCeti.Analysis.Contour.Dixon.FunctionDiff
+public import MaxModulusPoints.CauchyApproximation.ContourModification
+public import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+
 /-!
 # The residue of a compact contour modification
 
@@ -11,6 +14,9 @@ contour whose Cauchy integral measures the change in the improper integral.
 The homology Cauchy formula identifies that change with the winding-number
 multiple of the holomorphic function.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open TauCeti.Contour

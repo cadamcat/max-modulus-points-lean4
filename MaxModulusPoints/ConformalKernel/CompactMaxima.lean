@@ -1,13 +1,19 @@
-import Mathlib.Analysis.SpecialFunctions.Exp
-import Mathlib.Topology.MetricSpace.UniformConvergence
-import Mathlib.Topology.Order.Compact
-import Mathlib.Tactic.Linarith
+module
+
+public import Mathlib.Analysis.SpecialFunctions.Exp
+public import Mathlib.Topology.MetricSpace.UniformConvergence
+public import Mathlib.Topology.Order.Compact
+public import Mathlib.Tactic.Linarith
+
 /-!
 # Modulus maxima on fixed compact slices
 
 The compact-slice continuity step in Pardo-Simón–Sixsmith, Lemma 4.5.
 Local uniform dependence of the functions is an explicit hypothesis.
 -/
+
+
+@[expose] public section
 
 open Set Filter
 open scoped Topology

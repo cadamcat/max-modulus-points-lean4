@@ -1,11 +1,14 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.FiberContinuation.Basic
-import MaxModulusPoints.FiberContinuation.ClosedBranches
-import MaxModulusPoints.FiberContinuation.ExactCovers
-import MaxModulusPoints.FiberContinuation.HighBranches
-import MaxModulusPoints.FiberContinuation.LocalFamilies
-import MaxModulusPoints.FiberContinuation.StabilizedCovers
-import MaxModulusPoints.FiberContinuation.ValueCoordinates
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.FiberContinuation.Basic
+public import MaxModulusPoints.FiberContinuation.ClosedBranches
+public import MaxModulusPoints.FiberContinuation.ExactCovers
+public import MaxModulusPoints.FiberContinuation.HighBranches
+public import MaxModulusPoints.FiberContinuation.LocalFamilies
+public import MaxModulusPoints.FiberContinuation.StabilizedCovers
+public import MaxModulusPoints.FiberContinuation.ValueCoordinates
+
 /-!
 # Complete branches in the high-count closure
 
@@ -14,6 +17,9 @@ Its common spherical value is a positive power in a centered value chart.
 Every point of the high-count closure away from the omitted value lies on
 such a branch, including points over infinity.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

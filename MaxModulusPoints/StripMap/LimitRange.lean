@@ -1,9 +1,12 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.StripMap.BoundedTransform
-import MaxModulusPoints.StripMap.Geometry
-import MaxModulusPoints.StripMap.Growth
-import MaxModulusPoints.StripMap.KernelGeometry
-import MaxModulusPoints.StripMap.Rescaling
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.StripMap.BoundedTransform
+public import MaxModulusPoints.StripMap.Geometry
+public import MaxModulusPoints.StripMap.Growth
+public import MaxModulusPoints.StripMap.KernelGeometry
+public import MaxModulusPoints.StripMap.Rescaling
+
 /-!
 # The range of a rescaled map limit
 
@@ -11,6 +14,9 @@ The vanishing overhang of the rescaled targets forces every locally uniform
 limit into the closed right half-plane. The normalization and the maximum
 modulus principle then place its image in the open right half-plane.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

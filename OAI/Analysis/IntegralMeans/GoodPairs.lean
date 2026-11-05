@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.BoundaryEscape
+module
+
+public import OAI.Analysis.IntegralMeans.BoundaryEscape
+
+/-!
+# `OAI.Analysis.IntegralMeans.GoodPairs`
+-/
+
+@[expose] public section
 
 namespace OAI
 

@@ -1,12 +1,18 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Challenge
-import MaxModulusPoints.ConformalKernel.CompactMaxima
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Challenge
+public import MaxModulusPoints.ConformalKernel.CompactMaxima
+
 /-!
 # Continuity of compact-slice maxima
 
 Local uniform dependence of an entire family gives continuous maximum modulus
 on every fixed nonempty compact slice in logarithmic coordinates.
 -/
+
+
+@[expose] public section
 
 open Set Filter
 open scoped Topology

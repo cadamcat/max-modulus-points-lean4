@@ -1,9 +1,12 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.FiberContinuation.Basic
-import MaxModulusPoints.FiberContinuation.CompleteBranches
-import MaxModulusPoints.FiberContinuation.NonconstantBranches
-import MaxModulusPoints.FiberContinuation.OmittedContinuation
-import MaxModulusPoints.FiberContinuation.ValueCoordinates
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.FiberContinuation.Basic
+public import MaxModulusPoints.FiberContinuation.CompleteBranches
+public import MaxModulusPoints.FiberContinuation.NonconstantBranches
+public import MaxModulusPoints.FiberContinuation.OmittedContinuation
+public import MaxModulusPoints.FiberContinuation.ValueCoordinates
+
 /-!
 # Openness of the high-count product projection
 
@@ -12,6 +15,9 @@ physical branch. Nonconstant reflected products force its product coordinate
 to be nonconstant as a germ, so the open mapping theorem gives a neighborhood
 in the product projection.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

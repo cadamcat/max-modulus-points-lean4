@@ -1,5 +1,8 @@
-import MaxModulusPoints.CauchyApproximation.InverseDistortion
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import MaxModulusPoints.CauchyApproximation.InverseDistortion
+public import MaxModulusPoints.CauchyApproximation.Model
+
 /-!
 # Distortion from the vertical line to the interior contour
 
@@ -8,6 +11,9 @@ interior contour with a fixed relative margin and remain in the enlarged
 half-plane. Disk distortion transfers the degree-four inverse derivative
 bound to the actual interior contour.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open OAI.Brennan

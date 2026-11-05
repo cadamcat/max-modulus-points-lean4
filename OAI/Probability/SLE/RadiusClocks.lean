@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Probability.SLE.BrownianStrongMarkov
+module
+
+public import Mathlib
+public import OAI.Probability.SLE.BrownianStrongMarkov
+
+/-!
+# `OAI.Probability.SLE.RadiusClocks`
+-/
+
+@[expose] public section
 
 namespace OAI
 

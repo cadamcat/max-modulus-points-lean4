@@ -1,10 +1,13 @@
-import MaxModulusPoints.CauchyApproximation.ArcDecay
-import MaxModulusPoints.CauchyApproximation.CanonicalApproximation
-import MaxModulusPoints.CauchyApproximation.CanonicalDecay
-import MaxModulusPoints.CauchyApproximation.ContourGrowth
-import MaxModulusPoints.CauchyApproximation.DetourSeparation
-import MaxModulusPoints.CauchyApproximation.ImproperIntegral
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import MaxModulusPoints.CauchyApproximation.ArcDecay
+public import MaxModulusPoints.CauchyApproximation.CanonicalApproximation
+public import MaxModulusPoints.CauchyApproximation.CanonicalDecay
+public import MaxModulusPoints.CauchyApproximation.ContourGrowth
+public import MaxModulusPoints.CauchyApproximation.DetourSeparation
+public import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+public import MaxModulusPoints.CauchyApproximation.Model
+
 /-!
 # Global decay for the canonical core approximation
 
@@ -15,6 +18,9 @@ core and uniform decay outside the core. In particular, the original
 improper Cauchy integral has inverse-norm decay off its contour, and the
 canonical entire function has that decay outside the original tract.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open scoped Topology

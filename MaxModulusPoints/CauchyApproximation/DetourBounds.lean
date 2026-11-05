@@ -1,13 +1,16 @@
-import MaxModulusPoints.CauchyApproximation.ContourDerivative
-import MaxModulusPoints.CauchyApproximation.ContourDistortion
-import MaxModulusPoints.CauchyApproximation.ContourGrowth
-import MaxModulusPoints.CauchyApproximation.ContourTube
-import MaxModulusPoints.CauchyApproximation.InverseDistortion
-import MaxModulusPoints.CauchyApproximation.LocalDetour
-import MaxModulusPoints.CauchyApproximation.Model
-import MaxModulusPoints.CauchyApproximation.QuantitativeDetour
-import MaxModulusPoints.CauchyApproximation.ScaledDistortion
-import MaxModulusPoints.CauchyApproximation.UniformBounds
+module
+
+public import MaxModulusPoints.CauchyApproximation.ContourDerivative
+public import MaxModulusPoints.CauchyApproximation.ContourDistortion
+public import MaxModulusPoints.CauchyApproximation.ContourGrowth
+public import MaxModulusPoints.CauchyApproximation.ContourTube
+public import MaxModulusPoints.CauchyApproximation.InverseDistortion
+public import MaxModulusPoints.CauchyApproximation.LocalDetour
+public import MaxModulusPoints.CauchyApproximation.Model
+public import MaxModulusPoints.CauchyApproximation.QuantitativeDetour
+public import MaxModulusPoints.CauchyApproximation.ScaledDistortion
+public import MaxModulusPoints.CauchyApproximation.UniformBounds
+
 /-!
 # Uniform growth and density estimates for the tent detours
 
@@ -18,6 +21,9 @@ retain quartic position growth and order-nine density decay, with constants
 independent of the position of the tent and with the normalization derivative
 scale retained in the density.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open OAI.Brennan

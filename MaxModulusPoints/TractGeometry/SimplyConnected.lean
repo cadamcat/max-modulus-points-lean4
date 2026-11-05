@@ -1,10 +1,13 @@
-import Mathlib.Analysis.Normed.Group.Bounded
-import TauCeti.Analysis.Complex.Conformal.SimplyConnected
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.ComplementPaths
-import MaxModulusPoints.TractGeometry.Connectedness
-import MaxModulusPoints.TractGeometry.Openness
-import MaxModulusPoints.TractGeometry.StripContainment
+module
+
+public import Mathlib.Analysis.Normed.Group.Bounded
+public import TauCeti.Analysis.Complex.Conformal.SimplyConnected
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.ComplementPaths
+public import MaxModulusPoints.TractGeometry.Connectedness
+public import MaxModulusPoints.TractGeometry.Openness
+public import MaxModulusPoints.TractGeometry.StripContainment
+
 /-!
 # Simple connectivity of the chamber and gate tract
 
@@ -12,6 +15,9 @@ The complement is path connected and unbounded, so filling bounded
 complementary components leaves the tract unchanged. The open connected
 tract is therefore simply connected.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

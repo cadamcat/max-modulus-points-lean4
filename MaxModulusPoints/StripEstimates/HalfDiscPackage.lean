@@ -1,14 +1,20 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BoundaryUpper
-import MaxModulusPoints.Blueprint.Interfaces.HalfDisc
-import MaxModulusPoints.Blueprint.Interfaces.HalfDiscBarriers
-import MaxModulusPoints.StripEstimates.HalfDisc
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BoundaryUpper
+public import MaxModulusPoints.Blueprint.Interfaces.HalfDisc
+public import MaxModulusPoints.Blueprint.Interfaces.HalfDiscBarriers
+public import MaxModulusPoints.StripEstimates.HalfDisc
+
 /-!
 # Uniform half-disc boundary decay
 
 The rational barrier tends to zero uniformly near the midpoint of the diameter,
 as required in the endpiece estimate of Pardo-Simón–Sixsmith, Proposition 4.4.
 -/
+
+
+@[expose] public section
 
 open Set Filter Metric Topology InnerProductSpace
 open MaxModulusPoints.StripEstimates

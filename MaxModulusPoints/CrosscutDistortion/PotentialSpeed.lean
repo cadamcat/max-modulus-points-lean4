@@ -1,7 +1,10 @@
-import Mathlib.Analysis.Calculus.Deriv.Slope
-import Mathlib.Analysis.Calculus.LocalExtr.Basic
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.AbsolutelyContinuousFun
-import MaxModulusPoints.CrosscutDistortion.SlabPotentials
+module
+
+public import Mathlib.Analysis.Calculus.Deriv.Slope
+public import Mathlib.Analysis.Calculus.LocalExtr.Basic
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.AbsolutelyContinuousFun
+public import MaxModulusPoints.CrosscutDistortion.SlabPotentials
+
 /-!
 # Weighted speed bounds for slab potentials
 
@@ -9,6 +12,9 @@ A 1-Lipschitz potential cannot increase the speed of a differentiable
 curve. Slab potentials have zero derivative outside their vertical support,
 so their increments are controlled by the speed spent inside that slab.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

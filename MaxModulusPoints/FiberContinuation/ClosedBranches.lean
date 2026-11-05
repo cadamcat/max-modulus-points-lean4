@@ -1,8 +1,11 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.FiberContinuation.ExactCovers
-import MaxModulusPoints.FiberContinuation.LocalFamilies
-import MaxModulusPoints.FiberContinuation.ValueCoordinates
-import MaxModulusPoints.FiberContinuation.ValueWindows
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.FiberContinuation.ExactCovers
+public import MaxModulusPoints.FiberContinuation.LocalFamilies
+public import MaxModulusPoints.FiberContinuation.ValueCoordinates
+public import MaxModulusPoints.FiberContinuation.ValueWindows
+
 /-!
 # Relative closedness of finite raw branch unions
 
@@ -10,6 +13,9 @@ The value coordinate bounds every representing parameter strictly inside its
 disk. Compactness of a smaller closed parameter disk then closes any finite
 subunion of raw images inside the full open value cylinder.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

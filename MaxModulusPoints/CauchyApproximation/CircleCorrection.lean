@@ -1,6 +1,9 @@
-import MaxModulusPoints.CauchyApproximation.ContourTube
-import MaxModulusPoints.CauchyApproximation.Model
-import MaxModulusPoints.CauchyApproximation.SeparatedDecay
+module
+
+public import MaxModulusPoints.CauchyApproximation.ContourTube
+public import MaxModulusPoints.CauchyApproximation.Model
+public import MaxModulusPoints.CauchyApproximation.SeparatedDecay
+
 /-!
 # The finite-circle contribution to controlled Cauchy approximation
 
@@ -10,6 +13,9 @@ bound controls the normalized circle contribution by twice the boundary
 function bound. The scaled tract tube supplies such circles and boundary
 bounds for the canonical conformal function.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open scoped Topology

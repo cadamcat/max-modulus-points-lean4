@@ -1,3 +1,12 @@
-import MaxModulusPoints.Blueprint.Interfaces
-import MaxModulusPoints.Blueprint.Main
-import MaxModulusPoints.Challenge
+module
+
+public import MaxModulusPoints.Blueprint.Interfaces
+public import MaxModulusPoints.Blueprint.Main
+public import MaxModulusPoints.Challenge
+
+/-!
+# `MaxModulusPoints`
+-/
+
+@[expose] public section
+

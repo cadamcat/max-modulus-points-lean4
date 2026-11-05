@@ -1,10 +1,13 @@
-import OAI.Analysis.Crouzeix.Montel
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.StripMap.BoundedTransform
-import MaxModulusPoints.StripMap.Geometry
-import MaxModulusPoints.StripMap.KernelGeometry
-import MaxModulusPoints.StripMap.Rescaling
-import MaxModulusPoints.StripMap.Symmetry
+module
+
+public import OAI.Analysis.Crouzeix.Montel
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.StripMap.BoundedTransform
+public import MaxModulusPoints.StripMap.Geometry
+public import MaxModulusPoints.StripMap.KernelGeometry
+public import MaxModulusPoints.StripMap.Rescaling
+public import MaxModulusPoints.StripMap.Symmetry
+
 /-!
 # Compactness of normalized rescaled maps
 
@@ -13,6 +16,9 @@ strip. Its normalization prevents a subsequential limit from reaching the unit
 circle, so the inverse rational transform recovers locally uniform limits of
 the original rescaled maps.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

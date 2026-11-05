@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Probability.SLE.RadiusClocks
+module
+
+public import Mathlib
+public import OAI.Probability.SLE.RadiusClocks
+
+/-!
+# `OAI.Probability.SLE.AngularLaws`
+-/
+
+@[expose] public section
 
 namespace OAI
 

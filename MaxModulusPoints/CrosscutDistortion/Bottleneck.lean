@@ -1,7 +1,10 @@
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
-import MaxModulusPoints.CrosscutDistortion.ConformalArea
+module
+
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
+public import MaxModulusPoints.CrosscutDistortion.ConformalArea
+
 /-!
 # Real-part separation across a narrow tunnel
 
@@ -9,6 +12,9 @@ The passage and clean slices belong to the tract. The length–area bound
 with additive constant one therefore implies the required crosscut
 distortion estimate with additive constant `log 32 / π`.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

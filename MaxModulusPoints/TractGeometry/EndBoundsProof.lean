@@ -1,16 +1,19 @@
-import TauCeti.Analysis.Complex.Conformal.LengthArea
-import Mathlib.Topology.Order.IntermediateValue
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.Basepoint
-import MaxModulusPoints.TractGeometry.BlockPositions
-import MaxModulusPoints.TractGeometry.Connectedness
-import MaxModulusPoints.TractGeometry.EndBounds
-import MaxModulusPoints.TractGeometry.GapPaths
-import MaxModulusPoints.TractGeometry.NormalizedSymmetry
-import MaxModulusPoints.TractGeometry.RealAxisLimits
-import MaxModulusPoints.TractGeometry.StripContainment
-import MaxModulusPoints.TractGeometry.TargetGeometry
-import MaxModulusPoints.TractGeometry.TargetGeometryProof
+module
+
+public import TauCeti.Analysis.Complex.Conformal.LengthArea
+public import Mathlib.Topology.Order.IntermediateValue
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.Basepoint
+public import MaxModulusPoints.TractGeometry.BlockPositions
+public import MaxModulusPoints.TractGeometry.Connectedness
+public import MaxModulusPoints.TractGeometry.EndBounds
+public import MaxModulusPoints.TractGeometry.GapPaths
+public import MaxModulusPoints.TractGeometry.NormalizedSymmetry
+public import MaxModulusPoints.TractGeometry.RealAxisLimits
+public import MaxModulusPoints.TractGeometry.StripContainment
+public import MaxModulusPoints.TractGeometry.TargetGeometry
+public import MaxModulusPoints.TractGeometry.TargetGeometryProof
+
 /-!
 # Bounds on finite portions of a conformal tract
 
@@ -18,6 +21,9 @@ The exponential of the negative inverse has bounded image. Length–area
 estimates provide a large circular crosscut whose inverse lies far to the
 right. A retraction at a gap in the tract then bounds every finite portion.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

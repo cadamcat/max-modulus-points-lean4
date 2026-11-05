@@ -1,7 +1,10 @@
-import MaxModulusPoints.ConformalKernel.DiscKernelTheorem
-import MaxModulusPoints.ConformalKernel.KernelConvergence
-import MaxModulusPoints.ConformalKernel.KernelDerivatives
-import MaxModulusPoints.ConformalKernel.NormalizedMaps
+module
+
+public import MaxModulusPoints.ConformalKernel.DiscKernelTheorem
+public import MaxModulusPoints.ConformalKernel.KernelConvergence
+public import MaxModulusPoints.ConformalKernel.KernelDerivatives
+public import MaxModulusPoints.ConformalKernel.NormalizedMaps
+
 /-!
 # Kernel convergence of normalized maps to a fixed target
 
@@ -9,6 +12,9 @@ A fixed normalized target chart transfers the disc-map kernel theorem to
 conformal maps onto any proper simply connected plane domain. Forward maps,
 canonical inverses and forward derivatives converge locally uniformly.
 -/
+
+
+@[expose] public section
 
 open Set Filter Function Metric
 open scoped Topology

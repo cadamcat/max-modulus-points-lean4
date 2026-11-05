@@ -1,6 +1,9 @@
-import MaxModulusPoints.FiberContinuation.InverseCoordinates
-import MaxModulusPoints.FiberContinuation.InverseRoots
-import MaxModulusPoints.FiberContinuation.ValueCoordinates
+module
+
+public import MaxModulusPoints.FiberContinuation.InverseCoordinates
+public import MaxModulusPoints.FiberContinuation.InverseRoots
+public import MaxModulusPoints.FiberContinuation.ValueCoordinates
+
 /-!
 # Exact inverse families in spherical value charts
 
@@ -8,6 +11,9 @@ A finite collection of local orders has one positive common power. Each local
 analytic power coordinate then gives an exact finite family of physical roots
 over that common parameter in either a finite or an infinite value chart.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

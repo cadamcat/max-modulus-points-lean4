@@ -1,12 +1,17 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.RectangleBarriers
-import MaxModulusPoints.StripEstimates.RectanglePackage
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.RectangleBarriers
+public import MaxModulusPoints.StripEstimates.RectanglePackage
 
 /-!
 # `rectangle_barriers`
 
 One declaration of `MaxModulusPoints.Blueprint.Interfaces`, in its own module so that it can import the module that proves it.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

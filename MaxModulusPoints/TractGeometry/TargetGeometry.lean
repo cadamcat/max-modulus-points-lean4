@@ -1,11 +1,17 @@
-import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected
-import MaxModulusPoints.Blueprint.Data
+module
+
+public import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected
+public import MaxModulusPoints.Blueprint.Data
+
 /-!
 # Geometry of the target of the logarithmic construction
 
 These properties allow the normalized Riemann mapping theorem to be
 applied to the target.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

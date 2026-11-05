@@ -1,7 +1,10 @@
-import Mathlib.Topology.CompactOpen
-import Mathlib.Analysis.SpecialFunctions.Exp
-import MaxModulusPoints.Construction.Brouwer
-import MaxModulusPoints.Construction.Shooting
+module
+
+public import Mathlib.Topology.CompactOpen
+public import Mathlib.Analysis.SpecialFunctions.Exp
+public import MaxModulusPoints.Construction.Brouwer
+public import MaxModulusPoints.Construction.Shooting
+
 /-!
 
 # Continuous maxima on fixed compact slices
@@ -11,6 +14,9 @@ subsegments of chamber and passage slices. Compactness supplies attainment;
 continuous dependence in the compact-open topology supplies continuity of these maxima.
 The face estimates below are the analytic inputs from Propositions 4.1, 4.3, and 4.4.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

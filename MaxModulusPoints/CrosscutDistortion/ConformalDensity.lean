@@ -1,8 +1,11 @@
-import Mathlib.Analysis.Complex.RealDeriv
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CrosscutDistortion.PotentialSpeed
-import MaxModulusPoints.CrosscutDistortion.TunnelLength
-import MaxModulusPoints.CrosscutDistortion.TunnelSlice
+module
+
+public import Mathlib.Analysis.Complex.RealDeriv
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CrosscutDistortion.PotentialSpeed
+public import MaxModulusPoints.CrosscutDistortion.TunnelLength
+public import MaxModulusPoints.CrosscutDistortion.TunnelSlice
+
 /-!
 # Conformal pullback density for a vertical slab
 
@@ -10,6 +13,9 @@ The density is the norm of the complex derivative where the image lies
 between the vertical sides of the target slab, and zero elsewhere.
 Its vertical slice integral equals the slab-weighted image-curve length.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

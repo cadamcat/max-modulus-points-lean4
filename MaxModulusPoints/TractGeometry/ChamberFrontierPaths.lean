@@ -1,15 +1,21 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.ChamberGridPaths
-import MaxModulusPoints.TractGeometry.ChamberRightPaths
-import MaxModulusPoints.TractGeometry.ChamberWallPaths
-import MaxModulusPoints.TractGeometry.RectangleFrontiers
-import MaxModulusPoints.TractGeometry.Symmetry
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.ChamberGridPaths
+public import MaxModulusPoints.TractGeometry.ChamberRightPaths
+public import MaxModulusPoints.TractGeometry.ChamberWallPaths
+public import MaxModulusPoints.TractGeometry.RectangleFrontiers
+public import MaxModulusPoints.TractGeometry.Symmetry
+
 /-!
 # Complement paths from chamber frontiers
 
 Every point of a chamber frontier that remains outside the tract joins
 the exterior through a left edge, a right edge, or a horizontal grid wall.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

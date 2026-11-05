@@ -1,7 +1,10 @@
-import MaxModulusPoints.CauchyApproximation.CanonicalDecay
-import MaxModulusPoints.CauchyApproximation.CircleCorrection
-import MaxModulusPoints.CauchyApproximation.ContourTube
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import MaxModulusPoints.CauchyApproximation.CanonicalDecay
+public import MaxModulusPoints.CauchyApproximation.CircleCorrection
+public import MaxModulusPoints.CauchyApproximation.ContourTube
+public import MaxModulusPoints.CauchyApproximation.Model
+
 /-!
 # Bounds for the Cauchy integral on a circle arc
 
@@ -11,6 +14,9 @@ lies in the half-radius disk. Its pointwise norm bound controls every
 arc of angular length at most a full turn. The scaled tract tube supplies
 such bounds for the actual canonical conformal function.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open scoped Topology

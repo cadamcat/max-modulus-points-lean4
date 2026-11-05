@@ -1,15 +1,21 @@
-import Mathlib.Analysis.Real.Pi.Bounds
-import Mathlib.Tactic.Positivity
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.BlockPositions
-import MaxModulusPoints.TractGeometry.RectangleFrontiers
-import MaxModulusPoints.TractGeometry.Walls
+module
+
+public import Mathlib.Analysis.Real.Pi.Bounds
+public import Mathlib.Tactic.Positivity
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.BlockPositions
+public import MaxModulusPoints.TractGeometry.RectangleFrontiers
+public import MaxModulusPoints.TractGeometry.Walls
+
 /-!
 # Interior neighborhoods of the passage and tunnel openings
 
 Each restored vertical opening has an open rectangular neighborhood contained
 in the tract.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

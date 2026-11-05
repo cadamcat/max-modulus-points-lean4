@@ -3,6 +3,10 @@ Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: The Tau Ceti contributors
 -/
+/-
+Modified from TauCetiProject/TauCeti commit 3bed7e37f3c504a99e8c07e9f309540812a7aa90.
+The body below is upstream commit 0535b3bf5a08: Mathlib API adaptation on Lean v4.35.0-rc3.
+-/
 module
 
 public import TauCeti.Analysis.Complex.Conformal.SquareRoots
@@ -134,7 +138,7 @@ theorem exists_differentiableOn_injOn_mapsTo_unitBall {U : Set ℂ}
   have hopen : IsOpen (h '' U) := isOpen_image_of_differentiableOn_of_injOn hUo hhd hinj
   -- The image contains a ball around `h z₀`, and `-h` avoids it.
   obtain ⟨r, hr, hball⟩ := Metric.isOpen_iff.mp hopen (h z₀) ⟨z₀, hz₀, rfl⟩
-  set w₀ : ℂ := h z₀ with hw₀
+  set w₀ : ℂ := h z₀
   have havoid : ∀ z ∈ U, r ≤ ‖h z + w₀‖ :=
     le_norm_add_of_ball_subset_image hsq_inj hne hball
   -- Every denominator is nonzero, `r` being positive.

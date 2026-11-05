@@ -1,5 +1,8 @@
-import FixedPointTheorems.brouwer
-import MaxModulusPoints.Construction.Shooting
+module
+
+public import FixedPointTheorems.brouwer
+public import MaxModulusPoints.Construction.Shooting
+
 /-!
 # Brouwer's theorem supplies finite shooting
 
@@ -7,6 +10,9 @@ The product of interval subtypes is homeomorphic to the corresponding compact
 convex box in a finite-dimensional real vector space. This supplies the finite
 topological input in Pardo-Simón–Sixsmith, Lemma 2.4.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

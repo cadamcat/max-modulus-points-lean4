@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.RankPairing
+module
+
+public import OAI.Analysis.IntegralMeans.RankPairing
+
+/-!
+# `OAI.Analysis.IntegralMeans.BorelPairing`
+-/
+
+@[expose] public section
 
 namespace OAI
 

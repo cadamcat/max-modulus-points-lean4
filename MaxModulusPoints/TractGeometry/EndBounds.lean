@@ -1,11 +1,17 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.NormalizedSymmetry
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.NormalizedSymmetry
+
 /-!
 # Bounds at the finite end of a conformal tract
 
 Uniform bounds on the images of the left-hand portions of a tract imply
 that inverse images of sequences escaping in the target move to the right.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

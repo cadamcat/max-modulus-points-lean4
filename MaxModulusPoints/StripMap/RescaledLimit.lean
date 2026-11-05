@@ -1,11 +1,14 @@
-import Mathlib.Topology.UniformSpace.UniformConvergenceTopology
-import Mathlib.Order.Filter.AtTopBot.CountablyGenerated
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.StripMap.Compactness
-import MaxModulusPoints.StripMap.ExponentialChart
-import MaxModulusPoints.StripMap.Geometry
-import MaxModulusPoints.StripMap.LimitIdentification
-import MaxModulusPoints.StripMap.Rescaling
+module
+
+public import Mathlib.Topology.UniformSpace.UniformConvergenceTopology
+public import Mathlib.Order.Filter.AtTopBot.CountablyGenerated
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.StripMap.Compactness
+public import MaxModulusPoints.StripMap.ExponentialChart
+public import MaxModulusPoints.StripMap.Geometry
+public import MaxModulusPoints.StripMap.LimitIdentification
+public import MaxModulusPoints.StripMap.Rescaling
+
 /-!
 # The rescaled exponential limit
 
@@ -14,6 +17,9 @@ limit. For escaping translation parameters, the limit is uniquely the
 exponential. The subsequence criterion for convergence therefore gives the
 limit of the entire real-parameter family, together with its derivatives.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

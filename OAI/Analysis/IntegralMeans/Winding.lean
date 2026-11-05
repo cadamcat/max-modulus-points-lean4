@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.CriticalPoint
+module
+
+public import OAI.Analysis.IntegralMeans.CriticalPoint
+
+/-!
+# `OAI.Analysis.IntegralMeans.Winding`
+-/
+
+@[expose] public section
 
 namespace OAI
 

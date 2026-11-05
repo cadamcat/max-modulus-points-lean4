@@ -1,8 +1,11 @@
-import MaxModulusPoints.CauchyApproximation.CanonicalDensity
-import MaxModulusPoints.CauchyApproximation.ContourDerivative
-import MaxModulusPoints.CauchyApproximation.ContourDistortion
-import MaxModulusPoints.CauchyApproximation.EntireExtension
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import MaxModulusPoints.CauchyApproximation.CanonicalDensity
+public import MaxModulusPoints.CauchyApproximation.ContourDerivative
+public import MaxModulusPoints.CauchyApproximation.ContourDistortion
+public import MaxModulusPoints.CauchyApproximation.EntireExtension
+public import MaxModulusPoints.CauchyApproximation.Model
+
 /-!
 # The canonical entire approximation
 
@@ -12,6 +15,9 @@ makes the actual Cauchy density integrable. The contour gluing therefore
 determines a unique entire function, without an additional growth or
 integrability hypothesis.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open scoped Topology

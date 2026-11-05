@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.Winding
+module
+
+public import OAI.Analysis.IntegralMeans.Winding
+
+/-!
+# `OAI.Analysis.IntegralMeans.LevelCurve`
+-/
+
+@[expose] public section
 
 namespace OAI
 

@@ -1,5 +1,8 @@
-import MaxModulusPoints.CauchyApproximation.ImproperIntegral
-import MaxModulusPoints.CauchyApproximation.KernelEstimates
+module
+
+public import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+public import MaxModulusPoints.CauchyApproximation.KernelEstimates
+
 /-!
 # Decay of a Cauchy integral away from a scaled contour tube
 
@@ -8,6 +11,9 @@ is comparable to the evaluation norm. The remaining tails have an explicit
 integral bound. Together with the global separated-kernel envelope for small
 evaluation norms, this gives inverse-norm decay with a uniform constant.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open scoped Topology

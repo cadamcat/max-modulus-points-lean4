@@ -1,6 +1,9 @@
-import Mathlib.Analysis.SpecificLimits.Basic
-import MaxModulusPoints.CauchyApproximation.CoreTopology
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import Mathlib.Analysis.SpecificLimits.Basic
+public import MaxModulusPoints.CauchyApproximation.CoreTopology
+public import MaxModulusPoints.CauchyApproximation.Model
+
 /-!
 # The contour is the frontier of the core
 
@@ -9,6 +12,9 @@ side. The continuous conformal inverse brings them back to core points
 converging to each original contour point. Consequently the contour is
 exactly the frontier of the open core, and its complement is dense.
 -/
+
+
+@[expose] public section
 
 open Complex Filter Set
 open scoped Topology

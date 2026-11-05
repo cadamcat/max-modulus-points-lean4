@@ -1,8 +1,11 @@
-import Mathlib.Algebra.Order.Floor.Semiring
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Construction.OpenChamberGeometry
-import MaxModulusPoints.Construction.Tract
-import MaxModulusPoints.Construction.TractMembership
+module
+
+public import Mathlib.Algebra.Order.Floor.Semiring
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Construction.OpenChamberGeometry
+public import MaxModulusPoints.Construction.Tract
+public import MaxModulusPoints.Construction.TractMembership
+
 /-!
 # The bounded region before a passage crosscut
 
@@ -11,6 +14,9 @@ Its boundary inside the tract consists only of that passage slice;
 the chamber and passage walls exclude every other possible crossing.
 This supplies the geometry for Pardo-Simón–Sixsmith, Proposition 4.2.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

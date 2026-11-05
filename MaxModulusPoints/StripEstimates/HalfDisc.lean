@@ -1,11 +1,17 @@
-import Mathlib.Analysis.Complex.Convex
-import MaxModulusPoints.StripEstimates.ExceptionalBoundary
+module
+
+public import Mathlib.Analysis.Complex.Convex
+public import MaxModulusPoints.StripEstimates.ExceptionalBoundary
+
 /-!
 # A half-disc barrier
 
 An explicit rational harmonic barrier gives the boundary decay used in
 Pardo-Simón–Sixsmith, Proposition 4.4.
 -/
+
+
+@[expose] public section
 
 open Set Filter Metric Topology InnerProductSpace
 

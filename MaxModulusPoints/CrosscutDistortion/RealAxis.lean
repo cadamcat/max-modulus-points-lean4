@@ -1,17 +1,23 @@
-import Mathlib.Analysis.Complex.RealDeriv
-import Mathlib.Analysis.Calculus.Deriv.Slope
-import Mathlib.Analysis.Real.Pi.Bounds
-import Mathlib.Topology.Order.IntermediateValue
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Positivity
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CrosscutDistortion.TractSymmetry
+module
+
+public import Mathlib.Analysis.Complex.RealDeriv
+public import Mathlib.Analysis.Calculus.Deriv.Slope
+public import Mathlib.Analysis.Real.Pi.Bounds
+public import Mathlib.Topology.Order.IntermediateValue
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Positivity
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CrosscutDistortion.TractSymmetry
+
 /-!
 # Real-axis orientation of normalized tract maps
 
 The real interval to the right of `-2` remains in the tract. A normalized
 tract-to-strip equivalence is real and strictly increasing on this interval.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.CrosscutDistortion
 

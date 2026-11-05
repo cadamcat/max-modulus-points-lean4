@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Analysis.SymmetricDomains.FiberPolynomialNatDegree
+module
+
+public import Mathlib
+public import OAI.Analysis.SymmetricDomains.FiberPolynomialNatDegree
+
+/-!
+# `OAI.Analysis.SymmetricDomains.ProperEventuallyFiberSubset`
+-/
+
+@[expose] public section
 
 namespace OAI
 

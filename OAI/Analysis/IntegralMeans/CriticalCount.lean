@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.LevelIndex
+module
+
+public import OAI.Analysis.IntegralMeans.LevelIndex
+
+/-!
+# `OAI.Analysis.IntegralMeans.CriticalCount`
+-/
+
+@[expose] public section
 
 namespace OAI
 

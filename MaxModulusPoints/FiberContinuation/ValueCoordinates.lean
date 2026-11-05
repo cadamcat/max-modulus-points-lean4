@@ -1,10 +1,13 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Challenge
-import MaxModulusPoints.FiberContinuation.FiniteCoordinates
-import MaxModulusPoints.FiberContinuation.InverseCoordinates
-import MaxModulusPoints.FiberContinuation.LogarithmicValues
-import MaxModulusPoints.FiberContinuation.PoleCoordinates
-import MaxModulusPoints.FiberContinuation.SphericalCharts
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Challenge
+public import MaxModulusPoints.FiberContinuation.FiniteCoordinates
+public import MaxModulusPoints.FiberContinuation.InverseCoordinates
+public import MaxModulusPoints.FiberContinuation.LogarithmicValues
+public import MaxModulusPoints.FiberContinuation.PoleCoordinates
+public import MaxModulusPoints.FiberContinuation.SphericalCharts
+
 /-!
 # Uniform local value coordinates
 
@@ -12,6 +15,9 @@ Finite centers use translation; infinity uses reciprocation. In either case,
 the actual logarithmic derivative is represented by an injective spherical
 value chart applied to a nonconstant analytic germ vanishing at the root.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

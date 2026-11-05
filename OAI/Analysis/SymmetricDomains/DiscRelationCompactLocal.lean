@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Analysis.SymmetricDomains.ZeroLocusPolynomialSmooth
+module
+
+public import Mathlib
+public import OAI.Analysis.SymmetricDomains.ZeroLocusPolynomialSmooth
+
+/-!
+# `OAI.Analysis.SymmetricDomains.DiscRelationCompactLocal`
+-/
+
+@[expose] public section
 
 namespace OAI
 

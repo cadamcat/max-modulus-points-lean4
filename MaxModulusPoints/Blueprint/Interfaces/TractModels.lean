@@ -1,10 +1,15 @@
-import MaxModulusPoints.Blueprint.Data
+module
+
+public import MaxModulusPoints.Blueprint.Data
 
 /-!
 # `TractModels`
 
 One declaration of `MaxModulusPoints.Blueprint.Interfaces`, in its own module.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

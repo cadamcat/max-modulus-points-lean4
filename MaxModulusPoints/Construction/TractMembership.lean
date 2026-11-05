@@ -1,8 +1,11 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
-import MaxModulusPoints.Blueprint.Interfaces.StripMapData
-import MaxModulusPoints.Construction.StripCoordinates
-import MaxModulusPoints.Construction.Tract
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+public import MaxModulusPoints.Construction.StripCoordinates
+public import MaxModulusPoints.Construction.Tract
+
 /-!
 # Real-axis and slice membership in the chamber tract
 
@@ -10,6 +13,9 @@ The rectangle frontiers in Pardo-Simón–Sixsmith, §4, leave the real axis
 connected through the three passage and tunnel openings. The passage slice
 lies inside its rectangle, and the clean slice misses every closed block.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

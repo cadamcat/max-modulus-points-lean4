@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.CriticalMap
+module
+
+public import OAI.Analysis.IntegralMeans.CriticalMap
+
+/-!
+# `OAI.Analysis.IntegralMeans.CriticalPoint`
+-/
+
+@[expose] public section
 
 namespace OAI
 

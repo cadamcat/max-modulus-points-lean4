@@ -1,9 +1,12 @@
-import MaxModulusPoints.CauchyApproximation.CanonicalDensity
-import MaxModulusPoints.CauchyApproximation.ContourDerivative
-import MaxModulusPoints.CauchyApproximation.InverseDistortion
-import MaxModulusPoints.CauchyApproximation.Model
-import MaxModulusPoints.CauchyApproximation.RealSymmetry
-import MaxModulusPoints.CauchyApproximation.ScaledDistortion
+module
+
+public import MaxModulusPoints.CauchyApproximation.CanonicalDensity
+public import MaxModulusPoints.CauchyApproximation.ContourDerivative
+public import MaxModulusPoints.CauchyApproximation.InverseDistortion
+public import MaxModulusPoints.CauchyApproximation.Model
+public import MaxModulusPoints.CauchyApproximation.RealSymmetry
+public import MaxModulusPoints.CauchyApproximation.ScaledDistortion
+
 /-!
 # A controlled tube about the canonical contour
 
@@ -14,6 +17,9 @@ Every point in this tube has a nearby conformal preimage, giving decay of
 order thirteen for the exponential model. The actual contour density has
 the matching scale and decay of order nine.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open OAI.Brennan

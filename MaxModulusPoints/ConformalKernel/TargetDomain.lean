@@ -1,8 +1,11 @@
-import Mathlib.Analysis.Complex.Basic
-import Mathlib.Analysis.Convex.Contractible
-import Mathlib.Analysis.SpecialFunctions.Log.Basic
-import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected
-import Mathlib.Tactic.Linarith
+module
+
+public import Mathlib.Analysis.Complex.Basic
+public import Mathlib.Analysis.Convex.Contractible
+public import Mathlib.Analysis.SpecialFunctions.Log.Basic
+public import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected
+public import Mathlib.Tactic.Linarith
+
 /-!
 # The logarithmic target domain
 
@@ -10,6 +13,9 @@ The fixed target used by Pardo-Simón–Sixsmith is the epigraph
 `{x + y I | -14 * max 0 (log |y|) < x}`. A horizontal shear identifies
 it with the right half-plane and proves simple connectivity.
 -/
+
+
+@[expose] public section
 
 open Set
 

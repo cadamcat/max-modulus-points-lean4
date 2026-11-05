@@ -1,11 +1,16 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Challenge
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Challenge
 
 /-!
 # `RempeApproximation`
 
 One declaration of `MaxModulusPoints.Blueprint.Interfaces`, in its own module.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

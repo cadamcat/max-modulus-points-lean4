@@ -1,10 +1,16 @@
-import MaxModulusPoints.FiberContinuation.PowerCoordinates
+module
+
+public import MaxModulusPoints.FiberContinuation.PowerCoordinates
+
 /-!
 # Analytic inverse coordinates for local powers
 
 The inverse coordinate supplies analytic representatives of the local inverse
 roots. Both inverse identities hold on neighborhoods of their respective centers.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

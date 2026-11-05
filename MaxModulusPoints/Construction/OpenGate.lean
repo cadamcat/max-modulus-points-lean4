@@ -1,7 +1,10 @@
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
-import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+module
+
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+
 /-!
 # Quantitative estimates for open gates
 
@@ -10,6 +13,9 @@ separation to suppress the passage values. The rescaled strip map then
 gives a uniform lower bound on compact sets of translated strip coordinates.
 The final strict comparison survives the uniform approximation error.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

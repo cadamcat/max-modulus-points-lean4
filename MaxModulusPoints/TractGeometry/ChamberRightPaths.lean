@@ -1,7 +1,10 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.ChamberGridPaths
-import MaxModulusPoints.TractGeometry.ChamberRightWalls
-import MaxModulusPoints.TractGeometry.Symmetry
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.ChamberGridPaths
+public import MaxModulusPoints.TractGeometry.ChamberRightWalls
+public import MaxModulusPoints.TractGeometry.Symmetry
+
 /-!
 # Complement paths on chamber right edges
 
@@ -10,6 +13,9 @@ away from the gate center to a horizontal grid wall. That wall joins the
 point to the exterior of the tract.
 Conjugation gives the corresponding paths in negative chambers.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

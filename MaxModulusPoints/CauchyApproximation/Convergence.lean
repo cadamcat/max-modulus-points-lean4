@@ -1,9 +1,12 @@
-import Mathlib.Analysis.Calculus.FDeriv.Measurable
-import Mathlib.Analysis.Normed.Group.Bounded
-import Mathlib.Topology.Maps.Proper.CompactlyGenerated
-import MaxModulusPoints.CauchyApproximation.DensityBounds
-import MaxModulusPoints.CauchyApproximation.Holomorphy
-import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+module
+
+public import Mathlib.Analysis.Calculus.FDeriv.Measurable
+public import Mathlib.Analysis.Normed.Group.Bounded
+public import Mathlib.Topology.Maps.Proper.CompactlyGenerated
+public import MaxModulusPoints.CauchyApproximation.DensityBounds
+public import MaxModulusPoints.CauchyApproximation.Holomorphy
+public import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+
 /-!
 # Convergence and holomorphy under polynomial contour estimates
 
@@ -12,6 +15,9 @@ Theorem 2.1. Escape to infinity makes the contour proper, while the polynomial
 bounds make its density integrable. Injectivity, orientation, and a bound in a
 neighborhood of the contour enter the subsequent gluing and decay arguments.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open scoped Topology

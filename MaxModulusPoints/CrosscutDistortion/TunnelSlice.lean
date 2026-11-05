@@ -1,15 +1,21 @@
-import Mathlib.Analysis.Complex.Convex
-import Mathlib.Analysis.Real.Pi.Bounds
-import Mathlib.Topology.Order.IntermediateValue
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Positivity
-import MaxModulusPoints.Blueprint.Data
+module
+
+public import Mathlib.Analysis.Complex.Convex
+public import Mathlib.Analysis.Real.Pi.Bounds
+public import Mathlib.Topology.Order.IntermediateValue
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Positivity
+public import MaxModulusPoints.Blueprint.Data
+
 /-!
 # Maximal vertical segments in a narrow tunnel
 
 At an interior real coordinate of a tunnel, the vertical component through
 the real axis is precisely the open segment between the two tunnel walls.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.CrosscutDistortion
 

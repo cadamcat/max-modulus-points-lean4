@@ -1,8 +1,11 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CauchyApproximation.ContourGrowth
-import MaxModulusPoints.CauchyApproximation.ExponentialAdapter
-import MaxModulusPoints.CauchyApproximation.InverseDistortion
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CauchyApproximation.ContourGrowth
+public import MaxModulusPoints.CauchyApproximation.ExponentialAdapter
+public import MaxModulusPoints.CauchyApproximation.InverseDistortion
+public import MaxModulusPoints.CauchyApproximation.Model
+
 /-!
 # Quadratic inverse growth on the positive real axis
 
@@ -11,6 +14,9 @@ values on the positive real axis by a universal quadratic bound. The
 exponential correspondence gives the same estimate in logarithmic
 coordinates.
 -/
+
+
+@[expose] public section
 
 open Complex Set
 open OAI.Brennan

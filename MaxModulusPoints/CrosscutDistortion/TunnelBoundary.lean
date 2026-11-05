@@ -1,5 +1,8 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CrosscutDistortion.TunnelSlice
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CrosscutDistortion.TunnelSlice
+
 /-!
 # Boundary endpoints of tunnel crosscuts
 
@@ -7,6 +10,9 @@ The endpoints of the maximal central vertical tunnel segment lie on the
 tract frontier. Adding either endpoint to the segment would contradict
 maximality of its connected component.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.CrosscutDistortion
 

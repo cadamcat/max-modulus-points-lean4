@@ -1,4 +1,12 @@
-import Mathlib
+module
+
+public import Mathlib
+
+/-!
+# `OAI.Analysis.SymmetricDomains.Basic`
+-/
+
+@[expose] public section
 
 namespace OAI
 

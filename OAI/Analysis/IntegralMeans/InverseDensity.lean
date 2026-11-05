@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.ExpectedDensity
+module
+
+public import OAI.Analysis.IntegralMeans.ExpectedDensity
+
+/-!
+# `OAI.Analysis.IntegralMeans.InverseDensity`
+-/
+
+@[expose] public section
 
 namespace OAI
 

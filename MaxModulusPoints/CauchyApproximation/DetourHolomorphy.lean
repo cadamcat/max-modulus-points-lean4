@@ -1,9 +1,12 @@
-import MaxModulusPoints.CauchyApproximation.AdmissibleModification
-import MaxModulusPoints.CauchyApproximation.ContourRegularity
-import MaxModulusPoints.CauchyApproximation.Holomorphy
-import MaxModulusPoints.CauchyApproximation.ImproperIntegral
-import MaxModulusPoints.CauchyApproximation.LocalDetour
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import MaxModulusPoints.CauchyApproximation.AdmissibleModification
+public import MaxModulusPoints.CauchyApproximation.ContourRegularity
+public import MaxModulusPoints.CauchyApproximation.Holomorphy
+public import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+public import MaxModulusPoints.CauchyApproximation.LocalDetour
+public import MaxModulusPoints.CauchyApproximation.Model
+
 /-!
 # Holomorphic Cauchy integrals on the specified detours
 
@@ -13,6 +16,9 @@ parameter. When its density is integrable, compact modification preserves
 that integrability for the piecewise C¹ detour. The detour integral is then
 holomorphic on a whole neighborhood of the original contour point.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open scoped Topology

@@ -1,8 +1,11 @@
-import Mathlib.MeasureTheory.Integral.Prod
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CrosscutDistortion.AlmostEverywhereEnergy
-import MaxModulusPoints.CrosscutDistortion.ConformalDensity
-import MaxModulusPoints.CrosscutDistortion.SquareIntegrability
+module
+
+public import Mathlib.MeasureTheory.Integral.Prod
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CrosscutDistortion.AlmostEverywhereEnergy
+public import MaxModulusPoints.CrosscutDistortion.ConformalDensity
+public import MaxModulusPoints.CrosscutDistortion.SquareIntegrability
+
 /-!
 # Product energy of a rectangular family of curves
 
@@ -11,6 +14,9 @@ the outer energy. Square-integrable nonnegative densities then satisfy
 the rectangular energy bound whenever their integrable slices have unit
 length. This applies to the conformal density in a narrow tunnel.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

@@ -1,12 +1,18 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.NormalizedSymmetry
-import MaxModulusPoints.TractGeometry.Symmetry
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.NormalizedSymmetry
+public import MaxModulusPoints.TractGeometry.Symmetry
+
 /-!
 # Conjugation symmetry of the inverse conformal map
 
 The inverse of a symmetric conformal equivalence commutes with conjugation
 on the target, since reflection preserves the source tract.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

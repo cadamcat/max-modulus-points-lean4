@@ -1,12 +1,15 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.FiberContinuation.ExactCovers
-import MaxModulusPoints.FiberContinuation.LocalCounts
-import MaxModulusPoints.FiberContinuation.LocalFamilies
-import MaxModulusPoints.FiberContinuation.ParameterInverses
-import MaxModulusPoints.FiberContinuation.RegularBranches
-import MaxModulusPoints.FiberContinuation.RotatedComparisons
-import MaxModulusPoints.FiberContinuation.ValueCoordinates
-import MaxModulusPoints.FiberContinuation.ValueWindows
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.FiberContinuation.ExactCovers
+public import MaxModulusPoints.FiberContinuation.LocalCounts
+public import MaxModulusPoints.FiberContinuation.LocalFamilies
+public import MaxModulusPoints.FiberContinuation.ParameterInverses
+public import MaxModulusPoints.FiberContinuation.RegularBranches
+public import MaxModulusPoints.FiberContinuation.RotatedComparisons
+public import MaxModulusPoints.FiberContinuation.ValueCoordinates
+public import MaxModulusPoints.FiberContinuation.ValueWindows
+
 /-!
 # Stabilized exact covers with actual physical counts
 
@@ -14,6 +17,9 @@ Shrink the matched cover until rotated product comparisons and physical
 equality kernels stabilize. The whole window stays away from zero products
 and the omitted value, and every punctured branch has a constant actual count.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

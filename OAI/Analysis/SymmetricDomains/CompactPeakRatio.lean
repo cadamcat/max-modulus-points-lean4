@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Analysis.SymmetricDomains.ContinuityPrinciple
+module
+
+public import Mathlib
+public import OAI.Analysis.SymmetricDomains.ContinuityPrinciple
+
+/-!
+# `OAI.Analysis.SymmetricDomains.CompactPeakRatio`
+-/
+
+@[expose] public section
 
 namespace OAI
 

@@ -1,15 +1,21 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.BlockPositions
-import MaxModulusPoints.TractGeometry.GapPaths
-import MaxModulusPoints.TractGeometry.RectangleFrontiers
-import MaxModulusPoints.TractGeometry.TunnelPaths
-import MaxModulusPoints.TractGeometry.Walls
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.BlockPositions
+public import MaxModulusPoints.TractGeometry.GapPaths
+public import MaxModulusPoints.TractGeometry.RectangleFrontiers
+public import MaxModulusPoints.TractGeometry.TunnelPaths
+public import MaxModulusPoints.TractGeometry.Walls
+
 /-!
 # Paths from the regions beside a passage
 
 Between the tunnel and the chamber base, points to the right of the passage
 can move horizontally into the next gap and then vertically to the real axis.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

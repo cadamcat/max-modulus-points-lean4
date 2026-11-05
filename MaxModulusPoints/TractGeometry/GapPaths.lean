@@ -1,12 +1,18 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.RealAxis
-import MaxModulusPoints.TractGeometry.Walls
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.RealAxis
+public import MaxModulusPoints.TractGeometry.Walls
+
 /-!
 # Vertical paths between the blocks
 
 A vertical line outside all closed block intervals meets no walls. Within the
 ambient strip it therefore joins each point to the real axis inside the tract.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

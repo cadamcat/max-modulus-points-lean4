@@ -1,11 +1,14 @@
-import MaxModulusPoints.CauchyApproximation.ContourDensity
-import MaxModulusPoints.CauchyApproximation.CoreTopology
-import MaxModulusPoints.CauchyApproximation.DetourHolomorphy
-import MaxModulusPoints.CauchyApproximation.Holomorphy
-import MaxModulusPoints.CauchyApproximation.ImproperIntegral
-import MaxModulusPoints.CauchyApproximation.LocalAgreement
-import MaxModulusPoints.CauchyApproximation.LocalDetour
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import MaxModulusPoints.CauchyApproximation.ContourDensity
+public import MaxModulusPoints.CauchyApproximation.CoreTopology
+public import MaxModulusPoints.CauchyApproximation.DetourHolomorphy
+public import MaxModulusPoints.CauchyApproximation.Holomorphy
+public import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+public import MaxModulusPoints.CauchyApproximation.LocalAgreement
+public import MaxModulusPoints.CauchyApproximation.LocalDetour
+public import MaxModulusPoints.CauchyApproximation.Model
+
 /-!
 # The entire canonical Cauchy extension
 
@@ -15,6 +18,9 @@ other points. Since the contour complement is dense, these local functions
 agree on overlaps and define a unique entire extension of the canonical
 gluing. Integrability of the original density is the only extra hypothesis.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open scoped Topology

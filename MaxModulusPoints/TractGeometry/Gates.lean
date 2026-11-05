@@ -1,18 +1,24 @@
-import Mathlib.Analysis.Real.Pi.Bounds
-import Mathlib.Tactic.FieldSimp
-import Mathlib.Tactic.Ring
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.BlockPositions
-import MaxModulusPoints.TractGeometry.RectangleFrontiers
-import MaxModulusPoints.TractGeometry.StripContainment
-import MaxModulusPoints.TractGeometry.Symmetry
-import MaxModulusPoints.TractGeometry.Walls
+module
+
+public import Mathlib.Analysis.Real.Pi.Bounds
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Ring
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.BlockPositions
+public import MaxModulusPoints.TractGeometry.RectangleFrontiers
+public import MaxModulusPoints.TractGeometry.StripContainment
+public import MaxModulusPoints.TractGeometry.Symmetry
+public import MaxModulusPoints.TractGeometry.Walls
+
 /-!
 # Interior neighborhoods of the chamber gates
 
 A gate lies strictly between consecutive horizontal chamber walls. An open
 rectangle across its vertical wall is therefore contained in the tract.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

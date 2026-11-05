@@ -1,10 +1,13 @@
-import Mathlib.Analysis.Calculus.Deriv.Slope
-import Mathlib.Analysis.Calculus.Deriv.MeanValue
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.StripMap.Geometry
-import MaxModulusPoints.StripMap.Growth
-import MaxModulusPoints.StripMap.ImaginaryContraction
-import MaxModulusPoints.StripMap.Symmetry
+module
+
+public import Mathlib.Analysis.Calculus.Deriv.Slope
+public import Mathlib.Analysis.Calculus.Deriv.MeanValue
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.StripMap.Geometry
+public import MaxModulusPoints.StripMap.Growth
+public import MaxModulusPoints.StripMap.ImaginaryContraction
+public import MaxModulusPoints.StripMap.Symmetry
+
 /-!
 # The vertical real-part maximum
 
@@ -14,6 +17,9 @@ Their imaginary contraction implies that the imaginary part of the strip
 map's derivative is nonnegative above the real axis. The real part of the
 map therefore decreases along every upward vertical segment.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

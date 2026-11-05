@@ -1,14 +1,20 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.ChamberFrontierPaths
-import MaxModulusPoints.TractGeometry.ExteriorPaths
-import MaxModulusPoints.TractGeometry.PassageWallPaths
-import MaxModulusPoints.TractGeometry.TunnelWallPaths
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.ChamberFrontierPaths
+public import MaxModulusPoints.TractGeometry.ExteriorPaths
+public import MaxModulusPoints.TractGeometry.PassageWallPaths
+public import MaxModulusPoints.TractGeometry.TunnelWallPaths
+
 /-!
 # Paths in the complement of the tract
 
 Every point outside the tract lies outside the ambient strip or on a
 removed wall. The corresponding paths share a fixed exterior endpoint.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

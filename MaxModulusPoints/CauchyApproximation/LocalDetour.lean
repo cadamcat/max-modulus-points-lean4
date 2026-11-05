@@ -1,5 +1,8 @@
-import Mathlib.Topology.Maps.Proper.CompactlyGenerated
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import Mathlib.Topology.Maps.Proper.CompactlyGenerated
+public import MaxModulusPoints.CauchyApproximation.Model
+
 /-!
 # A local detour of the interior contour
 
@@ -10,6 +13,9 @@ of the tent. The conformal inverse transfers the detour to the tract. If the
 original contour is proper, the detour avoids a whole neighborhood of that
 point and retains the original tails.
 -/
+
+
+@[expose] public section
 
 open Complex Filter Set
 open scoped Topology

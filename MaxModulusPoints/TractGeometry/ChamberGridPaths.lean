@@ -1,11 +1,14 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.ChamberWallPaths
-import MaxModulusPoints.TractGeometry.ExteriorPaths
-import MaxModulusPoints.TractGeometry.GateHeights
-import MaxModulusPoints.TractGeometry.RectangleFrontiers
-import MaxModulusPoints.TractGeometry.RestoredWalls
-import MaxModulusPoints.TractGeometry.Symmetry
-import MaxModulusPoints.TractGeometry.Walls
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.ChamberWallPaths
+public import MaxModulusPoints.TractGeometry.ExteriorPaths
+public import MaxModulusPoints.TractGeometry.GateHeights
+public import MaxModulusPoints.TractGeometry.RectangleFrontiers
+public import MaxModulusPoints.TractGeometry.RestoredWalls
+public import MaxModulusPoints.TractGeometry.Symmetry
+public import MaxModulusPoints.TractGeometry.Walls
+
 /-!
 # Paths along the horizontal chamber walls
 
@@ -13,6 +16,9 @@ Every chamber grid segment avoids the restored openings and gates. Horizontal
 paths join its points to the left chamber edges and hence to the exterior of
 the tract. Conjugation supplies the paths on both sides of the real axis.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

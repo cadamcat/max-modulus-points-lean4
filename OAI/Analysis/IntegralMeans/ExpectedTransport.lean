@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.InverseDensity
+module
+
+public import OAI.Analysis.IntegralMeans.InverseDensity
+
+/-!
+# `OAI.Analysis.IntegralMeans.ExpectedTransport`
+-/
+
+@[expose] public section
 
 namespace OAI
 

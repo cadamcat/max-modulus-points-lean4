@@ -1,7 +1,10 @@
-import Mathlib.Analysis.Complex.AbsMax
-import MaxModulusPoints.ConformalKernel.HolomorphicImages
-import MaxModulusPoints.ConformalKernel.KernelConvergence
-import MaxModulusPoints.ConformalKernel.KernelNormalFamilies
+module
+
+public import Mathlib.Analysis.Complex.AbsMax
+public import MaxModulusPoints.ConformalKernel.HolomorphicImages
+public import MaxModulusPoints.ConformalKernel.KernelConvergence
+public import MaxModulusPoints.ConformalKernel.KernelNormalFamilies
+
 /-!
 # Inverse identities for limits on a pointed kernel
 
@@ -10,6 +13,9 @@ bijections between the pointed kernel and the disc. The maximum-modulus
 principle keeps the forward limit inside the disc; the inverse identities then
 rule out degeneracy and identify the limiting image with the kernel.
 -/
+
+
+@[expose] public section
 
 open Set Filter Function Metric
 open scoped Topology Uniformity

@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Analysis.SymmetricDomains.ProperEventuallyFiberSubset
+module
+
+public import Mathlib
+public import OAI.Analysis.SymmetricDomains.ProperEventuallyFiberSubset
+
+/-!
+# `OAI.Analysis.SymmetricDomains.FiberCardAmbientSheets`
+-/
+
+@[expose] public section
 
 namespace OAI
 

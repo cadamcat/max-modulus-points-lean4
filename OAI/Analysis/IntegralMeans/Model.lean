@@ -1,4 +1,12 @@
-import Mathlib
+module
+
+public import Mathlib
+
+/-!
+# `OAI.Analysis.IntegralMeans.Model`
+-/
+
+@[expose] public section
 
 namespace OAI
 

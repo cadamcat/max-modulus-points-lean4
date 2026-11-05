@@ -1,34 +1,36 @@
-import MaxModulusPoints.Blueprint.Interfaces.TractModels
-import MaxModulusPoints.Blueprint.Interfaces.KernelContinuity
-import MaxModulusPoints.Blueprint.Interfaces.FixedRempeApproximation
-import MaxModulusPoints.Blueprint.Interfaces.RempeApproximation
-import MaxModulusPoints.Blueprint.Interfaces.StripMapData
-import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
-import MaxModulusPoints.Blueprint.Interfaces.BoundaryUpper
-import MaxModulusPoints.Blueprint.Interfaces.Rectangle
-import MaxModulusPoints.Blueprint.Interfaces.ClosedGateInterval
-import MaxModulusPoints.Blueprint.Interfaces.RectangleBarriers
-import MaxModulusPoints.Blueprint.Interfaces.HalfDisc
-import MaxModulusPoints.Blueprint.Interfaces.HalfDiscBarriers
-import MaxModulusPoints.Blueprint.Interfaces.TractModels2
-import MaxModulusPoints.Blueprint.Interfaces.KernelContinuity2
-import MaxModulusPoints.Blueprint.Interfaces.RempeApproximation2
-import MaxModulusPoints.Blueprint.Interfaces.ParameterApproximation
-import MaxModulusPoints.Blueprint.Interfaces.StripMapEstimates
-import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates2
-import MaxModulusPoints.Blueprint.Interfaces.RectangleBarriers2
-import MaxModulusPoints.Blueprint.Interfaces.HalfDiscBarriers2
-import MaxModulusPoints.Blueprint.Interfaces.ChambersAndGates
-import MaxModulusPoints.Blueprint.Interfaces.CompactMaximumContinuity
-import MaxModulusPoints.Blueprint.Interfaces.Shooting
-import MaxModulusPoints.Blueprint.Interfaces.GlobalMaxima
-import MaxModulusPoints.Blueprint.Interfaces.Normalize
-import MaxModulusPoints.Blueprint.Interfaces.NonconstantProducts
-import MaxModulusPoints.Blueprint.Interfaces.SmallCoordinateBound
-import MaxModulusPoints.Blueprint.Interfaces.HighCountContinuation
-import MaxModulusPoints.Blueprint.Interfaces.RegularFiberBound
-import MaxModulusPoints.Blueprint.Interfaces.ExceptionalRadii
-import MaxModulusPoints.Blueprint.Interfaces.RadialEnvelope
+module
+
+public import MaxModulusPoints.Blueprint.Interfaces.TractModels
+public import MaxModulusPoints.Blueprint.Interfaces.KernelContinuity
+public import MaxModulusPoints.Blueprint.Interfaces.FixedRempeApproximation
+public import MaxModulusPoints.Blueprint.Interfaces.RempeApproximation
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+public import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
+public import MaxModulusPoints.Blueprint.Interfaces.BoundaryUpper
+public import MaxModulusPoints.Blueprint.Interfaces.Rectangle
+public import MaxModulusPoints.Blueprint.Interfaces.ClosedGateInterval
+public import MaxModulusPoints.Blueprint.Interfaces.RectangleBarriers
+public import MaxModulusPoints.Blueprint.Interfaces.HalfDisc
+public import MaxModulusPoints.Blueprint.Interfaces.HalfDiscBarriers
+public import MaxModulusPoints.Blueprint.Interfaces.TractModels2
+public import MaxModulusPoints.Blueprint.Interfaces.KernelContinuity2
+public import MaxModulusPoints.Blueprint.Interfaces.RempeApproximation2
+public import MaxModulusPoints.Blueprint.Interfaces.ParameterApproximation
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapEstimates
+public import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates2
+public import MaxModulusPoints.Blueprint.Interfaces.RectangleBarriers2
+public import MaxModulusPoints.Blueprint.Interfaces.HalfDiscBarriers2
+public import MaxModulusPoints.Blueprint.Interfaces.ChambersAndGates
+public import MaxModulusPoints.Blueprint.Interfaces.CompactMaximumContinuity
+public import MaxModulusPoints.Blueprint.Interfaces.Shooting
+public import MaxModulusPoints.Blueprint.Interfaces.GlobalMaxima
+public import MaxModulusPoints.Blueprint.Interfaces.Normalize
+public import MaxModulusPoints.Blueprint.Interfaces.NonconstantProducts
+public import MaxModulusPoints.Blueprint.Interfaces.SmallCoordinateBound
+public import MaxModulusPoints.Blueprint.Interfaces.HighCountContinuation
+public import MaxModulusPoints.Blueprint.Interfaces.RegularFiberBound
+public import MaxModulusPoints.Blueprint.Interfaces.ExceptionalRadii
+public import MaxModulusPoints.Blueprint.Interfaces.RadialEnvelope
 
 /-!
 # Analytic and topological interfaces for maximum-modulus counting
@@ -36,5 +38,8 @@ import MaxModulusPoints.Blueprint.Interfaces.RadialEnvelope
 Source line references refer to the plain-text editions of the cited papers.
 The theorem packages separate the analytic construction from its final counting argument.
 -/
+
+
+@[expose] public section
 
 /-! The declarations of this file that the development uses are in the modules `MaxModulusPoints.Blueprint.Interfaces.*`, one declaration per module. -/

@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Probability.SLE.StoppedPower
+module
+
+public import Mathlib
+public import OAI.Probability.SLE.StoppedPower
+
+/-!
+# `OAI.Probability.SLE.SwallowExit`
+-/
+
+@[expose] public section
 
 namespace OAI
 

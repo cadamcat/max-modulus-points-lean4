@@ -1,7 +1,10 @@
-import Mathlib.Analysis.Analytic.IsolatedZeros
-import Mathlib.Analysis.Analytic.Constructions
-import Mathlib.Order.Filter.Finite
-import MaxModulusPoints.Blueprint.Data
+module
+
+public import Mathlib.Analysis.Analytic.IsolatedZeros
+public import Mathlib.Analysis.Analytic.Constructions
+public import Mathlib.Order.Filter.Finite
+public import MaxModulusPoints.Blueprint.Data
+
 /-!
 # Stabilizing finite physical families
 
@@ -9,6 +12,9 @@ Isolated zeros stabilize every comparison in a finite family of analytic germs.
 Cardinalities are taken after identifying equal physical pairs, so repeated
 indices do not affect the count.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

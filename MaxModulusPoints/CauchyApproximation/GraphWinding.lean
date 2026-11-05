@@ -1,5 +1,8 @@
-import TauCeti.Analysis.Contour.LogDerivFTC
-import MaxModulusPoints.CauchyApproximation.ResidueJump
+module
+
+public import TauCeti.Analysis.Contour.LogDerivFTC
+public import MaxModulusPoints.CauchyApproximation.ResidueJump
+
 /-!
 # Winding between two graphs
 
@@ -9,6 +12,9 @@ evaluates their winding integrals by the logarithmic fundamental theorem of
 calculus in the two half-planes. The endpoint terms cancel. The remaining
 branch terms give winding number −1 between the graphs and zero to their left.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open TauCeti.Contour

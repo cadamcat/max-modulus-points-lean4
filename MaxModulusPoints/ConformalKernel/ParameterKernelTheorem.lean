@@ -1,6 +1,9 @@
-import MaxModulusPoints.ConformalKernel.KernelConvergence
-import MaxModulusPoints.ConformalKernel.NormalizedMaps
-import MaxModulusPoints.ConformalKernel.TargetKernelTheorem
+module
+
+public import MaxModulusPoints.ConformalKernel.KernelConvergence
+public import MaxModulusPoints.ConformalKernel.NormalizedMaps
+public import MaxModulusPoints.ConformalKernel.TargetKernelTheorem
+
 /-!
 # Parameter dependence of normalized conformal maps
 
@@ -9,6 +12,9 @@ locally uniform convergence of the normalized maps, their inverses and derivativ
 This is the parameter form of the kernel-continuity input in
 Pardo-Simón–Sixsmith, Observation 2.3.
 -/
+
+
+@[expose] public section
 
 open Set Filter Function
 open scoped Topology

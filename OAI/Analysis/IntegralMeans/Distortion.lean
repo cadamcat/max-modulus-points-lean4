@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.UnivalentArea
+module
+
+public import OAI.Analysis.IntegralMeans.UnivalentArea
+
+/-!
+# `OAI.Analysis.IntegralMeans.Distortion`
+-/
+
+@[expose] public section
 
 namespace OAI
 

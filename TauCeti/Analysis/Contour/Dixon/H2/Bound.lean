@@ -3,6 +3,10 @@ Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Chris Birkbeck
 -/
+/-
+Modified from TauCetiProject/TauCeti commit 3bed7e37f3c504a99e8c07e9f309540812a7aa90.
+The body below is upstream commit 0535b3bf5a08: Mathlib API adaptation on Lean v4.35.0-rc3.
+-/
 module
 
 public import TauCeti.Analysis.Contour.Dixon.Def
@@ -63,7 +67,6 @@ theorem dixonH2_norm_le {R M : ℝ}
     ‖dixonH2 f γ a b w‖ ≤ M / (‖w‖ - R) * |b - a| := by
   rw [dixonH2_def]
   have hM_nn : 0 ≤ M := (norm_nonneg _).trans (hM a Set.left_mem_uIcc)
-  have hpos : 0 < ‖w‖ - R := by linarith
   have h_ptwise : ∀ t ∈ Set.uIoc a b,
       ‖f (γ t) / (γ t - w) * deriv γ t‖ ≤ M / (‖w‖ - R) := by
     intro t ht_ui

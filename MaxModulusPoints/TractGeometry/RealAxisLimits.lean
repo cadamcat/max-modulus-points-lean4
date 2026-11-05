@@ -1,14 +1,20 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.NormalizedSymmetry
-import MaxModulusPoints.TractGeometry.RealAxis
-import MaxModulusPoints.TractGeometry.RealAxisCorrespondence
-import MaxModulusPoints.TractGeometry.RealAxisOrientation
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.NormalizedSymmetry
+public import MaxModulusPoints.TractGeometry.RealAxis
+public import MaxModulusPoints.TractGeometry.RealAxisCorrespondence
+public import MaxModulusPoints.TractGeometry.RealAxisOrientation
+
 /-!
 # Limits at the right-hand end of the real-axis correspondence
 
 The increasing bijection between the two real axes sends their right-hand
 ends to one another, in both directions.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

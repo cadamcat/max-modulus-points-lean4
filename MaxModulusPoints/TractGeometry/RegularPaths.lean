@@ -1,12 +1,15 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.ChamberCover
-import MaxModulusPoints.TractGeometry.ChamberPaths
-import MaxModulusPoints.TractGeometry.GapPaths
-import MaxModulusPoints.TractGeometry.PassagePaths
-import MaxModulusPoints.TractGeometry.RealAxis
-import MaxModulusPoints.TractGeometry.RegularCoordinates
-import MaxModulusPoints.TractGeometry.ShoulderPaths
-import MaxModulusPoints.TractGeometry.TunnelPaths
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.ChamberCover
+public import MaxModulusPoints.TractGeometry.ChamberPaths
+public import MaxModulusPoints.TractGeometry.GapPaths
+public import MaxModulusPoints.TractGeometry.PassagePaths
+public import MaxModulusPoints.TractGeometry.RealAxis
+public import MaxModulusPoints.TractGeometry.RegularCoordinates
+public import MaxModulusPoints.TractGeometry.ShoulderPaths
+public import MaxModulusPoints.TractGeometry.TunnelPaths
+
 /-!
 # Connecting points with regular coordinates
 
@@ -14,6 +17,9 @@ Every regular point of the ambient strip lies in a gap or in the interior of
 one of the block regions. The region paths join it to the real axis, which
 then connects it to the normalization point.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

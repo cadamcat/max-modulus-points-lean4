@@ -1,11 +1,14 @@
-import TauCeti.Analysis.Complex.BranchLogRoot
-import Mathlib.MeasureTheory.Integral.DivergenceTheorem
-import MaxModulusPoints.CauchyApproximation.ContourRegularity
-import MaxModulusPoints.CauchyApproximation.DetourHolomorphy
-import MaxModulusPoints.CauchyApproximation.ImproperIntegral
-import MaxModulusPoints.CauchyApproximation.LocalDetour
-import MaxModulusPoints.CauchyApproximation.Model
-import MaxModulusPoints.CauchyApproximation.ResidueJump
+module
+
+public import TauCeti.Analysis.Complex.BranchLogRoot
+public import Mathlib.MeasureTheory.Integral.DivergenceTheorem
+public import MaxModulusPoints.CauchyApproximation.ContourRegularity
+public import MaxModulusPoints.CauchyApproximation.DetourHolomorphy
+public import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+public import MaxModulusPoints.CauchyApproximation.LocalDetour
+public import MaxModulusPoints.CauchyApproximation.Model
+public import MaxModulusPoints.CauchyApproximation.ResidueJump
+
 /-!
 # Null-homology of the concrete detour loop
 
@@ -15,6 +18,9 @@ outside the tract, a holomorphic logarithm of the translated coordinate
 provides a primitive of the winding kernel. The fundamental theorem of
 calculus across the finitely many corners makes its winding number zero.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open TauCeti.Contour

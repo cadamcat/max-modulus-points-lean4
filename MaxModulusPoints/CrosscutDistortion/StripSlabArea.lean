@@ -1,8 +1,11 @@
-import Mathlib.MeasureTheory.Measure.Lebesgue.Complex
-import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
-import Mathlib.Tactic.NormNum
-import Mathlib.Tactic.Ring
-import MaxModulusPoints.Blueprint.Data
+module
+
+public import Mathlib.MeasureTheory.Measure.Lebesgue.Complex
+public import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Ring
+public import MaxModulusPoints.Blueprint.Data
+
 /-!
 # Area of a vertical slab in the unit-height strip
 
@@ -10,6 +13,9 @@ Complex Lebesgue measure agrees with product Lebesgue measure in real and
 imaginary coordinates. The target support slab therefore has area equal
 to its horizontal width, with zero area when that width is nonpositive.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

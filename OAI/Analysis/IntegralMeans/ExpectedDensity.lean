@@ -1,4 +1,12 @@
-import OAI.Analysis.IntegralMeans.AffineLaw
+module
+
+public import OAI.Analysis.IntegralMeans.AffineLaw
+
+/-!
+# `OAI.Analysis.IntegralMeans.ExpectedDensity`
+-/
+
+@[expose] public section
 
 namespace OAI
 

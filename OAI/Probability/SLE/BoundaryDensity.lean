@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Probability.SLE.LoewnerReflection
+module
+
+public import Mathlib
+public import OAI.Probability.SLE.LoewnerReflection
+
+/-!
+# `OAI.Probability.SLE.BoundaryDensity`
+-/
+
+@[expose] public section
 
 namespace OAI
 

@@ -1,14 +1,17 @@
-import Mathlib
-import FixedPointTheorems.apply_cubical_sperner
-import FixedPointTheorems.convex_homeos
+module
+
+public import FixedPointTheorems.apply_cubical_sperner
+public import FixedPointTheorems.convex_homeos
+public import Mathlib.Dynamics.FixedPoints.Basic
 
 /-!
 # Brouwer's fixed-point theorem
 
-The unit-cube fixed-point theorem is transported along a homeomorphism of a
-nonempty compact convex set. The resulting theorem is also expressed using
-`Function.IsFixedPt` and the set of fixed points.
+Every continuous function mapping a nonempty compact convex set in a finite-dimensional
+real normed space to itself has a fixed point.
 -/
+
+@[expose] public section
 
 
 theorem brouwer_fixed_point {V : Type*}
@@ -24,13 +27,15 @@ theorem brouwer_fixed_point {V : Type*}
   rwa [e.symm_apply_apply] at h1
 }
 
+/-- Brouwer's fixed-point theorem stated with mathlib's `Function.IsFixedPt` vocabulary. -/
 theorem brouwer_fixed_point_isFixedPt {V : Type*}
     [NormedAddCommGroup V] [NormedSpace ℝ V] [FiniteDimensional ℝ V]
     (s : Set V) (hcvx : Convex ℝ s) (hcmpct : IsCompact s) (hne : Set.Nonempty s)
     (f : C(s, s)) :
     ∃ x, Function.IsFixedPt f x := by
-  simpa [Function.IsFixedPt] using! brouwer_fixed_point s hcvx hcmpct hne f
+  simpa [Function.IsFixedPt] using brouwer_fixed_point s hcvx hcmpct hne f
 
+/-- The fixed-point set of a continuous self-map on a Brouwer domain is nonempty. -/
 theorem brouwer_fixedPoints_nonempty {V : Type*}
     [NormedAddCommGroup V] [NormedSpace ℝ V] [FiniteDimensional ℝ V]
     (s : Set V) (hcvx : Convex ℝ s) (hcmpct : IsCompact s) (hne : Set.Nonempty s)

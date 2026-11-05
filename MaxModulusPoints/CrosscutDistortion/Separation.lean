@@ -1,14 +1,20 @@
-import Mathlib.Algebra.Order.Floor.Ring
-import Mathlib.Tactic.FunProp
-import Mathlib.Tactic.NormNum
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CrosscutDistortion.TunnelSlice
+module
+
+public import Mathlib.Algebra.Order.Floor.Ring
+public import Mathlib.Tactic.FunProp
+public import Mathlib.Tactic.NormNum
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CrosscutDistortion.TunnelSlice
+
 /-!
 # Separation by a tunnel crosscut
 
 Every connected subset of the chamber and gate tract that joins the passage
 slice to the clean slice meets each central vertical tunnel segment.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.CrosscutDistortion
 

@@ -1,17 +1,23 @@
-import Mathlib.Analysis.Calculus.Deriv.Slope
-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
-import Mathlib.Topology.Order.IntermediateValue
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.NormalizedSymmetry
-import MaxModulusPoints.TractGeometry.Openness
-import MaxModulusPoints.TractGeometry.RealAxis
-import MaxModulusPoints.TractGeometry.RealAxisCorrespondence
+module
+
+public import Mathlib.Analysis.Calculus.Deriv.Slope
+public import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+public import Mathlib.Topology.Order.IntermediateValue
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.NormalizedSymmetry
+public import MaxModulusPoints.TractGeometry.Openness
+public import MaxModulusPoints.TractGeometry.RealAxis
+public import MaxModulusPoints.TractGeometry.RealAxisCorrespondence
+
 /-!
 # Orientation of the real-axis conformal correspondence
 
 The real-axis restriction is a continuous injection. Its positive derivative
 at the normalization point selects the increasing orientation.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

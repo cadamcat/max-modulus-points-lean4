@@ -1,7 +1,10 @@
-import Mathlib.Topology.Order.Compact
-import Mathlib.Topology.Order.ProjIcc
-import Mathlib.Topology.Instances.Real.Lemmas
-import Mathlib.Tactic.Linarith
+module
+
+public import Mathlib.Topology.Order.Compact
+public import Mathlib.Topology.Order.ProjIcc
+public import Mathlib.Topology.Instances.Real.Lemmas
+public import Mathlib.Tactic.Linarith
+
 /-!
 # Simultaneous shooting on products of intervals
 
@@ -9,6 +12,9 @@ The compactness step of Pardo-Simón–Sixsmith, Lemma 2.4, works for an arbitra
 index set. Finite-dimensional Brouwer is recorded explicitly as an input;
 the reduction to face signs and the passage to infinitely many equations are proved here.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

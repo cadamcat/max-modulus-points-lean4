@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Analysis.SymmetricDomains.FiniteProperMapOpen
+module
+
+public import Mathlib
+public import OAI.Analysis.SymmetricDomains.FiniteProperMapOpen
+
+/-!
+# `OAI.Analysis.SymmetricDomains.FiberPolynomialNatDegree`
+-/
+
+@[expose] public section
 
 namespace OAI
 

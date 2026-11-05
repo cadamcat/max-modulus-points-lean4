@@ -1,11 +1,14 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.StripMap.ExponentialChart
-import MaxModulusPoints.StripMap.Geometry
-import MaxModulusPoints.StripMap.LimitRange
-import MaxModulusPoints.StripMap.RealDerivative
-import MaxModulusPoints.StripMap.Rescaling
-import MaxModulusPoints.StripMap.SharpDerivative
-import MaxModulusPoints.StripMap.Symmetry
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.StripMap.ExponentialChart
+public import MaxModulusPoints.StripMap.Geometry
+public import MaxModulusPoints.StripMap.LimitRange
+public import MaxModulusPoints.StripMap.RealDerivative
+public import MaxModulusPoints.StripMap.Rescaling
+public import MaxModulusPoints.StripMap.SharpDerivative
+public import MaxModulusPoints.StripMap.Symmetry
+
 /-!
 # Identification of rescaled limits
 
@@ -14,6 +17,9 @@ uniform limits. For a normalized map into the right half-plane, Schwarz's
 lemma gives the opposite bound. Its equality case identifies the map with
 the exponential.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

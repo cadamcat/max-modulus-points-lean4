@@ -1,11 +1,14 @@
-import OAI.Analysis.IntegralMeans.TraceBounds
-import MaxModulusPoints.CauchyApproximation.CanonicalDensity
-import MaxModulusPoints.CauchyApproximation.CircleCorrection
-import MaxModulusPoints.CauchyApproximation.ContourDerivative
-import MaxModulusPoints.CauchyApproximation.ContourDistortion
-import MaxModulusPoints.CauchyApproximation.InverseDistortion
-import MaxModulusPoints.CauchyApproximation.Model
-import MaxModulusPoints.CauchyApproximation.UniformBounds
+module
+
+public import OAI.Analysis.IntegralMeans.TraceBounds
+public import MaxModulusPoints.CauchyApproximation.CanonicalDensity
+public import MaxModulusPoints.CauchyApproximation.CircleCorrection
+public import MaxModulusPoints.CauchyApproximation.ContourDerivative
+public import MaxModulusPoints.CauchyApproximation.ContourDistortion
+public import MaxModulusPoints.CauchyApproximation.InverseDistortion
+public import MaxModulusPoints.CauchyApproximation.Model
+public import MaxModulusPoints.CauchyApproximation.UniformBounds
+
 /-!
 # Quartic position growth of the canonical contour
 
@@ -15,6 +18,9 @@ comparison on the disks joining that line to the canonical contour. Together
 with compact bounds on the remaining interval, these estimates give one
 quartic position bound for all normalized inverse conformal maps.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open OAI.Brennan

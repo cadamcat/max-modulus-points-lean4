@@ -1,15 +1,18 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
-import MaxModulusPoints.Blueprint.Interfaces.BoundaryUpper
-import MaxModulusPoints.Blueprint.Interfaces.ClosedGateInterval
-import MaxModulusPoints.Blueprint.Interfaces.Rectangle
-import MaxModulusPoints.Blueprint.Interfaces.RectangleBarriers
-import MaxModulusPoints.Blueprint.Interfaces.StripMapData
-import MaxModulusPoints.Construction.BoundaryLimits
-import MaxModulusPoints.Construction.ClosedChamberGeometry
-import MaxModulusPoints.Construction.OpenChamberGeometry
-import MaxModulusPoints.Construction.Tract
-import MaxModulusPoints.Construction.UniformLeftBound
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
+public import MaxModulusPoints.Blueprint.Interfaces.BoundaryUpper
+public import MaxModulusPoints.Blueprint.Interfaces.ClosedGateInterval
+public import MaxModulusPoints.Blueprint.Interfaces.Rectangle
+public import MaxModulusPoints.Blueprint.Interfaces.RectangleBarriers
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+public import MaxModulusPoints.Construction.BoundaryLimits
+public import MaxModulusPoints.Construction.ClosedChamberGeometry
+public import MaxModulusPoints.Construction.OpenChamberGeometry
+public import MaxModulusPoints.Construction.Tract
+public import MaxModulusPoints.Construction.UniformLeftBound
+
 /-!
 # Uniform estimates for almost closed gates
 
@@ -17,6 +20,9 @@ Pardo-Simón–Sixsmith, Proposition 4.3, first bounds the real part of the
 logarithmic map on a fixed chamber rectangle. The rectangle barrier then
 makes its full sample slice small, uniformly over all other gates.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

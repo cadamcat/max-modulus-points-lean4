@@ -1,13 +1,19 @@
-import Mathlib.Analysis.Complex.Schwarz
-import Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.StripMap.Rescaling
+module
+
+public import Mathlib.Analysis.Complex.Schwarz
+public import Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.StripMap.Rescaling
+
 /-!
 # Explicit charts for the strip and the right half-plane
 
 The exponential identifies the strip of height one with the right half-plane.
 The Cayley transform then supplies a normalized disc chart and its inverse.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

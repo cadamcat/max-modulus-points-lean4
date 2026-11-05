@@ -1,11 +1,14 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.StripMapData
-import MaxModulusPoints.Construction.PassageCut
-import MaxModulusPoints.Construction.RealOrientation
-import MaxModulusPoints.Construction.StripClearance
-import MaxModulusPoints.Construction.StripCoordinates
-import MaxModulusPoints.Construction.Tract
-import MaxModulusPoints.Construction.TractMembership
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+public import MaxModulusPoints.Construction.PassageCut
+public import MaxModulusPoints.Construction.RealOrientation
+public import MaxModulusPoints.Construction.StripClearance
+public import MaxModulusPoints.Construction.StripCoordinates
+public import MaxModulusPoints.Construction.Tract
+public import MaxModulusPoints.Construction.TractMembership
+
 /-!
 # A uniform positive witness on each passage slice
 
@@ -14,6 +17,9 @@ follows quantitatively from the fixed height of the ambient strip.
 An omitted boundary value bounds the inverse strip-coordinate derivative;
 the mean-value estimate and strip growth then give a positive real witness.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

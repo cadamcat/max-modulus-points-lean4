@@ -1,14 +1,20 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.BlockPositions
-import MaxModulusPoints.TractGeometry.PassagePaths
-import MaxModulusPoints.TractGeometry.RectangleFrontiers
-import MaxModulusPoints.TractGeometry.Walls
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.BlockPositions
+public import MaxModulusPoints.TractGeometry.PassagePaths
+public import MaxModulusPoints.TractGeometry.RectangleFrontiers
+public import MaxModulusPoints.TractGeometry.Walls
+
 /-!
 # Vertical paths inside the tunnels
 
 The interior of each tunnel lies below the chamber walls. Its points can move
 vertically to the real axis without crossing any wall.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

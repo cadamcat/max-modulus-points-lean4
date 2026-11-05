@@ -1,15 +1,17 @@
-import Mathlib
+module
+
+public import Mathlib.Combinatorics.Enumerative.DoubleCounting
+import Mathlib.Algebra.BigOperators.Ring.Nat
+import Mathlib.Tactic
 
 /-!
 # Cubical simplices and boundary incidence
 
-The grid simplices of a labelled cube are classified by their boundary coordinates.
-Coordinate-change counts order their vertices and determine the number of parent simplices,
-providing the incidence identities used in the cubical Sperner argument.
+The grid simplices of a labelled cube are classified by their boundary coordinates. The
+incidence counts follow Kuhn's combinatorial form of Sperner's lemma.
 -/
 
-
-open Classical
+@[expose] public section
 
 structure SpernerCube where
   n : ℕ
@@ -20,17 +22,21 @@ structure SpernerCube where
 
 namespace SpernerCube
 
-def G (SC : SpernerCube) := Fin SC.n → Fin (SC.p+1)
+/-- The vertices of the cube: functions from coordinates to grid positions.
 
-instance Gfin (SC : SpernerCube): Fintype SC.G := by {
-  exact Pi.instFintype
-}
+This is `abbrev` (i.e. reducible) rather than `def` on purpose.  `G` is used purely as a
+type synonym, and instance search only unfolds reducible definitions: with a plain `def`,
+even the type of an application `v i` for `v : SC.G` cannot be computed during instance
+resolution, so `DecidableEq SC.G` and `DecidablePred fun i => v1 i ≠ v2 i` both fail and
+silently fall back to `Classical.propDecidable`. -/
+abbrev G (SC : SpernerCube) := Fin SC.n → Fin (SC.p+1)
 
 end SpernerCube
 
 variable (SC : SpernerCube)
 variable {n1 : ℕ}
 variable {hn1 : n1 + 1 = SC.n}
+
 
 def simplex (m:ℕ ) (I : Fin (m+1)→ SC.G) := Function.Injective I
     ∧ ∀ i < m, ∀ j : Fin SC.n, (I (Fin.ofNat _ i) j).1 ≤ (I (Fin.ofNat _ (i+1)) j).1
@@ -46,6 +52,42 @@ def is_boundary_face I := ∃! J, @is_face SC n1 I J
 
 def complete_boundary_face I := is_boundary_face SC I ∧ complete_simplex SC n1 I
 
+/-! ### Decidability
+
+The predicates above are `def`s, so instance search does not unfold them, and every one of
+them quantifies only over finite types.  Rather than let `Classical.propDecidable` supply
+the instances (which is what an unscoped `open Classical` used to do, silently), the genuine
+decision procedures are given here; this is what keeps `Finset.card {J | is_face SC I J}`
+and friends computable. -/
+
+instance decidableRangeSubset {α β γ : Type*} [Fintype α] [Fintype β] [DecidableEq γ]
+    (I : α → γ) (J : β → γ) : Decidable (Set.range I ⊆ Set.range J) :=
+  decidable_of_iff (∀ a, ∃ b, J b = I a) (by simp [Set.range_subset_iff, Set.mem_range])
+
+instance decidableSimplex (m : ℕ) (I : Fin (m+1) → SC.G) : Decidable (simplex SC m I) :=
+  inferInstanceAs (Decidable (_ ∧ _))
+
+instance decidableCompleteSimplex (m : ℕ) (I : Fin (m+1) → SC.G) :
+    Decidable (complete_simplex SC m I) :=
+  have : Decidable (Set.range (fun (i : Fin (m+1)) ↦ SC.RL (I i)) = {j : ℕ | j ≤ m}) :=
+    decidable_of_iff ((∀ i, SC.RL (I i) ≤ m) ∧ ∀ c ≤ m, ∃ i, SC.RL (I i) = c) (by
+      simp only [Set.ext_iff, Set.mem_range, Set.mem_ofPred_eq]
+      exact ⟨fun h c ↦ ⟨fun ⟨i, hi⟩ ↦ hi ▸ h.1 i, fun hc ↦ h.2 c hc⟩,
+        fun h ↦ ⟨fun i ↦ (h _).1 ⟨i, rfl⟩, fun c hc ↦ (h c).2 hc⟩⟩)
+  inferInstanceAs (Decidable (_ ∧ _))
+
+instance decidableIsFace (I : Fin (n1+1) → SC.G) (J : Fin (SC.n+1) → SC.G) :
+    Decidable (@is_face SC n1 I J) :=
+  inferInstanceAs (Decidable (_ ∧ _ ∧ Set.range I ⊆ Set.range J))
+
+instance decidableIsBoundaryFace (I : Fin (n1+1) → SC.G) :
+    Decidable (@is_boundary_face SC n1 I) :=
+  inferInstanceAs (Decidable (∃ J, @is_face SC n1 I J ∧ ∀ J', @is_face SC n1 I J' → J' = J))
+
+instance decidableCompleteBoundaryFace (I : Fin (n1+1) → SC.G) :
+    Decidable (@complete_boundary_face SC n1 I) :=
+  inferInstanceAs (Decidable (_ ∧ _))
+
 def case_A (I : Fin (n1 +1) → SC.G) := ∃ j, ∀ k, I k j = 0
 
 def case_B (I : Fin (n1 +1) → SC.G) := ∃ j, ∀ k, I k j = Fin.last SC.p
@@ -54,6 +96,7 @@ def case_C (I : Fin (n1 +1) → SC.G) :=
     ∃ j, ∃ (q : Fin (SC.p + 1)), (q ≠ 0 ∧ q ≠ Fin.last SC.p ) ∧ ∀ k, I k j = q
 
 def case_D (I : Fin (n1 +1) → SC.G) := ∀ j, ∀ q, ∃ k,I k j ≠ q
+
 
 lemma one_of_ABCD (I : Fin (n1 +1) → SC.G) :
     case_A SC I ∨ case_B SC I ∨ case_C SC I ∨ case_D SC I := by {
@@ -81,7 +124,9 @@ lemma one_of_ABCD (I : Fin (n1 +1) → SC.G) :
   use j, q
 }
 
+
 section simplex_properties
+
 
 lemma monotone_1_of_simplex {m:ℕ } (I : Fin (m+1)→ SC.G) (hs : simplex SC m I) (i1 i2 : Fin (m+1))
     (h1 : i1 ≤ i2) : ∀ j, I i1 j ≤ I i2 j := by {
@@ -94,7 +139,7 @@ lemma monotone_1_of_simplex {m:ℕ } (I : Fin (m+1)→ SC.G) (hs : simplex SC m 
   intro i1
   have h3 := (hs.2 i1.1 i1.2 j).1
   simp only [Fin.val_fin_le] at h3
-  convert! h3 <;> ext <;> simp [Fin.ofNat_eq_cast, Nat.mod_eq_of_lt]
+  convert h3 <;> ext <;> simp [Fin.ofNat_eq_cast, Nat.mod_eq_of_lt]
 }
 
 lemma monotone_2_of_simplex {m:ℕ } (I : Fin (m+1)→ SC.G) (hs : simplex SC m I) (i1 i2 : Fin (m+1)) :
@@ -137,6 +182,7 @@ lemma le_add_one_of_simplex {m: ℕ} I (hs : simplex SC m I) (i1 i2 : Fin (m+1))
 
 end simplex_properties
 
+
 lemma p_ne_zero_of_cube {hn1 : n1 + 1 = SC.n}: Fin.last SC.p ≠ 0 := by {
   simp only [ne_eq, Fin.last_eq_zero_iff]
   intro h1
@@ -151,7 +197,9 @@ lemma p_ne_zero_of_cube {hn1 : n1 + 1 = SC.n}: Fin.last SC.p ≠ 0 := by {
   exact h2.1 h4 (h2.2 h4)
 }
 
+
 section simplex_child
+
 
 def insert_index (j : Fin (SC.n+1)) (a: Fin (n1 +1 )) : Fin (SC.n+1) :=
 { val := if a.val < j.val then a.val else a.val+1,
@@ -264,6 +312,7 @@ lemma insert_index_inj j : Function.Injective (@insert_index SC n1 hn1 j) := by 
   apply insert_index_strict_mono
 }
 
+
 lemma delete_vertex_inj J {hs : simplex SC SC.n J} i1 i2
     (h1 : @delete_vertex SC n1 hn1 i1 J = @delete_vertex SC n1 hn1 i2 J ) : i1 = i2 := by {
   by_contra h2
@@ -370,7 +419,7 @@ lemma is_insert_index_of_strict_mono f (hsm : StrictMono f)
     apply almost_surjective_of_insert_index
     exact hj k1
   }
-  obtain ⟨g, hg⟩ := axiomOfChoice h1
+  obtain ⟨g, hg⟩ := Classical.axiomOfChoice h1
   have h2 : StrictMono g := by {
     intro k1 k2
     contrapose!
@@ -402,7 +451,7 @@ lemma child_simplex_char (I : Fin (n1 +1) → SC.G) J {hs : simplex SC SC.n J}
         use j
         exact hj.symm
       }
-      apply axiom_of_choice h3
+      apply Classical.axiom_of_choice h3
     }
     obtain ⟨f, hf ⟩ := h2
     have h31 : Function.Injective f := by {
@@ -433,6 +482,7 @@ lemma child_simplex_char (I : Fin (n1 +1) → SC.G) J {hs : simplex SC SC.n J}
 
 end simplex_child
 
+
 section cases_ABCD
 
 lemma insert_vertex I (v : SC.G) j :
@@ -462,11 +512,11 @@ lemma insert_vertex I (v : SC.G) j :
       rw [h2, hi]
     }
   }
-  obtain ⟨J, h2⟩ := axiomOfChoice h1
+  obtain ⟨J, h2⟩ := Classical.axiomOfChoice h1
   use J
   apply And.intro
   {
-    ext i
+    funext i
     exact (h2 (@insert_index SC n1 hn1 j i)).2 i rfl
   }
   exact (h2 j).1 rfl
@@ -693,7 +743,7 @@ lemma parent_simplex_case_D I (hs : simplex SC n1 I) J j i
     }
     by_cases h8 : i2 = j.1
     {
-      convert! h5.2
+      convert h5.2
       simp only [h8, Fin.cast_val_eq_self]
       have h11 : j ≠ Fin.last SC.n := by {
         suffices h12 : j.1 ≠ SC.n by exact Ne.symm (Fin.ne_of_val_ne (Ne.symm h12))
@@ -708,7 +758,7 @@ lemma parent_simplex_case_D I (hs : simplex SC n1 I) J j i
     {
       rw [←h9] at h6
       simp only [Nat.add_right_cancel_iff] at h6
-      convert! h5.1
+      convert h5.1
       rw [←h6]
       simp only [Fin.cast_val_eq_self]
       rw [h9]
@@ -777,7 +827,8 @@ lemma parent_simplex_case_D I (hs : simplex SC n1 I) J j i
   }
 }
 
-noncomputable def coord_change_count (v1 v2 : SC.G) := Finset.card {i | v1 i ≠ v2 i}
+
+def coord_change_count (v1 v2 : SC.G) := Finset.card {i | v1 i ≠ v2 i}
 
 lemma ccc_add {m} I (hs : simplex SC m I) (i1 i2 i3) (h1 : i1 ≤ i2 ∧ i2 ≤ i3) :
     coord_change_count SC (I i1) (I i3) =
@@ -832,7 +883,7 @@ lemma ccc_pos {m} I (hs : simplex SC m I) i1 i2 (h1 : i1 ≠ i2)
   apply h2
 }
 
-noncomputable def ccc_fun {m} (I : Fin (m+1)→ SC.G) (i : Fin (m+1)) : Fin (SC.n + 1 )
+def ccc_fun {m} (I : Fin (m+1)→ SC.G) (i : Fin (m+1)) : Fin (SC.n + 1 )
     := ⟨ coord_change_count SC (I 0) (I i), by {
       refine Nat.lt_succ_of_le ?_
       exact card_finset_fin_le {i_1 | I 0 i_1 ≠ I i i_1}
@@ -855,15 +906,18 @@ lemma ccc_fun_is_insert_index I (hs : simplex SC n1 I) :
   apply ccc_fun_strict_mono SC I hs
 }
 
+
+
 lemma ccc_fun_case_D_iff {m} I (hs : simplex SC m I) :
     case_D SC I ↔ ccc_fun SC I (Fin.last m) = Fin.last SC.n := by {
   have h1 : (ccc_fun SC I (Fin.last m) = Fin.last SC.n) ↔ ∀ k, I 0 k ≠ I (Fin.last m) k  := by {
+    unfold ccc_fun coord_change_count
     rw [Fin.ext_iff]
-    change Finset.card {k : Fin SC.n | I 0 k ≠ I (Fin.last m) k} = SC.n ↔ _
-    have hcard := Finset.card_eq_iff_eq_univ
-      {k : Fin SC.n | I 0 k ≠ I (Fin.last m) k}
-    simpa only [Fintype.card_fin, Finset.eq_univ_iff_forall,
-      Finset.mem_filter, Finset.mem_univ, true_and] using hcard
+    have h3 : SC.n = Fintype.card (Fin SC.n) := by {exact Eq.symm (Fintype.card_fin SC.n)}
+    simp only [ne_eq, Fin.val_last]
+    nth_rewrite 7 [h3]
+    rw [Finset.card_eq_iff_eq_univ, Finset.eq_univ_iff_forall]
+    simp only [Finset.mem_filter, Finset.mem_univ, true_and]
   }
   apply Iff.trans _ h1.symm
   unfold case_D
@@ -1047,13 +1101,14 @@ lemma same_delete_index_eq_iff J1 J2 j
     : J1 = J2 ↔ J1 j = J2 j := by {
   apply Iff.intro (fun a ↦ congrFun a j)
   intro h2
-  ext j2
+  funext j2
   by_cases h3 : j2 = j
   rw [h3,h2]
   obtain ⟨i1, hi1⟩ := @almost_surjective_of_insert_index SC n1 hn1 j j2 h3
   rw [hi1]
   exact congrFun h1 i1
 }
+
 
 lemma case_D_parent_count {hn1 : n1 + 1 = SC.n} I (hs : simplex SC n1 I) (h1 : case_D SC I )
     : Finset.card { J : Fin (SC.n + 1) → SC.G | is_face SC I J} = 2 := by {
@@ -1101,7 +1156,7 @@ lemma case_D_parent_count {hn1 : n1 + 1 = SC.n} I (hs : simplex SC n1 I) (h1 : c
   have h4 : ∃ k1, ∃ k2, k1 ≠ k2 ∧ {k | I i1 k ≠ I (i1 +1) k} = {k1, k2} := by {
     unfold coord_change_count at h3
     rw [Finset.card_eq_two] at h3
-    convert! h3
+    convert h3
     simp only [ne_eq]
     rw [←Finset.coe_eq_pair]
     simp only [Finset.coe_filter, Finset.mem_univ, true_and]
@@ -1290,6 +1345,7 @@ lemma case_D_parent_count {hn1 : n1 + 1 = SC.n} I (hs : simplex SC n1 I) (h1 : c
   }
 }
 
+
 lemma unique_const_ABC {hn1 : n1 + 1 = SC.n} I (hs : simplex SC n1 I) k1 q1
     (h1 : ∀ i, I i k1 = q1): ∀ k2, k1 ≠ k2 → I 0 k2 ≠ I (Fin.last n1) k2 := by {
   intro k2 h3 h2
@@ -1320,6 +1376,7 @@ lemma unique_const_ABC {hn1 : n1 + 1 = SC.n} I (hs : simplex SC n1 I) k1 q1
   rw [←hn1,add_le_add_iff_left] at h7
   simp only [Nat.not_ofNat_le_one] at h7
 }
+
 
 lemma case_AC_ex_unique I (hs : simplex SC n1 I) k1 q
     (hABC : ∀ i, I i k1 = q) (hAC : q ≠ Fin.last SC.p)
@@ -1406,6 +1463,7 @@ lemma case_B_not_last I (h1 : case_B SC I) J
   exact lt_add_one SC.p
 }
 
+
 lemma case_BC_ex_unique I (hs : simplex SC n1 I) k1 q
     (hABC : ∀ i, I i k1 = q) (hBC : q ≠ 0)
     : ∃! J, I = @delete_vertex SC n1 hn1 0 J ∧ is_face SC I J := by {
@@ -1486,6 +1544,8 @@ lemma case_A_not_zero I (h1 : case_A SC I) J
   rfl
 }
 
+
+
 lemma case_ABC_count_disj {hn1 : n1 + 1 = SC.n} I k1 q
     (hABC : ∀ i, I i k1 = q) : Finset.card { J | is_face SC I J}
     = Finset.card {J | I = @delete_vertex SC n1 hn1 0 J ∧ is_face SC I J}
@@ -1527,6 +1587,7 @@ lemma case_ABC_count_disj {hn1 : n1 + 1 = SC.n} I k1 q
   rw [←h2.1,←h3.1]
 }
 
+
 lemma case_C_parent_count {hn1 : n1 + 1 = SC.n} I (hs : simplex SC n1 I) (h1 : case_C SC I )
     : Finset.card { J : Fin (SC.n + 1) → SC.G | is_face SC I J} = 2 := by {
   obtain ⟨k1,q, h1⟩  := h1
@@ -1567,6 +1628,7 @@ lemma case_A_parent_count {hn1 : n1 + 1 = SC.n} I (hs : simplex SC n1 I) (h2 : c
 
 end cases_ABCD
 
+-- used in other file
 lemma boundary_is_A_or_B {hn1 : n1 + 1 = SC.n} I (hbf : @is_boundary_face SC n1 I)
     : case_A SC I ∨ case_B SC I := by {
   have hs : simplex SC n1 I := by {
@@ -1586,10 +1648,13 @@ lemma boundary_is_A_or_B {hn1 : n1 + 1 = SC.n} I (hbf : @is_boundary_face SC n1 
   simp only [OfNat.ofNat_ne_one] at hbf
 }
 
+-- used in other file
 lemma case_B_boundary {hn1 : n1 + 1 = SC.n} I (hs : simplex SC n1 I)
     (h1 : case_B SC I) : is_boundary_face SC I :=
   (Fintype.existsUnique_iff_card_one _).mpr (@case_B_parent_count SC n1 hn1 I hs h1)
 
+
+-- used in other file
 lemma parent_count {hn1 : n1 + 1 = SC.n} I (hs : simplex SC n1 I) :
     Finset.card { J : Fin (SC.n + 1) → SC.G | is_face SC I J} ∈ {c | c = 1 ∨ c = 2} := by {
   simp only [Set.mem_ofPred_eq]

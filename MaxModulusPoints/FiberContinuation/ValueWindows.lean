@@ -1,6 +1,9 @@
-import Mathlib.Analysis.Complex.Polynomial.Basic
-import MaxModulusPoints.FiberContinuation.SphericalCharts
-import MaxModulusPoints.FiberContinuation.ValueCoordinates
+module
+
+public import Mathlib.Analysis.Complex.Polynomial.Basic
+public import MaxModulusPoints.FiberContinuation.SphericalCharts
+public import MaxModulusPoints.FiberContinuation.ValueCoordinates
+
 /-!
 # Matched spherical value windows
 
@@ -8,6 +11,9 @@ The image of a centered parameter disk is an open spherical neighborhood.
 Matching its radius with a positive integral power ensures that every parameter
 root over the window lies inside the same disk.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

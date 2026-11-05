@@ -1,13 +1,19 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Challenge
-import MaxModulusPoints.FiberContinuation.CompactCapture
-import MaxModulusPoints.FiberContinuation.LogarithmicValues
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Challenge
+public import MaxModulusPoints.FiberContinuation.CompactCapture
+public import MaxModulusPoints.FiberContinuation.LogarithmicValues
+
 /-!
 # Finite physical fibers
 
 The first coordinate embeds each nonzero-product fiber into the zeros of one
 nonzero entire function. Compact capture and isolated zeros give finiteness.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

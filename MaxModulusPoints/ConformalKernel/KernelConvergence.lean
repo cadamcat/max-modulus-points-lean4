@@ -1,7 +1,10 @@
-import Mathlib.Topology.Compactness.Compact
-import Mathlib.Topology.Connected.Basic
-import Mathlib.Topology.LocallyFinite
-import Mathlib.Topology.Instances.Real.Lemmas
+module
+
+public import Mathlib.Topology.Compactness.Compact
+public import Mathlib.Topology.Connected.Basic
+public import Mathlib.Topology.LocallyFinite
+public import Mathlib.Topology.Instances.Real.Lemmas
+
 /-!
 # Pointed kernels of domains with moving gates
 
@@ -10,6 +13,9 @@ are eventually contained in the moving sets. Kernel convergence requires the sam
 kernel for every subsequence, as in the kernel-convergence remark of
 Pardo-Simón–Sixsmith, Section 2.
 -/
+
+
+@[expose] public section
 
 open Set Filter
 open scoped Topology

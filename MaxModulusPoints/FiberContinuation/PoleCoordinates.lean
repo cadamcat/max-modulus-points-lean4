@@ -1,12 +1,18 @@
-import MaxModulusPoints.Challenge
-import MaxModulusPoints.FiberContinuation.InverseCoordinates
-import MaxModulusPoints.FiberContinuation.LogarithmicValues
+module
+
+public import MaxModulusPoints.Challenge
+public import MaxModulusPoints.FiberContinuation.InverseCoordinates
+public import MaxModulusPoints.FiberContinuation.LogarithmicValues
+
 /-!
 # Analytic coordinates at poles
 
 The reciprocal of a genuine simple pole extends analytically by zero and has
 a nonzero derivative. It therefore has an analytic local inverse.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

@@ -1,7 +1,10 @@
-import Mathlib.Analysis.Complex.LocallyUniformLimit
-import MaxModulusPoints.ConformalKernel.KernelConvergence
-import MaxModulusPoints.ConformalKernel.KernelLimits
-import MaxModulusPoints.ConformalKernel.KernelNormalFamilies
+module
+
+public import Mathlib.Analysis.Complex.LocallyUniformLimit
+public import MaxModulusPoints.ConformalKernel.KernelConvergence
+public import MaxModulusPoints.ConformalKernel.KernelLimits
+public import MaxModulusPoints.ConformalKernel.KernelNormalFamilies
+
 /-!
 # Derivative convergence and normalization on a pointed kernel
 
@@ -10,6 +13,9 @@ For limits of normalized Riemann maps, injectivity prevents the limiting positiv
 real derivative from vanishing. Normalized uniqueness then identifies every
 simultaneous subsequential limit with the prescribed map of the kernel.
 -/
+
+
+@[expose] public section
 
 open Set Filter Function Metric
 open scoped Topology ComplexOrder

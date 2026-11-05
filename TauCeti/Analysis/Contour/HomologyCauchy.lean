@@ -3,10 +3,15 @@ Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: Chris Birkbeck
 -/
+/-
+Modified from TauCetiProject/TauCeti commit 3bed7e37f3c504a99e8c07e9f309540812a7aa90.
+The body below is upstream commit 0535b3bf5a08: Mathlib API adaptation on Lean v4.35.0-rc3.
+-/
 module
 
 public import TauCeti.Analysis.Contour.Dixon.Def
 public import TauCeti.Analysis.Contour.PiecewiseC1On
+import Mathlib.Analysis.Calculus.FDeriv.Mul
 import TauCeti.Analysis.Contour.Cauchy.IntegralFormula
 import TauCeti.Analysis.Contour.Curve.Distance
 import TauCeti.Analysis.Contour.Dixon.FunctionDiff

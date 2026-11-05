@@ -1,7 +1,10 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.ConformalKernel.KernelConvergence
-import MaxModulusPoints.ConformalKernel.TractGateWalls
-import MaxModulusPoints.ConformalKernel.VerticalGates
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.ConformalKernel.KernelConvergence
+public import MaxModulusPoints.ConformalKernel.TractGateWalls
+public import MaxModulusPoints.ConformalKernel.VerticalGates
+
 /-!
 # Kernel convergence of the chamber tracts
 
@@ -9,6 +12,9 @@ Each tract is the fully open tract with the closed portions of its variable
 chamber walls removed. The vertical-wall kernel theorem then applies to
 coordinatewise convergent gate parameters.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

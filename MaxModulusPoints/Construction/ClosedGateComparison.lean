@@ -1,14 +1,17 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
-import MaxModulusPoints.Blueprint.Interfaces.RectangleBarriers
-import MaxModulusPoints.Blueprint.Interfaces.StripMapData
-import MaxModulusPoints.Construction.ClosedChamberGeometry
-import MaxModulusPoints.Construction.ClosedGate
-import MaxModulusPoints.Construction.Maxima
-import MaxModulusPoints.Construction.OpenGateComparison
-import MaxModulusPoints.Construction.PassageLower
-import MaxModulusPoints.Construction.Tract
-import MaxModulusPoints.Construction.TractMembership
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
+public import MaxModulusPoints.Blueprint.Interfaces.RectangleBarriers
+public import MaxModulusPoints.Blueprint.Interfaces.StripMapData
+public import MaxModulusPoints.Construction.ClosedChamberGeometry
+public import MaxModulusPoints.Construction.ClosedGate
+public import MaxModulusPoints.Construction.Maxima
+public import MaxModulusPoints.Construction.OpenGateComparison
+public import MaxModulusPoints.Construction.PassageLower
+public import MaxModulusPoints.Construction.Tract
+public import MaxModulusPoints.Construction.TractMembership
+
 /-!
 # Strict comparison at almost closed gates
 
@@ -17,6 +20,9 @@ with a passage witness. A sufficiently large initial gap supplies a common
 passage floor, and the rectangle bound supplies the chamber ceiling.
 The strict margin survives the uniform approximation error.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

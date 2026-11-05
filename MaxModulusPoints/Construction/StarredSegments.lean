@@ -1,5 +1,8 @@
-import MaxModulusPoints.Construction.CirclePoints
-import MaxModulusPoints.Construction.Tract
+module
+
+public import MaxModulusPoints.Construction.CirclePoints
+public import MaxModulusPoints.Construction.Tract
+
 /-!
 
 # Fixed compact starred segments
@@ -8,6 +11,9 @@ The geometric part of Pardo-Simón–Sixsmith, Proposition 4.4: the full slices
 are disjoint, their compact subsegments can be chosen symmetrically, and shortening
 the deleted endpieces preserves uniform endpoint bounds and prescribed witnesses.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

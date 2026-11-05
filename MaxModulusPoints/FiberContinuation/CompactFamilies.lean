@@ -1,10 +1,13 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.FiberContinuation.BoundedSurvivors
-import MaxModulusPoints.FiberContinuation.InverseCoordinates
-import MaxModulusPoints.FiberContinuation.InverseRoots
-import MaxModulusPoints.FiberContinuation.LogarithmicValues
-import MaxModulusPoints.FiberContinuation.SphericalInverseRoots
-import MaxModulusPoints.FiberContinuation.ValueCoordinates
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.FiberContinuation.BoundedSurvivors
+public import MaxModulusPoints.FiberContinuation.InverseCoordinates
+public import MaxModulusPoints.FiberContinuation.InverseRoots
+public import MaxModulusPoints.FiberContinuation.LogarithmicValues
+public import MaxModulusPoints.FiberContinuation.SphericalInverseRoots
+public import MaxModulusPoints.FiberContinuation.ValueCoordinates
+
 /-!
 # Finite families capturing compact surviving pairs
 
@@ -13,6 +16,9 @@ compact set give a finite common-power family. It captures every nearby pair
 in that compact set at each common-value parameter. The analytic branches
 themselves may leave the compact set, and no count is assigned to this family.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

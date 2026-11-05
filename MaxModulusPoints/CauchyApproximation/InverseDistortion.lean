@@ -1,6 +1,9 @@
-import OAI.Analysis.IntegralMeans.HalfPlane
-import MaxModulusPoints.CauchyApproximation.ContourDerivative
-import MaxModulusPoints.CauchyApproximation.Model
+module
+
+public import OAI.Analysis.IntegralMeans.HalfPlane
+public import MaxModulusPoints.CauchyApproximation.ContourDerivative
+public import MaxModulusPoints.CauchyApproximation.Model
+
 /-!
 # Inverse derivative bounds on a vertical line
 
@@ -10,6 +13,9 @@ origin and the prescribed value at one control the normalization constant
 by the quarter theorem. These estimates provide the first part of the
 conformal distortion argument for the canonical interior contour.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open OAI.Brennan

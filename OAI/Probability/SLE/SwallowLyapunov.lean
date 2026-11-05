@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Probability.SLE.FiniteRadiusStop
+module
+
+public import Mathlib
+public import OAI.Probability.SLE.FiniteRadiusStop
+
+/-!
+# `OAI.Probability.SLE.SwallowLyapunov`
+-/
+
+@[expose] public section
 
 namespace OAI
 

@@ -1,7 +1,10 @@
-import Mathlib.Analysis.Calculus.Deriv.Star
-import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Normalization
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.StripMap.Geometry
+module
+
+public import Mathlib.Analysis.Calculus.Deriv.Star
+public import TauCeti.Analysis.Complex.Conformal.RiemannMapping.Normalization
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.StripMap.Geometry
+
 /-!
 # Normalization of the strip map
 
@@ -9,6 +12,9 @@ Normalized Riemann maps to the disc produce the conformal equivalence from
 the strip to the logarithmic target with value one and positive real derivative
 at the origin.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Probability.SLE.SwallowLyapunov
+module
+
+public import Mathlib
+public import OAI.Probability.SLE.SwallowLyapunov
+
+/-!
+# `OAI.Probability.SLE.StoppedPower`
+-/
+
+@[expose] public section
 
 namespace OAI
 

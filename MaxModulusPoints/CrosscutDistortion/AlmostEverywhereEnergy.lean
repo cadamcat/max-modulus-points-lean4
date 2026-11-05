@@ -1,4 +1,7 @@
-import MaxModulusPoints.CrosscutDistortion.RectangleEnergy
+module
+
+public import MaxModulusPoints.CrosscutDistortion.RectangleEnergy
+
 /-!
 # Rectangular energy from almost-everywhere slice bounds
 
@@ -6,6 +9,9 @@ The squared-density energy is at least width divided by height when the
 vertical length bound and slice integrability hold almost everywhere.
 Exceptional horizontal coordinates do not affect the total integral.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.CrosscutDistortion
 

@@ -1,12 +1,18 @@
-import Mathlib.Analysis.Analytic.IsolatedZeros
-import Mathlib.Analysis.Calculus.InverseFunctionTheorem.Analytic
-import Mathlib.Analysis.Complex.Polynomial.Basic
+module
+
+public import Mathlib.Analysis.Analytic.IsolatedZeros
+public import Mathlib.Analysis.Calculus.InverseFunctionTheorem.Analytic
+public import Mathlib.Analysis.Complex.Polynomial.Basic
+
 /-!
 # Local analytic power coordinates
 
 A nonconstant analytic germ is a positive integral power of a local conformal
 coordinate after subtracting its central value.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

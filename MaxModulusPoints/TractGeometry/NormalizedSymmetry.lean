@@ -1,11 +1,17 @@
-import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected
-import MaxModulusPoints.Blueprint.Data
+module
+
+public import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected
+public import MaxModulusPoints.Blueprint.Data
+
 /-!
 # Normalized conformal equivalences of symmetric plane domains
 
 The real derivative normalization at real base points determines a
 conformal equivalence that commutes with complex conjugation.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

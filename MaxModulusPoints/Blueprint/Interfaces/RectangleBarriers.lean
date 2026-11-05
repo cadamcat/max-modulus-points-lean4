@@ -1,13 +1,18 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BoundaryUpper
-import MaxModulusPoints.Blueprint.Interfaces.ClosedGateInterval
-import MaxModulusPoints.Blueprint.Interfaces.Rectangle
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BoundaryUpper
+public import MaxModulusPoints.Blueprint.Interfaces.ClosedGateInterval
+public import MaxModulusPoints.Blueprint.Interfaces.Rectangle
 
 /-!
 # `RectangleBarriers`
 
 One declaration of `MaxModulusPoints.Blueprint.Interfaces`, in its own module.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

@@ -1,12 +1,17 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.KernelContinuity
-import MaxModulusPoints.ConformalKernel.KernelContinuityPackage
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.KernelContinuity
+public import MaxModulusPoints.ConformalKernel.KernelContinuityPackage
 
 /-!
 # `kernel_continuity`
 
 One declaration of `MaxModulusPoints.Blueprint.Interfaces`, in its own module so that it can import the module that proves it.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

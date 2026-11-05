@@ -1,7 +1,10 @@
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
-import Mathlib.MeasureTheory.Function.SpecialFunctions.Basic
-import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
-import Mathlib.Tactic.Linarith
+module
+
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
+public import Mathlib.MeasureTheory.Function.SpecialFunctions.Basic
+public import Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+public import Mathlib.Tactic.Linarith
+
 /-!
 # Integrability of a nonnegative density from its square
 
@@ -9,6 +12,9 @@ On a finite measure space, a nonnegative real density with integrable
 square is integrable. Its measurability follows by taking the square
 root, so a separate measurability hypothesis on the density is unnecessary.
 -/
+
+
+@[expose] public section
 
 universe u
 

@@ -1,6 +1,9 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.ParameterApproximation.TargetMajorant
-import MaxModulusPoints.StripEstimates.HalfDisc
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.ParameterApproximation.TargetMajorant
+public import MaxModulusPoints.StripEstimates.HalfDisc
+
 /-!
 # Bounds on an upper semicircle from three interior values
 
@@ -8,6 +11,9 @@ Three unit disks tangent to the real axis cover the unit upper semicircle.
 Their boundary-distance estimates, combined with the positive target
 majorant, give the reciprocal-height bound used in harmonic comparison.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

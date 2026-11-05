@@ -1,6 +1,9 @@
-import TauCeti.Analysis.Contour.PiecewiseC1On
-import Mathlib.MeasureTheory.Function.LocallyIntegrable
-import MaxModulusPoints.CauchyApproximation.Convergence
+module
+
+public import TauCeti.Analysis.Contour.PiecewiseC1On
+public import Mathlib.MeasureTheory.Function.LocallyIntegrable
+public import MaxModulusPoints.CauchyApproximation.Convergence
+
 /-!
 # Admissibility of compact contour modifications
 
@@ -10,6 +13,9 @@ it, its density is integrable on that arc. The unchanged tails retain the
 integrability of the original density. These facts supply the analytic
 hypotheses needed when deforming an improper Cauchy contour locally.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open TauCeti.Contour

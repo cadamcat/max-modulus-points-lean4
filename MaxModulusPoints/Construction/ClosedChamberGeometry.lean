@@ -1,12 +1,15 @@
-import Mathlib.Analysis.Complex.ReImTopology
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
-import MaxModulusPoints.Blueprint.Interfaces.ClosedGateInterval
-import MaxModulusPoints.Blueprint.Interfaces.Rectangle
-import MaxModulusPoints.Construction.OpenChamberGeometry
-import MaxModulusPoints.Construction.PassageCut
-import MaxModulusPoints.Construction.StarredSegments
-import MaxModulusPoints.Construction.Tract
+module
+
+public import Mathlib.Analysis.Complex.ReImTopology
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Blueprint.Interfaces.BottleneckEstimates
+public import MaxModulusPoints.Blueprint.Interfaces.ClosedGateInterval
+public import MaxModulusPoints.Blueprint.Interfaces.Rectangle
+public import MaxModulusPoints.Construction.OpenChamberGeometry
+public import MaxModulusPoints.Construction.PassageCut
+public import MaxModulusPoints.Construction.StarredSegments
+public import MaxModulusPoints.Construction.Tract
+
 /-!
 # Chamber rectangles with arbitrary gate heights
 
@@ -14,6 +17,9 @@ The fixed rectangle in Pardo-Simón–Sixsmith, Proposition 4.3, lies in
 every tract. Its frontier is removed except at its own right-hand gate.
 These statements refer to the literal union-of-frontiers tract.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

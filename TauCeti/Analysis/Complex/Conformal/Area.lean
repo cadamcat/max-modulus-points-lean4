@@ -3,6 +3,10 @@ Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
 Authors: The Tau Ceti contributors
 -/
+/-
+Modified from TauCetiProject/TauCeti commit 3bed7e37f3c504a99e8c07e9f309540812a7aa90.
+The body below is upstream commit 0535b3bf5a08: Mathlib API adaptation on Lean v4.35.0-rc3.
+-/
 module
 
 public import Mathlib.MeasureTheory.Function.Jacobian
@@ -250,7 +254,7 @@ theorem volume_image_eq_zero_iff (hUo : IsOpen U) (hf : DifferentiableOn ℂ f U
   rw [volume_image_eq_lintegral_enorm_deriv_sq hUo hf hs.nullMeasurableSet hsU hinj,
     lintegral_eq_zero_iff' hm]
   refine ⟨fun h => ?_, fun h => ?_⟩
-  · have hfalse : ∀ᵐ z ∂volume.restrict s, False := by
+  · have hfalse : ∀ᵐ _ ∂volume.restrict s, False := by
       filter_upwards [h, hd] with z hz hz0
       exact hz0 (enorm_eq_zero.mp (pow_eq_zero_iff two_ne_zero |>.mp hz))
     simpa [ae_iff, Measure.restrict_apply_univ] using hfalse

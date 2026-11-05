@@ -1,5 +1,8 @@
-import Mathlib.Analysis.InnerProductSpace.Harmonic.Constructions
-import MaxModulusPoints.StripEstimates.BoundaryMaximum
+module
+
+public import Mathlib.Analysis.InnerProductSpace.Harmonic.Constructions
+public import MaxModulusPoints.StripEstimates.BoundaryMaximum
+
 /-!
 # Finite exceptional sets in harmonic comparison
 
@@ -7,6 +10,9 @@ Logarithmic barriers remove finitely many exceptional boundary points from the
 maximum principle. This supplies the endpoint argument used in the rectangle
 and half-disc comparisons of Pardo-Simón–Sixsmith, Section 4.
 -/
+
+
+@[expose] public section
 
 open Set Filter Metric Topology InnerProductSpace
 

@@ -1,8 +1,11 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.FiberContinuation.LocalFamilies
-import MaxModulusPoints.FiberContinuation.Stabilization
-import MaxModulusPoints.FiberContinuation.ValueCoordinates
-import MaxModulusPoints.FiberContinuation.ValueWindows
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.FiberContinuation.LocalFamilies
+public import MaxModulusPoints.FiberContinuation.Stabilization
+public import MaxModulusPoints.FiberContinuation.ValueCoordinates
+public import MaxModulusPoints.FiberContinuation.ValueWindows
+
 /-!
 # Exact covers of the whole local actual image
 
@@ -10,6 +13,9 @@ The product and value windows are shrunk together with the parameter radius.
 Every full raw open-disk image stays in the final window, and every actual
 target there is captured at each of its common-power parameters.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

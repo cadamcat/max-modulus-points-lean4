@@ -1,7 +1,10 @@
-import Mathlib.MeasureTheory.Integral.IntegralEqImproper
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
-import Mathlib.Topology.Maps.Proper.Basic
-import Mathlib.Analysis.Complex.Basic
+module
+
+public import Mathlib.MeasureTheory.Integral.IntegralEqImproper
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+public import Mathlib.Topology.Maps.Proper.Basic
+public import Mathlib.Analysis.Complex.Basic
+
 /-!
 # Absolutely convergent Cauchy integrals on proper curves
 
@@ -11,6 +14,9 @@ absolute convergence at every point off the curve. This is the convergence step
 in Theorem 2.1 of Rempe-Gillen, *Hyperbolic entire functions with full hyperbolic
 dimension and approximation by Eremenko–Lyubich functions*.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open scoped Topology

@@ -1,5 +1,13 @@
-import Mathlib
-import OAI.Probability.SLE.NearRealContraction
+module
+
+public import Mathlib
+public import OAI.Probability.SLE.NearRealContraction
+
+/-!
+# `OAI.Probability.SLE.BrownianStrongMarkov`
+-/
+
+@[expose] public section
 
 namespace OAI
 

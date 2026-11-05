@@ -1,9 +1,12 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Challenge
-import MaxModulusPoints.FiberContinuation.CompactCapture
-import MaxModulusPoints.FiberContinuation.FiniteCoordinates
-import MaxModulusPoints.FiberContinuation.FiniteFibers
-import MaxModulusPoints.FiberContinuation.LogarithmicValues
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Challenge
+public import MaxModulusPoints.FiberContinuation.CompactCapture
+public import MaxModulusPoints.FiberContinuation.FiniteCoordinates
+public import MaxModulusPoints.FiberContinuation.FiniteFibers
+public import MaxModulusPoints.FiberContinuation.LogarithmicValues
+
 /-!
 # Compact surviving physical pairs
 
@@ -12,6 +15,9 @@ A product bound therefore puts one surviving pair in a fixed compact annulus
 product. Restricted compact capture and isolated zeros also hold at the value
 at the origin; full-fiber properness is not needed for these statements.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

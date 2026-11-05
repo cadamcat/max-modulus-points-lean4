@@ -1,11 +1,17 @@
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.NormNum
-import MaxModulusPoints.Blueprint.Data
+module
+
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import MaxModulusPoints.Blueprint.Data
+
 /-!
 # The normalization point of the chamber and gate tracts
 
 All walls lie to the right of the imaginary axis, leaving `-1` in the tract.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

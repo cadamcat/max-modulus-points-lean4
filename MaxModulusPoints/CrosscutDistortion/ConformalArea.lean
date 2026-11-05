@@ -1,10 +1,3 @@
-import Mathlib.MeasureTheory.Function.Jacobian
-import Mathlib.RingTheory.Complex
-import Mathlib.RingTheory.Norm.Transitivity
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CrosscutDistortion.ComplexEnergy
-import MaxModulusPoints.CrosscutDistortion.ConformalDensity
-import MaxModulusPoints.CrosscutDistortion.StripSlabArea
 /-
 Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.
 Released under Apache 2.0 license as described in the file LICENSE.
@@ -12,6 +5,16 @@ Released under Apache 2.0 license as described in the file LICENSE.
 The complex determinant computation is adapted from
 TauCeti.Analysis.Complex.Conformal.Area.
 -/
+module
+
+public import Mathlib.MeasureTheory.Function.Jacobian
+public import Mathlib.RingTheory.Complex
+public import Mathlib.RingTheory.Norm.Transitivity
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CrosscutDistortion.ComplexEnergy
+public import MaxModulusPoints.CrosscutDistortion.ConformalDensity
+public import MaxModulusPoints.CrosscutDistortion.StripSlabArea
+
 /-!
 # Area control of conformal tunnel energy
 
@@ -19,6 +22,9 @@ The real Jacobian change of variables identifies squared complex
 derivative energy with image area. Restricting to the target support slab
 gives both finite pullback energy and its upper bound by the slab width.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

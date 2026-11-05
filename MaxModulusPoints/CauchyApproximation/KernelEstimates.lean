@@ -1,5 +1,8 @@
-import MaxModulusPoints.CauchyApproximation.ContourTube
-import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+module
+
+public import MaxModulusPoints.CauchyApproximation.ContourTube
+public import MaxModulusPoints.CauchyApproximation.ImproperIntegral
+
 /-!
 # Quantitative bounds for separated Cauchy kernels
 
@@ -8,6 +11,9 @@ cancel the normalization scale. The resulting clamped-power envelope has
 an explicit two-sided tail integral. Splitting at a middle interval gives
 the integral estimate used in the decay argument for Cauchy approximation.
 -/
+
+
+@[expose] public section
 
 open Complex Filter MeasureTheory Set
 open scoped Topology

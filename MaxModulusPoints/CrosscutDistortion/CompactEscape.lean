@@ -1,5 +1,8 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.CrosscutDistortion.TunnelBoundary
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.CrosscutDistortion.TunnelBoundary
+
 /-!
 # Compact-target escape at excluded source endpoints
 
@@ -7,6 +10,9 @@ Along an approach to a point outside the source of a conformal equivalence,
 the images eventually avoid every compact subset of the target. This does
 not require the images to have a boundary limit.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.CrosscutDistortion
 

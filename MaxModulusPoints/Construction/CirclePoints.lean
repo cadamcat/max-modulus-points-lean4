@@ -1,6 +1,9 @@
-import Mathlib.Analysis.SpecialFunctions.Complex.Log
-import Mathlib.Data.Set.Card
-import MaxModulusPoints.Construction.Maxima
+module
+
+public import Mathlib.Analysis.SpecialFunctions.Complex.Log
+public import Mathlib.Data.Set.Card
+public import MaxModulusPoints.Construction.Maxima
+
 /-!
 
 # From equal slice maxima to maximum-modulus points
@@ -9,6 +12,9 @@ The last step of Pardo-Simón–Sixsmith, Corollary 4.6, compares equal maxima
 on compact starred segments with the deleted endpieces and the complement of the
 exponentiated tract. The resulting points are global maxima on the entire circle.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Construction
 

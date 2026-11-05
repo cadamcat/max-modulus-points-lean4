@@ -1,14 +1,20 @@
-import Mathlib.Analysis.Calculus.MeanValue
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.Challenge
-import MaxModulusPoints.FiberContinuation.InverseCoordinates
-import MaxModulusPoints.FiberContinuation.LogarithmicValues
+module
+
+public import Mathlib.Analysis.Calculus.MeanValue
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.Challenge
+public import MaxModulusPoints.FiberContinuation.InverseCoordinates
+public import MaxModulusPoints.FiberContinuation.LogarithmicValues
+
 /-!
 # Finite logarithmic-value coordinates
 
 Clearing the denominator gives an entire equation. A constant germ of the
 logarithmic derivative would make the normalized entire factor constant.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

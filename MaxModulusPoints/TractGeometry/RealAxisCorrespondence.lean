@@ -1,14 +1,20 @@
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.TractGeometry.InverseSymmetry
-import MaxModulusPoints.TractGeometry.NormalizedSymmetry
-import MaxModulusPoints.TractGeometry.RealAxis
-import MaxModulusPoints.TractGeometry.StripContainment
+module
+
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.TractGeometry.InverseSymmetry
+public import MaxModulusPoints.TractGeometry.NormalizedSymmetry
+public import MaxModulusPoints.TractGeometry.RealAxis
+public import MaxModulusPoints.TractGeometry.StripContainment
+
 /-!
 # The real-axis correspondence of the conformal equivalence
 
 Conjugation symmetry in both directions identifies the real axis of the
 tract with the positive real axis of the target.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.TractGeometry
 

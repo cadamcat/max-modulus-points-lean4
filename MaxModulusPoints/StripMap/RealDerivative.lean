@@ -1,14 +1,20 @@
-import Mathlib.Analysis.Complex.RealDeriv
-import Mathlib.Topology.Order.IntermediateValue
-import MaxModulusPoints.Blueprint.Data
-import MaxModulusPoints.StripMap.Geometry
-import MaxModulusPoints.StripMap.Symmetry
+module
+
+public import Mathlib.Analysis.Complex.RealDeriv
+public import Mathlib.Topology.Order.IntermediateValue
+public import MaxModulusPoints.Blueprint.Data
+public import MaxModulusPoints.StripMap.Geometry
+public import MaxModulusPoints.StripMap.Symmetry
+
 /-!
 # The real derivative of the normalized strip map
 
 The derivative is real and never vanishes on the real axis. Continuity
 propagates the positive orientation at the origin to every real point.
 -/
+
+
+@[expose] public section
 
 noncomputable section
 

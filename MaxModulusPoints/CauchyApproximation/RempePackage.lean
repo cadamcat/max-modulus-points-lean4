@@ -1,12 +1,18 @@
-import MaxModulusPoints.Blueprint.Interfaces.FixedRempeApproximation
-import MaxModulusPoints.CauchyApproximation.FixedApproximation
-import MaxModulusPoints.WallGrowth.WallDecay
+module
+
+public import MaxModulusPoints.Blueprint.Interfaces.FixedRempeApproximation
+public import MaxModulusPoints.CauchyApproximation.FixedApproximation
+public import MaxModulusPoints.WallGrowth.WallDecay
+
 /-!
 # The approximation package
 
 The canonical Cauchy-integral approximation for the chamber and gate tracts,
 combining the core-relative construction with the uniform decay at the tract walls.
 -/
+
+
+@[expose] public section
 
 namespace MaxModulusPoints.Blueprint.Packages
 

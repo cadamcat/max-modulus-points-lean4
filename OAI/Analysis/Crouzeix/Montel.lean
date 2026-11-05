@@ -1,4 +1,12 @@
-import Mathlib
+module
+
+public import Mathlib
+
+/-!
+# `OAI.Analysis.Crouzeix.Montel`
+-/
+
+@[expose] public section
 
 namespace OAI
 
