@@ -17,6 +17,8 @@
 
 Lean 中的定义和量词见 [MaxModulusPoints/Challenge.lean](MaxModulusPoints/Challenge.lean)；主定理由 [MaxModulusPoints/Blueprint/Main.lean](MaxModulusPoints/Blueprint/Main.lean) 汇总。同一陈述（证明留空）见 [Challenge.lean](Challenge.lean)。[Solution.lean](Solution.lean) 导入该证明。
 
+`v1.1.0` 版本已在 Palomar Registry 登记，编号 [PALOMAR-2026-11-06-000007](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-06-000007&version=1)。Palomar 重新编译了该提交，并用 Comparator 核对了 [Challenge.lean](Challenge.lean) 中的定理。
+
 ## 工具链
 
 本分支使用 Lean `v4.35.0` 与 Mathlib 提交 `56a005855ea17e0b0958f73ec801ae140b0a1679`（`v4.35.0` 标签）。所有 Lean 源文件都使用模块系统。随仓库提供的 OAI、TauCeti 与 FixedPointTheorems 已适配该工具链，改动记在 [THIRD_PARTY.md](THIRD_PARTY.md)。`v1.0.0` 仍是最初发布版，使用 Lean `v4.34.1`。

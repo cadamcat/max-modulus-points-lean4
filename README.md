@@ -17,6 +17,8 @@ For an entire function `f : ℂ → ℂ` and a radius `r`, `ν f r` is the cardi
 
 The Lean definitions and quantifiers are in [MaxModulusPoints/Challenge.lean](MaxModulusPoints/Challenge.lean); the theorem is assembled in [MaxModulusPoints/Blueprint/Main.lean](MaxModulusPoints/Blueprint/Main.lean). The same statement, with the proof left open, is in [Challenge.lean](Challenge.lean). [Solution.lean](Solution.lean) imports the proof.
 
+Release `v1.1.0` is registered in the Palomar Registry as [PALOMAR-2026-11-06-000007](https://palomar-registry.org/entry.html?id=PALOMAR-2026-11-06-000007&version=1). Palomar rebuilt that commit and checked the theorem of [Challenge.lean](Challenge.lean) with Comparator.
+
 ## Toolchain
 
 This branch uses Lean `v4.35.0` and Mathlib commit `56a005855ea17e0b0958f73ec801ae140b0a1679` (the `v4.35.0` tag). Every Lean source uses the module system. The vendored OAI, TauCeti, and FixedPointTheorems files are adapted to that toolchain; the changes are recorded in [THIRD_PARTY.md](THIRD_PARTY.md). Release `v1.0.0` remains the original release, on Lean `v4.34.1`.

@@ -28,10 +28,6 @@ The checks below are for the module-system port. Release `v1.0.0` is unchanged.
 
 Tool versions: Lean `v4.35.0` (`eb6cafb7290e8bd5f2937522d8d804f58f02bafc`); Mathlib `56a005855ea17e0b0958f73ec801ae140b0a1679`; Comparator `865edc14486c3388e9225daa971da8e157488c3e` with its lean4export requirement set to tag `v4.35.0`; lean4export `5a9a355dc6c5fd82b69058d433e2ae2e8dfbf8fe`; nanoda_lib `8de7e0c4ed3052745a7f8725164efd9e76d84c56`.
 
-### Controls
-
-- Comparator rejected a challenge changing `UnboundedCounts` from `∀ N` to `∃ N` (exit 1): `Const does not match between challenge and target 'MaxModulusPoints.UnboundedCounts'`.
-
 ## Controls
 
 - Comparator rejected a challenge changing `UnboundedCounts` from `∀ N` to `∃ N` (exit 1): `Const does not match between challenge and target 'MaxModulusPoints.UnboundedCounts'`.
